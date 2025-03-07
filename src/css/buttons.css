@@ -1,0 +1,52 @@
+/* buttons.css */
+
+.ourButton
+{
+    margin: 1px;
+    /* horizontal and vertical padding */
+    padding: 2px 5px;
+    border: solid 1px rgb(100, 100, 100);
+    border-radius: 3px;
+    background-color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-family: arial;
+    font-size: 14.5px;
+    font-weight: bold;
+    color: rgb(247, 247, 247);
+    text-align: center;
+    display: inline-flex; /* Use flex for centering */
+    justify-content: center; /* Centers text horizontally */
+    align-items: center; /* Centers text vertically */
+    height: auto; /* Adjust height automatically based on content */
+    min-height: 10px; /* Ensures button maintains a minimum height */
+    word-wrap: break-word; /* Allows word wrapping for long text */
+    cursor: pointer;
+}
+
+.ourButton:hover
+{
+    border-color: rgb(255, 255, 255);
+    background: rgb(0, 217, 255);
+}
+
+.ourButton:active
+{
+    position: relative;
+    top: 1px;
+    border-color: rgb(255, 0, 255);
+    color: rgb(255, 0, 255);
+}
+
+.buttonStyle002
+{
+    background-color: black;
+}
+
+/* ---- */
+
+/* Dedicated to God the Father */
+/* All Rights Reserved Christopher Andrew Topalian Copyright 2000-2025 */
+/* https://github.com/ChristopherTopalian */
+/* https://github.com/ChristopherAndrewTopalian */
+/* https://sites.google.com/view/CollegeOfScripting */
+

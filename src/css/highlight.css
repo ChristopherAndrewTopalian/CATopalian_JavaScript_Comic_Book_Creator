@@ -1,0 +1,80 @@
+/* highlight */
+
+.tags
+{
+  display: inline;
+  position: relative;
+}
+
+.tags:hover:after
+{
+    background: #333;
+    background: rgba(0, 0, 0, .8);
+    border-radius: 5px;
+    bottom: -20px; /*-34*/
+    color: #fff;
+    content: attr(gloss);
+    left: 300px;
+    padding: 15px 15px;
+    position: absolute;
+    z-index: 98;
+    line-height: 15px;
+    width: 350px;
+}
+
+.tags:hover:before
+{
+    border: solid;
+    border-color: rgb(255, 255, 255) transparent;
+    border-width: 0 5px 5px 5px;
+    bottom: -4px;
+    content: "";
+    left: 50%;
+    position: absolute;
+    z-index: 100;
+}
+
+.tags2
+{
+    display: inline;
+    position: relative;
+}
+
+.tags2:hover:after
+{
+    background: #333;
+    background: rgba(0, 0, 0, .8);
+    border-radius: 5px;
+    bottom: 20px;
+    color: rgb(220, 220, 220);
+    content: attr(gloss);
+    left: 0px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    position: absolute;
+    z-index: 98;
+    line-height: 15px;
+}
+
+.tags2:hover:before
+{
+    border: solid;
+    border-color: rgb(255, 255, 255) transparent;
+    border-width: 0 5px 5px 5px;
+    top: -4px;
+    content: "";
+    left: 37%;
+    position: absolute;
+    z-index: 99;
+}
+
+/* ---- */
+
+/* Dedicated to God the Father */
+/* All Rights Reserved Christopher Andrew Topalian Copyright 2000-2025 */
+/* https://github.com/ChristopherTopalian */
+/* https://github.com/ChristopherAndrewTopalian */
+/* https://sites.google.com/view/CollegeOfScripting */
+

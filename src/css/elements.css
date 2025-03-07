@@ -1,0 +1,87 @@
+/* elements.css */
+
+html
+{
+    min-height: 100%;
+}
+
+body
+{
+    background: rgb(0, 0, 0);
+    overflow: hidden;
+}
+
+/* chrome scrollbar styling */
+::-webkit-scrollbar
+{
+  width: 9px;
+}
+
+::-webkit-scrollbar-track
+{
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb
+{
+  background-color: rgba(155, 155, 155, 0.5);
+  border-radius: 20px;
+  border: transparent;
+}
+
+/* mozilla scrollbar styling */
+.scrolling
+{
+  overflow-y: scroll;
+  /* scrollbar-color: rgb(0, 0, 0); */
+  scrollbar-width: thin;
+}
+
+hr
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+a:visited
+{
+    border-color: red;
+}
+
+input
+{
+    background-color: black;
+}
+
+input[type=submit]
+{
+    border: 1px solid #f44c0e;
+    color: white;
+    background: black;
+    padding: 10px 20px;
+    border-radius: 3px;
+}
+
+/*
+:root
+{
+    --theGray: 500;
+}
+*/
+
+details > summary {
+  list-style-type: '➡'; /* ▶️ ➡*/
+}
+
+details[open] > summary {
+  list-style-type: '⬇'; /* 🔽⬇*/
+}
+
+/* ---- */
+
+/* Dedicated to God the Father */
+/* All Rights Reserved Christopher Andrew Topalian Copyright 2000-2025 */
+/* https://github.com/ChristopherTopalian */
+/* https://github.com/ChristopherAndrewTopalian */
+/* https://sites.google.com/view/CollegeOfScripting */
+

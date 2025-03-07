@@ -1,0 +1,140 @@
+/* ourStyle.css */
+
+.slider
+{
+    width: 270px;
+}
+
+.textAreaMenuOptionsStyle
+{
+    background-color: rgb(10, 10, 10);
+    color: rgb(245, 245, 245);
+    font-family: arial;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.spiral
+{
+    width: 1000px;
+    z-index: -1;
+}
+
+.secondImage
+{
+    position: absolute;
+    left: 300px;
+    top: 275px;
+    width: 500px;
+    z-index: 2;
+    opacity: 80%;
+}
+
+.sliderOutput
+{
+    color: white;
+}
+
+.flexColumn
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.flexRow
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.divSpace
+{
+    margin-right: 20px;
+    color: white;
+    text-shadow: 2px 2px black;
+}
+
+.characterStyle
+{
+    color:white;
+}
+
+.propStyle
+{
+    color:white;
+}
+
+.characterGalleryStyle
+{
+    width: 100px;
+}
+
+.characterGalleryStyle:hover
+{
+    /* width: 200px ; */
+}
+
+.gridContainerStyle
+{
+    padding: 0px;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    /* grid-template-columns: repeat(3, 1fr); */
+    background-color: rgba(40, 40, 40, 0.9);
+    /* justify-content: space-between; */
+}
+
+.gridItemStyle
+{
+    width: 450px;
+    padding: 5px;
+    margin: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.gridItemStyle:hover
+{
+    border-color: aqua;
+}
+
+.gridItemStyle:active
+{
+    border-color: magenta;
+}
+
+.gridItemSmallStyle
+{
+    width: 100px;
+    padding: 5px;
+    margin: 10px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(255, 255, 255);
+    font-size: 30px;
+    text-align: center;
+}
+
+.theTextAreaStyle
+{
+    border-radius: 8px;
+    background-color: rgb(0, 0, 0);
+    font-family: tahoma;
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    opacity: 0.8;
+    overflow-y: scroll;
+}
+
+/* ---- */
+
+/* Dedicated to God the Father */
+/* All Rights Reserved Christopher Andrew Topalian Copyright 2000-2025 */
+/* https://github.com/ChristopherTopalian */
+/* https://github.com/ChristopherAndrewTopalian */
+/* https://sites.google.com/view/CollegeOfScripting */
+

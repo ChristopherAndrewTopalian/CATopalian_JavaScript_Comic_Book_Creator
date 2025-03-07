@@ -1,0 +1,25 @@
+/* panel.css */
+
+.panel
+{
+    border: solid 4px rgb(70, 70, 70);
+    border-radius: 8px;
+    padding: 5px;
+    background-color: rgb(0, 0, 0);
+    opacity: 0.9;
+    z-index: 5000;
+    overflow-y: scroll;
+    font-family: Arial;
+    font-size: 17px;
+    font-weight: bold;
+    color: rgb(0, 255, 255);
+}
+
+/* ---- */
+
+/* Dedicated to God the Father */
+/* All Rights Reserved Christopher Andrew Topalian Copyright 2000-2025 */
+/* https://github.com/ChristopherTopalian */
+/* https://github.com/ChristopherAndrewTopalian */
+/* https://sites.google.com/view/CollegeOfScripting */
+

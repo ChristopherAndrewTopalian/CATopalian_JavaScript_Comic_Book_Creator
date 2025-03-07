@@ -1,0 +1,22 @@
+/* background.css  */
+
+.theBackground2
+{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    /* background: repeat; */
+    /* background-size: 100% 100%; */
+    margin: 0; /* remove default margin */
+    /* height: 100vh; /* set height to 100% of the viewport height */
+    z-index: -1;
+}
+
+/* ---- */
+
+/* Dedicated to God the Father */
+/* All Rights Reserved Christopher Andrew Topalian Copyright 2000-2025 */
+/* https://github.com/ChristopherTopalian */
+/* https://github.com/ChristopherAndrewTopalian */
+/* https://sites.google.com/view/CollegeOfScripting */
+

@@ -1,0 +1,137 @@
+// galleryMaker.js
+
+// combine arrays together into one array
+let everything = galleryCharacters.concat(galleryHeads, galleryBody, galleryProps, galleryJets, galleryTanks, galleryArtillery, galleryDronesMilitary, galleryMilitaryMales);
+
+let countries = [
+{
+    name: "America",
+},
+
+{
+    name: "China",
+},
+
+{
+    name: "Russia"
+}
+];
+
+function galleryMaker(whichArray, whichCategory)
+{
+    if (ge("characterGalleryId"))
+    {
+        ge("characterGalleryId").remove();
+    }
+    else
+    {
+        sortByNameAndCategory(everything, "up");
+
+        let mainDiv = ce("div");
+        mainDiv.id = "characterGalleryId";
+        mainDiv.className = "gridContainerStyle";
+        mainDiv.style.position = "fixed";
+        mainDiv.style.left = 20 + "px";
+        mainDiv.style.top = 30 + "px";
+        mainDiv.style.width = 700 + "px";
+        mainDiv.style.height = 350 + "px";
+        mainDiv.style.overflowY = "scroll";
+        mainDiv.style.zIndex = "10000";
+        ba(mainDiv);
+
+        //-//
+
+        // close button
+        mainDiv.append(closeButton('characterGalleryId'));
+
+        //-//
+
+        /*
+        let theCloseX = ce("button");
+        theCloseX.textContent = "X";
+        theCloseX.className = "ourButton";
+        theCloseX.style.width = 25 + "px";
+        theCloseX.style.height = 25 + "px";
+        theCloseX.onclick = function()
+        {
+            ge("characterGalleryId").remove();
+        };
+        mainDiv.append(theCloseX);
+        */
+
+        //-//
+
+        for (let x = 0; x < whichArray.length; x++)
+        {
+            if (whichArray[x].category == whichCategory)
+            {
+                let thePerson = ce("img");
+                thePerson.className = "gridItemStyle";
+                thePerson.src = whichArray[x].texture;
+                thePerson.style.width = whichArray[x].sizeX;
+
+                thePerson.title = whichArray[x].name + "\n" + whichArray[x].texture;
+
+                thePerson.style.position = "relative";
+
+                thePerson.style.left = whichArray[x].posX;
+
+                thePerson.style.top = whichArray[x].posY;
+
+                idToMove = whichArray[x].theId;
+
+                //-//
+
+                thePerson.onclick = function()
+                {
+                    let theCreatedPerson = ce("img");
+
+                    theCreatedPerson.style.position = "absolute";
+
+                    theCreatedPerson.style.left = 300 + "px";
+                    theCreatedPerson.style.top = 200 + "px";
+
+                    theCreatedPerson.style.width = whichArray[x].sizeX + "px";
+
+                    theCreatedPerson.style.zIndex = 5;
+
+                    theCreatedPerson.id = whichArray[x].name + "_" + x;
+
+                    menuOptions(theCreatedPerson.id);
+
+                    theCreatedPerson.src = whichArray[x].texture;
+
+                    theCreatedPerson.className = whichArray[x].className;
+
+                    setMenuOptionsValues(whichArray, x);
+
+                    idToMove = theCreatedPerson.id;
+
+                    theCreatedPerson.oncontextmenu = function()
+                    {
+                        idToMove = theCreatedPerson.id;
+
+                        menuOptions(theCreatedPerson.id);
+
+                        menuAnimationsArrayOfObjectsHere("animationsArrayOfObjects", "animation");
+
+                        setMenuOptionsValues(whichArray, x);
+                    };
+                    ba(theCreatedPerson);
+
+                    makeElementDraggable(theCreatedPerson);
+                };
+                mainDiv.append(thePerson);
+            }
+        }
+    }
+}
+
+//----//
+
+// Dedicated to God the Father
+// All Rights Reserved Christopher Andrew Topalian Copyright 2000-2025
+// https://github.com/ChristopherTopalian
+// https://github.com/ChristopherAndrewTopalian
+// https://sites.google.com/view/CollegeOfScripting
+

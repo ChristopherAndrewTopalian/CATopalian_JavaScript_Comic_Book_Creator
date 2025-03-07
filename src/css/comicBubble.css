@@ -1,0 +1,26 @@
+/* comicBubble.css */
+
+.comicBubble
+{
+    color: rgb(255, 255, 255);
+    word-wrap: break-word;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    line-height: 20px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 7px;
+    padding-bottom: 5px;
+}
+
+/* ---- */
+
+/* Dedicated to God the Father */
+/* All Rights Reserved Christopher Andrew Topalian Copyright 2000-2025 */
+/* https://github.com/ChristopherTopalian */
+/* https://github.com/ChristopherAndrewTopalian */
+/* https://sites.google.com/view/CollegeOfScripting */
+
