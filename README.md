@@ -7,6 +7,14 @@ A JavaScript creation application that enables the person to create comic book s
 
 ![screenshot_003](src/media/texture/screenshots/003.PNG)
 
+VIDEOS: https://www.youtube.com/watch?v=reVhfmYnG1c
+
+https://www.youtube.com/watch?v=mUsod_uU5tU
+
+https://www.youtube.com/watch?v=-7jjU9yr1ho
+
+https://www.youtube.com/watch?v=H0jGeRb6q8A
+
 ---
 
 ### How to Download this App
