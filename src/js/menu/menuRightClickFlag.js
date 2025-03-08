@@ -31,7 +31,7 @@ function menuRightClickFlag(whichId)
     //-//
 
     let theCloseX = ce("button");
-    theCloseX.innerHTML = "X";
+    theCloseX.textContent = "X";
     theCloseX.className = "ourButton";
     theCloseX.onclick = function()
     {
@@ -49,14 +49,14 @@ function menuRightClickFlag(whichId)
     //-//
 
     let titleDiv = ce("div");
-    titleDiv.innerHTML = "Right Click Menu On/Off <br>";
+    titleDiv.textContent = "Right Click Menu On/Off";
     titleDiv.style.color = "rgb(255, 255, 255)";
     mainDiv.append(titleDiv);
 
     //-//
 
     let buttonRightClickOff = ce("button");
-    buttonRightClickOff.innerHTML = "Off";
+    buttonRightClickOff.textContent = "Off";
     buttonRightClickOff.onclick = function()
     {
         // preventRightClickFlag = false;
