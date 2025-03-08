@@ -158,7 +158,7 @@ let theFunctions = [
     },
 
     {
-        name: "menuDropDownMenu(greetings, 'maven', 'Greetings', 'sfx_warp_001', 300, 580)",
+        name: "menuDropDownMenu(greetings, 'maven', 'Greetings', 'sfx_warp_001', 200, 50)",
         fullName: "menuDropDownMenu",
         description: "Maven COMIC BUBBLES"
     },

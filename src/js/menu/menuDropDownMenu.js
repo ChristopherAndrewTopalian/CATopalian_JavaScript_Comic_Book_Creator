@@ -5,7 +5,7 @@ function menuDropDownMenu(whichArray, whichId, menuName, whichSound, theX, theY)
     let theSelect = ce("select");
     theSelect.style.position = "fixed";
     theSelect.style.left = theX + "px";
-    theSelect.style.top = theY + "px";
+    theSelect.style.bottom = theY + "px";
     theSelect.style.zIndex = 1000000;
     theSelect.className = "ourDropDown";
     theSelect.title = "menuDropDownMenu()";
