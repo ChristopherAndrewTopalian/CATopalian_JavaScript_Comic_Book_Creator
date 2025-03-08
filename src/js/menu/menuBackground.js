@@ -7,8 +7,6 @@ let house_001 = [
 
 function menuBackground(whichArray, whichId, whichSound)
 {
-    whichArray = eval(whichArray);
-
     let menuId = "menuBackgroundId";
 
     // if the menu exists, remove it

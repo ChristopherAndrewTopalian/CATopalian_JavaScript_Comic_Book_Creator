@@ -5,7 +5,7 @@ let theNumber = 1200;
 let backgrounds = [
 {
     name: "background001",
-    texture: "src/media/texture/render/background/ExcaliburHomes-seotool-54177-WhattoKnow-image1.jpg",
+    texture: "src/media/texture/background/theater/movieTheater.webp",
     theId: "background001",
     sizeX: "250",
     posX: "20", 
@@ -34,7 +34,7 @@ let backgrounds = [
 
 {
     name: "background002",
-    texture: "src/media/texture/render/background/stringio.jpg",
+    texture: "src/media/texture/background/theater/movieTheater002.webp",
     theId: "background002",
     sizeX: "250",
     posX: "20", 

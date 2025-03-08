@@ -8,7 +8,7 @@ let theFunctions = [
     },
 
     {
-        name: "menuBackground('house_001', 'theBgId', 'Backgrounds', 'sfx_warp_001', 550, 0, 'house_001', 'inside')",
+        name: "menuBackground(house_001, 'theBgId', 'Backgrounds', 'sfx_warp_001', 550, 0, 'house_001', 'inside')",
         fullName: "menuBackground",
         description: "BACKGROUNDS"
     },
