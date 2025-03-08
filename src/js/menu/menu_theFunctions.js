@@ -170,7 +170,7 @@ let theFunctions = [
     },
 
     {
-        name: "menuGif('gifsLand', 'prop_tv_screen_dark', 'TV Programs', 'sfx_warp_001', 250, 0)",
+        name: "menuGif(gifsLand, 'prop_tv_screen_dark', 'TV Programs', 'sfx_warp_001', 250, 0)",
         fullName: "menuGif",
         description: "TV - Gif Menu"
     },
