@@ -1,19 +1,17 @@
 // menuVoiceLoop.js
 
-// NON DETAILS VERSION OF MENU
 function menuVoiceLoop()
 {
-    // if the menu exists, remove it
+    // if the menu exists
     if (ge("menuVoiceLoopId"))
     {
+        // remove the menu
         ge("menuVoiceLoopId").remove();
     }
 
     let mainDiv = ce("div");
     mainDiv.style.position = "absolute";
     mainDiv.style.left = 300 + "px";
-    //function(){ getPos(idToMove).x };
-    //function(){ getPos(idToMove).y };
     mainDiv.style.top = 100 + "px";
     mainDiv.style.backgroundColor = "rgba(0,0,0,0.4)";
     mainDiv.className = "scrolling";
