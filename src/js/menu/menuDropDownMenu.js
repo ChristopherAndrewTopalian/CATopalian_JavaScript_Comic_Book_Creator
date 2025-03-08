@@ -2,8 +2,6 @@
 
 function menuDropDownMenu(whichArray, whichId, menuName, whichSound, theX, theY)
 {
-    whichArray = eval(whichArray);
-
     let theSelect = ce("select");
     theSelect.style.position = "fixed";
     theSelect.style.left = theX + "px";
