@@ -14,9 +14,9 @@ function menuRightClickFlag(whichId)
     }
 
     let mainDiv = ce("div");
-    mainDiv.style.position = "relative";
-    mainDiv.style.left = 350 + "px";
-    mainDiv.style.top = 400 + "px";
+    mainDiv.style.position = "absolute";
+    mainDiv.style.left = 300 + "px";
+    mainDiv.style.top = 100 + "px";
     mainDiv.style.backgroundColor = "rgba(0,0,0,0.4)";
     mainDiv.className = "scrolling";
     mainDiv.id = whichId;
@@ -59,14 +59,7 @@ function menuRightClickFlag(whichId)
     buttonRightClickOff.textContent = "Off";
     buttonRightClickOff.onclick = function()
     {
-        // preventRightClickFlag = false;
-
-        theEvent = window.addEventListener("contextmenu", function(e)
-        {
-            e.preventDefault();
-        });
-
-        //theEvent = window.addEventListener("contextmenu", e => e.preventDefault());
+        rightClickOff();
     };
     buttonRightClickOff.className = "ourButton";
     mainDiv.append(buttonRightClickOff);
@@ -77,11 +70,7 @@ function menuRightClickFlag(whichId)
     buttonRightClickOn.textContent = "On";
     buttonRightClickOn.onclick = function()
     {
-        alert("Refresh Page to Enable Right Click Menu Again");
-
-        //preventRightClickFlag = "true";
-
-        //window.removeEventListener("contextmenu", theEvent);
+        rightClickOn();
     };
     buttonRightClickOn.className = "ourButton";
     mainDiv.append(buttonRightClickOn);

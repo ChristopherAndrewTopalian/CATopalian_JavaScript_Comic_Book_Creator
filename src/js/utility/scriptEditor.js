@@ -31,7 +31,7 @@ function makeScriptEditor()
 
     let runButton = ce("button");
     // checkmark for run symbol
-    runButton.textContent = "&#x2714"
+    runButton.textContent = "O"
     runButton.title = "Activate"
     runButton.onclick = function()
     {
