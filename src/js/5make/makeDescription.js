@@ -48,11 +48,9 @@ function makeDescription(whichArray)
     // remove mainDiv after 2 seconds
     setTimeout(function()
     {
-        let existingDiv = ge(theId);
-
-        if (existingDiv)
+        if (ge(mainDiv.id))
         {
-            existingDiv.remove();
+            ge(mainDiv.id).remove();
         }
     }, 2000);
 }
