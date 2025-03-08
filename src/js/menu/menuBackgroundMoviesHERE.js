@@ -2,8 +2,6 @@
 
 function menuBackgroundMoviesHERE(whichSize, whichArray, whichSound)
 {
-    whichArray = eval(whichArray);
-
     let theMenuId = "menuBackgroundMoviesHEREId";
 
     // if the menu exists, remove it
