@@ -1,9 +1,8 @@
 // menuScenes.js
 
+// makes a scene menu appear
 function menuScenes(whichArray, whichId, menuName, whichSound, theX, theY)
 {
-    whichArray = eval(whichArray);
-
     let theMenuId = "menuGifId";
 
     // if the menu exists, remove it
@@ -14,8 +13,8 @@ function menuScenes(whichArray, whichId, menuName, whichSound, theX, theY)
 
     let mainDiv = ce("div");
     mainDiv.style.position = "absolute";
-    mainDiv.style.left = 370 + "px";
-    mainDiv.style.top = 400 + "px";
+    mainDiv.style.left = 300 + "px";
+    mainDiv.style.top = 100 + "px";
     mainDiv.style.width = 500 + "px";
     mainDiv.id = "menuBackgroundId";
     mainDiv.style.zIndex = 1000;
@@ -28,6 +27,8 @@ function menuScenes(whichArray, whichId, menuName, whichSound, theX, theY)
     mainDiv.className = "scrolling";
     mainDiv.id = theMenuId;
     ba(mainDiv);
+
+    makeElementDraggable(mainDiv);
 
     //-//
 
@@ -60,19 +61,18 @@ function menuScenes(whichArray, whichId, menuName, whichSound, theX, theY)
     {
         let theButton = ce("button");
 
-        // get the last part of the file path, meaning the name.extension
-        theButton.textContent = whichArray[x].substring(whichArray[x].lastIndexOf('/') + 1);
+        theButton.textContent = whichArray[x].name;
 
         theButton.onclick = function()
         {
             playSound(whichSound, 1.0);
 
-            scene(whichArray[x]);
+            scene(whichArray[x].obj);
 
-            sceneEvents(whichArray, x);
+            sceneEvents(whichArray[x].obj, x);
 
             // used for menuSelectorGallery
-            currentScene = whichArray[x];
+            currentScene = whichArray[x].obj;
         };
 
         theButton.className = "ourButton";

@@ -152,7 +152,7 @@ let theFunctions = [
     },
     
     {
-        name: "menuScenes('scenes', 'something', 'Scenes', 'sfx_warp_001', 900, 540)",
+        name: "menuScenes(scenes, 'something', 'Scenes', 'sfx_warp_001', 900, 540)",
         fullName: "menuScenes",
         description: "SCENES"
     },
