@@ -1,12 +1,13 @@
 // backgroundMovieCreate.js
 
 // full screen version
-
 function backgroundMovieCreate(whichArray, whichItem)
 {
-    // Check the Video URL
-    const videoUrl = whichArray[whichItem].theUrl;
-    if (!videoUrl) {
+    // check the Video URL
+    let videoUrl = whichArray[whichItem].theUrl;
+
+    if (!videoUrl)
+    {
         console.error("Invalid video URL");
         return;
     }
@@ -17,7 +18,7 @@ function backgroundMovieCreate(whichArray, whichItem)
     }
 
     // Create the video element
-    let videoElement = document.createElement('video');
+    let videoElement = ce('video');
     videoElement.id = 'theVideo';
     videoElement.setAttribute('height', '100%');
     videoElement.setAttribute('loop', true);
@@ -27,19 +28,16 @@ function backgroundMovieCreate(whichArray, whichItem)
     videoElement.muted = true;
     videoElement.setAttribute('id', 'theVideo');
 
-    // Create source element for the video
-    let sourceElement = document.createElement('source');
+    //-//
+
+    let sourceElement = ce('source');
     sourceElement.setAttribute('src', videoUrl);
     sourceElement.setAttribute('type', 'video/mp4');
+    videoElement.append(sourceElement);
+    ba(videoElement);
 
-    // Append the source to the video element
-    videoElement.appendChild(sourceElement);
-
-    // Append the video element to the body or desired container
-    document.body.appendChild(videoElement);
-
-    // Load the video (optional, but can ensure it starts playing)
-    videoElement.load();
+    // load video 
+    // videoElement.load();
 }
 
 /*
