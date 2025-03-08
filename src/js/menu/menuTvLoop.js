@@ -2,8 +2,6 @@
 
 function menuTvLoop(whichArray, whichId, menuName, whichSound, theX, theY)
 {
-    whichArray = eval(whichArray);
-
     let theMenuId = "menuGifId";
 
     // if the menu exists, remove it
