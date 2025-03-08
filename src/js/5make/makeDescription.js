@@ -21,7 +21,7 @@ function makeDescription(whichArray)
     ba(mainDiv);
 
     //-//
-
+ 
     let theTitle = ce("div");
     theTitle.innerHTML = whichArray[0].sceneTitle.bold();
     mainDiv.append(theTitle);
