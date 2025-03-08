@@ -3,38 +3,36 @@
 // full screen version
 function backgroundMovieCreate(whichArray, whichItem)
 {
-    // check the Video URL
-    let videoUrl = whichArray[whichItem].theUrl;
-
-    if (!videoUrl)
+    if (ge('videoMainDiv'))
     {
-        console.error("Invalid video URL");
-        return;
+        ge('videoMainDiv').remove();
     }
 
-    if (ge('theVideo'))
-    {
-        ge('theVideo').remove();
-    }
+    let mainDiv = ce('div');
+    mainDiv.id = 'videoMainDiv';
+    mainDiv.style.position = 'absolute';
+    ba(mainDiv);
 
-    // Create the video element
+    makeElementDraggable(mainDiv);
+
+    //-//
+
     let videoElement = ce('video');
     videoElement.id = 'theVideo';
     videoElement.setAttribute('height', '100%');
     videoElement.setAttribute('loop', true);
     videoElement.setAttribute('autoplay', true);
-
     //videoElement.setAttribute('muted', true);
     videoElement.muted = true;
     videoElement.setAttribute('id', 'theVideo');
+    mainDiv.append(videoElement);
 
     //-//
 
     let sourceElement = ce('source');
-    sourceElement.setAttribute('src', videoUrl);
+    sourceElement.setAttribute('src', whichArray[whichItem].theUrl);
     sourceElement.setAttribute('type', 'video/mp4');
     videoElement.append(sourceElement);
-    ba(videoElement);
 
     // load video 
     // videoElement.load();
