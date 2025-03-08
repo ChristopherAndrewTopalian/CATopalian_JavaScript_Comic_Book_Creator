@@ -19,13 +19,15 @@ function backgroundMovieCreateSize(whichArray, whichItem)
     theMovie.className = "backgroundMoviesStyle";
 
     theMovie.style.position = "absolute";
-    theMovie.style.left = 0 + "px";
-    theMovie.style.top = 0 + "px";
+    //theMovie.style.left = 0 + "px";
+    //theMovie.style.top = 0 + "px";
     
-    //theMovie.style.left = whichArray[whichItem].theX + "px";
-    //theMovie.style.top = whichArray[whichItem].theY + "px";
+    theMovie.style.left = whichArray[whichItem].theX + "px";
+    theMovie.style.top = whichArray[whichItem].theY + "px";
 
-    theMovie.style.width = whichArray[whichItem].sizeX + "px";
+    //theMovie.style.width = whichArray[whichItem].sizeX + "px";
+
+    theMovie.setAttribute('width', whichArray[whichItem].sizeX + "px");
 
     theMovie.style.zIndex = whichArray[whichItem].theLayer;
     ba(theMovie);

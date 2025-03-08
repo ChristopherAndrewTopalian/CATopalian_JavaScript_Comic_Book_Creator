@@ -11,6 +11,8 @@ function backgroundMovieCreate(whichArray, whichItem)
     let mainDiv = ce('div');
     mainDiv.id = 'videoMainDiv';
     mainDiv.style.position = 'absolute';
+    mainDiv.style.left = 0 + 'px';
+    mainDiv.style.top = 0 + 'px';
     ba(mainDiv);
 
     makeElementDraggable(mainDiv);
@@ -24,7 +26,6 @@ function backgroundMovieCreate(whichArray, whichItem)
     videoElement.setAttribute('autoplay', true);
     //videoElement.setAttribute('muted', true);
     videoElement.muted = true;
-    videoElement.setAttribute('id', 'theVideo');
     mainDiv.append(videoElement);
 
     //-//
