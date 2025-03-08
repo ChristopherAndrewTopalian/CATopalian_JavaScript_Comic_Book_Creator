@@ -64,9 +64,6 @@ function menuGif(whichArray, whichId, menuName, whichSound, theX, theY)
 
         theButton.textContent = whichArray[x].name;
 
-        // get the last part of the file path, meaning the name.extension
-        //theButton.textContent = whichArray[x].substring(whichArray[x].lastIndexOf('/') + 1);
-
         theButton.onclick = function()
         {
             ge(whichId).src = whichArray[x].textureOffline;
