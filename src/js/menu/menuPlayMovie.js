@@ -96,7 +96,7 @@ function menuPlayMovie()
     playGifButton.textContent = "Play Gifs";
     playGifButton.onclick = function()
     {
-        textureTimerRepeat('gifsLand', 'prop_tv_screen_dark', 'src/media/texture/gif/', 5000);
+        textureTimerRepeat(gifsLand, 'prop_tv_screen_dark', 'src/media/texture/gif/', 5000);
     };
     playGifButton.className = "ourButton";
     mainDiv.append(playGifButton);

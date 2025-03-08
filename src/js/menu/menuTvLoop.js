@@ -63,7 +63,7 @@ function menuTvLoop(whichArray, whichId, menuName, whichSound, theX, theY)
     loopButton.className = "ourButton";
     loopButton.onclick = function()
     {
-        textureTimerRepeat('gifsLand', 'prop_tv_screen_dark', 5000);
+        textureTimerRepeat(gifsLand, 'prop_tv_screen_dark', 5000);
     };
     mainDiv.append(loopButton);
 

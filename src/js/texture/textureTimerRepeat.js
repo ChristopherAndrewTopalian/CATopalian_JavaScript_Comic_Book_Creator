@@ -21,7 +21,7 @@ function textureTimerRepeat(whichArray, whichId, speed)
         //ge("tvMovies").style.zIndex = ge("prop_tv_screen_dark").style.zIndex + 1;
     }
 
-    whichArray = eval(whichArray);
+    // whichArray = eval(whichArray);
 
     textureTimerRepeatTimer = setInterval(function()
     {
