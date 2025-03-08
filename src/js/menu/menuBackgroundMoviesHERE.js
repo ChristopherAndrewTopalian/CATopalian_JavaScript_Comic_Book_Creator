@@ -62,7 +62,6 @@ function menuBackgroundMoviesHERE(whichSize, whichArray, whichSound)
     {
         let theButton = ce("button");
 
-        // get the last part of the file path, meaning the name.extension
         theButton.textContent = whichArray[x].name;
 
         theButton.onclick = function()
@@ -70,7 +69,7 @@ function menuBackgroundMoviesHERE(whichSize, whichArray, whichSound)
             if (whichSize == "sized")
             {
                 // whichArray, whichItem, theX, theY, sizeX
-                backgroundMovieCreateSize(movies, x, 0, 0, 700);
+                backgroundMovieCreateSize(movies, x);
             }
             if (whichSize == "full")
             {
