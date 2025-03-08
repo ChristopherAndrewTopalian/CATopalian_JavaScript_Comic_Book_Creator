@@ -74,7 +74,7 @@ function menuRightClickFlag(whichId)
     //-//
 
     let buttonRightClickOn = ce("button");
-    buttonRightClickOn.innerHTML = "On";
+    buttonRightClickOn.textContent = "On";
     buttonRightClickOn.onclick = function()
     {
         alert("Refresh Page to Enable Right Click Menu Again");
@@ -89,7 +89,7 @@ function menuRightClickFlag(whichId)
     //-//
 
     let theText = ce("div");
-    theText.innerHTML = "Allows Right Click Menu or Not";
+    theText.textContent = "Allows Right Click Menu or Not";
     theText.style.display = "block";
     //inline //block //none //inline-block
     mainDiv.append(theText);

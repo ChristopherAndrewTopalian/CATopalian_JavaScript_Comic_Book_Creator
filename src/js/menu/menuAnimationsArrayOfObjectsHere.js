@@ -34,7 +34,7 @@ function menuAnimationsArrayOfObjectsHere(whichArray, whichCategory)
     {
         playSound("sfx_crystal_bell_001", 1.0);
     };
-    theSummary.innerHTML = "";
+    theSummary.textContent = "";
     theDetails.append(theSummary);
 
     //-//
