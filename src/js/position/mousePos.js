@@ -11,7 +11,7 @@ function mousePos()
 
     if (ge("mousePosInfoLeft"))
     {
-        ge("mousePosInfoLeft").innerHTML = mousePos;
+        ge("mousePosInfoLeft").textContent = mousePos;
 
         return mouseObject;
     }

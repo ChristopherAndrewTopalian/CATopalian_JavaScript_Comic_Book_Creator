@@ -27,10 +27,6 @@ function mousePositionShow(whichId)
     {
         ge("mousePositionShowId").remove();
     };
-    mainDiv.onmouseover = function()
-    {
-        ge("mousePositionShowId").style.visibility = "hidden";
-    };
     ba(mainDiv);
 
     //-//
