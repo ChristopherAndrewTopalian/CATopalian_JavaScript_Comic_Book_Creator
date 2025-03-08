@@ -43,14 +43,13 @@ function mousePositionShow(whichId)
     thePanel.style.fontFamily = "arial";
     thePanel.style.fontSize = 13 + "px";
     thePanel.style.opacity = "0.9";
-
-    // thePanel.innerHTML += 'Id to Edit <div>\''+idToMove+'\'</div>';
-
-    thePanel.innerHTML = '<div id = "mousePosInfoLeft"></div>';
-
-    // thePanel.innerHTML += '<hr>';
-
     mainDiv.append(thePanel);
+
+    //-//
+
+    let mousePosDiv = ce('div');
+    mousePosDiv.id = "mousePosInfoLeft";
+    thePanel.append(mousePosDiv);
 }
 
 //----//
