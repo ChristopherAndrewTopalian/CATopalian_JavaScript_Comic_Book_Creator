@@ -11,10 +11,10 @@ function menuVoiceLoop()
 
     let mainDiv = ce("div");
     mainDiv.style.position = "absolute";
-    mainDiv.style.left = 350 + "px";
+    mainDiv.style.left = 300 + "px";
     //function(){ getPos(idToMove).x };
     //function(){ getPos(idToMove).y };
-    mainDiv.style.top = 400 + "px";
+    mainDiv.style.top = 100 + "px";
     mainDiv.style.backgroundColor = "rgba(0,0,0,0.4)";
     mainDiv.className = "scrolling";
     mainDiv.id = "menuVoiceLoopId";
@@ -25,6 +25,8 @@ function menuVoiceLoop()
     mainDiv.style.borderRadius = 5 + "px";
     mainDiv.style.height = 100 + "px";
     ba(mainDiv);
+
+    makeElementDraggable(mainDiv);
 
     //-//
 
@@ -57,7 +59,8 @@ function menuVoiceLoop()
     activateVoicesButton.textContent = "Activate";
     activateVoicesButton.onclick = function()
     {
-        soundPlayVoices('voiceArray', 5000);
+        // using sfx array for testing
+        soundPlayVoices(sfx, 5000);
     };
     activateVoicesButton.className = "ourButton";
     mainDiv.append(activateVoicesButton);

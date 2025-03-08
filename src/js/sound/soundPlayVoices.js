@@ -6,17 +6,11 @@ let soundPlayVoicesTimer;
 
 function soundPlayVoices(whichArray, speed)
 {
-    whichArray = eval(whichArray);
-
-    //whichArray = eval(gifsLand);
-
-    //speed = 5000;
-
     soundPlayVoicesTimer = setInterval(function()
     {
         if (whichNumberSound == whichArray.length)
         {
-            //clearInterval(soundPlayVoicesTimer);
+            clearInterval(soundPlayVoicesTimer);
 
             //whichNumberSound = -1;
 
@@ -24,7 +18,8 @@ function soundPlayVoices(whichArray, speed)
         }
         else
         {
-            playSound(whichArray[whichNumberSound], 0.5);
+            playSound(whichArray[whichNumberSound].name, 0.5);
+
             whichNumberSound += 1;
         }
     }, speed);
