@@ -2,10 +2,12 @@
 
 let gifsLand = [
     {
+        name: 'waves_001',
         textureOffline: "src/media/texture/gif/waves_001.gif",
     },
 
     {
+        name: 'prism_001',
         textureOffline: "src/media/texture/gif/prism_001.gif"
     },
 

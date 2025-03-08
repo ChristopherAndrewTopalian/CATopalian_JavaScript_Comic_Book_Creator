@@ -12,8 +12,8 @@ function menuGif(whichArray, whichId, menuName, whichSound, theX, theY)
 
     let mainDiv = ce("div");
     mainDiv.style.position = "absolute";
-    mainDiv.style.left = 370 + "px";
-    mainDiv.style.top = 400 + "px";
+    mainDiv.style.left = 300 + "px";
+    mainDiv.style.top = 100 + "px";
     mainDiv.style.width = 500 + "px";
     mainDiv.id = "menuBackgroundId";
     mainDiv.style.zIndex = 10;
@@ -62,12 +62,14 @@ function menuGif(whichArray, whichId, menuName, whichSound, theX, theY)
     {
         let theButton = ce("button");
 
+        theButton.textContent = whichArray[x].name;
+
         // get the last part of the file path, meaning the name.extension
-        theButton.textContent = whichArray[x].substring(whichArray[x].lastIndexOf('/') + 1);
+        //theButton.textContent = whichArray[x].substring(whichArray[x].lastIndexOf('/') + 1);
 
         theButton.onclick = function()
         {
-            ge(whichId).src = "texture\\gif\\" + whichArray[x];
+            ge(whichId).src = whichArray[x].textureOffline;
 
             ge("tvMovies").style.visibility = "hidden";
 
