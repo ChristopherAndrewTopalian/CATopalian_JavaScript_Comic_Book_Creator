@@ -128,7 +128,7 @@ let theFunctions = [
     },
 
     {
-        name: "menuAnimationsArrayOfObjectsNICE('animationsArrayOfObjects', 'animation')",
+        name: "menuAnimationsArrayOfObjectsNICE(animationsArrayOfObjects, 'animation')",
         fullName: "menuAnimationsArrayOfObjectsNICE",
         description: "ANIMATION Menu"
     },

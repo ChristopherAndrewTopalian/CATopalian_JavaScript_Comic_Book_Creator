@@ -2,8 +2,6 @@
 
 function menuAnimationsArrayOfObjectsNICE(whichArray, whichCategory)
 {
-    whichArray = eval(whichArray);
-
     let theMenuId = "menuAnimationsArrayOfObjectsNICEId";
 
     // if the menu exists, remove it

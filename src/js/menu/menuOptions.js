@@ -1159,10 +1159,16 @@ function menuOptions(whichId)
 
     //-//
 
-    let titleOfApp = ce('div');
-    titleOfApp.innerHTML = 'CATopalian JavaScript Comic Book Creator<br>All Rights Reserved (c) Copyright 2000-2025';
-    titleOfApp.style.fontSize = '15px';
+    let titleOfApp = ce('a');
+    titleOfApp.textContent = 'CATopalian JavaScript Comic Book Creator';
+    titleOfApp.href = 'https://github.com/ChristopherAndrewTopalian/CATopalian_JavaScript_Comic_Book_Creator';
+    titleOfApp.target = '_blank';
     thePanel.append(titleOfApp);
+
+    let credits = ce('div');
+    credits.textContent = 'All Rights Reserved (c) Copyright 2000-2025';
+    credits.style.fontSize = '15px';
+    thePanel.append(credits);
 }
 
 //----//

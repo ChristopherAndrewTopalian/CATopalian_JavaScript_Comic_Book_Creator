@@ -1,7 +1,6 @@
 // menuAnimationsArrayOfObjectsHere.js
 
 // DETAILS VERSION HERE
-//menuAnimationsArrayOfObjectsHere("animationsArrayOfObjects", "animation");
 function menuAnimationsArrayOfObjectsHere(whichArray, whichCategory)
 {
     if (ge("menuLeftId"))
@@ -69,6 +68,10 @@ function menuAnimationsArrayOfObjectsHere(whichArray, whichCategory)
 }
 
 //----//
+
+//menuAnimationsArrayOfObjectsHere(animationsArrayOfObjects, "animation");
+
+//-----//
 
 // Dedicated to God the Father
 // All Rights Reserved Christopher Andrew Topalian Copyright 2000-2025
