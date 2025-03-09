@@ -15,9 +15,7 @@ function menuZoom()
     let mainDiv = ce("div");
     mainDiv.style.position = "fixed";
     mainDiv.style.right = 0 + "px";
-    //function(){ getPos(idToMove).x };
-    //function(){ getPos(idToMove).y };
-    mainDiv.style.top = 0 + "px";
+    mainDiv.style.top = 30 + "px";
     mainDiv.style.width = 100 + "px";
     mainDiv.id = "menuBackgroundId";
     mainDiv.style.zIndex = 10;
@@ -30,6 +28,8 @@ function menuZoom()
     mainDiv.className = "scrolling";
     mainDiv.id = theMenuId;
     ba(mainDiv);
+
+    makeElementDraggable(mainDiv);
 
     //-//
 
