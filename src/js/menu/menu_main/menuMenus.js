@@ -16,7 +16,8 @@ function menuMenus()
     mainDiv.id = "menuMenusId";
     ba(mainDiv);
 
-    // Close Button
+    //-//
+
     let theCloseX = ce("button");
     theCloseX.textContent = "_";
     theCloseX.className = "ourButton";
@@ -67,11 +68,14 @@ function menuMenus()
     selectorButton.textContent = "SELECTOR";
     selectorButton.className = "ourButton";
     selectorButton.title = "makeButtonsForEachCharacter";
+    selectorButton.onmouseover = function()
+    {
+        hoverSound();
+    };
     selectorButton.onclick = function()
     {
         clickSound();
         makeButtonsForEachCharacter();
-        cl("makeButtonsForEachCharacter");
     };
     subDiv.append(selectorButton);
 
@@ -81,6 +85,10 @@ function menuMenus()
     charactersButton.textContent = "CHARACTERS";
     charactersButton.className = "ourButton";
     charactersButton.title = "galleryMaker";
+    charactersButton.onmouseover = function()
+    {
+        hoverSound();
+    };
     charactersButton.onclick = function()
     {
         clickSound();
@@ -95,6 +103,10 @@ function menuMenus()
     headButton.textContent = "HEAD";
     headButton.className = "ourButton";
     headButton.title = "galleryMaker";
+    headButton.onmouseover = function()
+    {
+        hoverSound();
+    };
     headButton.onclick = function()
     {
         clickSound();
@@ -109,6 +121,10 @@ function menuMenus()
     bodyButton.textContent = "BODY";
     bodyButton.className = "ourButton";
     bodyButton.title = "galleryMaker";
+    bodyButton.onmouseover = function()
+    {
+        hoverSound();
+    };
     bodyButton.onclick = function()
     {
         clickSound();
@@ -123,6 +139,10 @@ function menuMenus()
     propsButton.textContent = "PROPS";
     propsButton.className = "ourButton";
     propsButton.title = "galleryMaker";
+    propsButton.onmouseover = function()
+    {
+        hoverSound();
+    };
     propsButton.onclick = function()
     {
         clickSound();
@@ -137,6 +157,10 @@ function menuMenus()
     jetsButton.textContent = "JETS";
     jetsButton.className = "ourButton";
     jetsButton.title = "galleryMaker";
+    jetsButton.onmouseover = function()
+    {
+        hoverSound();
+    };
     jetsButton.onclick = function()
     {
         clickSound();
@@ -151,6 +175,10 @@ function menuMenus()
     tanksButton.textContent = "TANKS";
     tanksButton.className = "ourButton";
     tanksButton.title = "galleryMaker";
+    tanksButton.onmouseover = function()
+    {
+        hoverSound();
+    };
     tanksButton.onclick = function()
     {
         clickSound();
@@ -165,6 +193,10 @@ function menuMenus()
     artilleryButton.textContent = "ARTILLERY";
     artilleryButton.className = "ourButton";
     artilleryButton.title = "galleryMaker";
+    artilleryButton.onmouseover = function()
+    {
+        hoverSound();
+    };
     artilleryButton.onclick = function()
     {
         clickSound();
@@ -179,6 +211,10 @@ function menuMenus()
     dronesMilitaryButton.textContent = "DRONES_MILITARY";
     dronesMilitaryButton.className = "ourButton";
     dronesMilitaryButton.title = "galleryMaker";
+    dronesMilitaryButton.onmouseover = function()
+    {
+        hoverSound();
+    };
     dronesMilitaryButton.onclick = function()
     {
         clickSound();
@@ -193,6 +229,10 @@ function menuMenus()
     hideMouseInfoButton.textContent = "Mouse Info OFF";
     hideMouseInfoButton.className = "ourButton";
     hideMouseInfoButton.title = "hideMouseInfo";
+    hideMouseInfoButton.onmouseover = function()
+    {
+        hoverSound();
+    };
     hideMouseInfoButton.onclick = function()
     {
         clickSound();
@@ -207,6 +247,10 @@ function menuMenus()
     mousePositionShowButton.textContent = "Mouse Info ON";
     mousePositionShowButton.className = "ourButton";
     mousePositionShowButton.title = "mousePositionShow";
+    mousePositionShowButton.onmouseover = function()
+    {
+        hoverSound();
+    };
     mousePositionShowButton.onclick = function()
     {
         clickSound();
@@ -221,6 +265,10 @@ function menuMenus()
     menuAnimationIconsButton.textContent = "Animation Presets";
     menuAnimationIconsButton.className = "ourButton";
     menuAnimationIconsButton.title = "menuAnimationIcons";
+    menuAnimationIconsButton.onmouseover = function()
+    {
+        hoverSound();
+    };
     menuAnimationIconsButton.onclick = function()
     {
         clickSound();
@@ -235,6 +283,10 @@ function menuMenus()
     menuCameraDivButton.textContent = "CAMERA - Follow or Stay";
     menuCameraDivButton.className = "ourButton";
     menuCameraDivButton.title = "menuCameraDiv";
+    menuCameraDivButton.onmouseover = function()
+    {
+        hoverSound();
+    };
     menuCameraDivButton.onclick = function()
     {
         clickSound();
@@ -249,6 +301,10 @@ function menuMenus()
     menuImageInfoButton.textContent = "Get Image Data";
     menuImageInfoButton.className = "ourButton";
     menuImageInfoButton.title = "menuImageInfo";
+    menuImageInfoButton.onmouseover = function()
+    {
+        hoverSound();
+    };
     menuImageInfoButton.onclick = function()
     {
         clickSound();
@@ -263,6 +319,10 @@ function menuMenus()
     neededButton.textContent = "Image Info";
     neededButton.className = "ourButton";
     neededButton.title = "needed";
+    neededButton.onmouseover = function()
+    {
+        hoverSound();
+    };
     neededButton.onclick = function()
     {
         clickSound();
@@ -277,6 +337,10 @@ function menuMenus()
     makeScriptEditorButton.textContent = "Make Script Editor";
     makeScriptEditorButton.className = "ourButton";
     makeScriptEditorButton.title = "makeScriptEditor";
+    makeScriptEditorButton.onmouseover = function()
+    {
+        hoverSound();
+    };
     makeScriptEditorButton.onclick = function()
     {
         clickSound();
@@ -298,6 +362,10 @@ function menuMenus()
     menuRightClickFlagButton.textContent = "Right Click On or Off";
     menuRightClickFlagButton.className = "ourButton";
     menuRightClickFlagButton.title = "menuRightClickFlag";
+    menuRightClickFlagButton.onmouseover = function()
+    {
+        hoverSound();
+    };
     menuRightClickFlagButton.onclick = function()
     {
         clickSound();
@@ -312,6 +380,10 @@ function menuMenus()
     menuVoiceLoopButton.textContent = "Voice Loop Options";
     menuVoiceLoopButton.className = "ourButton";
     menuVoiceLoopButton.title = "menuVoiceLoop";
+    menuVoiceLoopButton.onmouseover = function()
+    {
+        hoverSound();
+    };
     menuVoiceLoopButton.onclick = function()
     {
         clickSound();
@@ -326,6 +398,10 @@ function menuMenus()
     menuMoveRandomPlacesButton.textContent = "Move Players Around";
     menuMoveRandomPlacesButton.className = "ourButton";
     menuMoveRandomPlacesButton.title = "menuMoveRandomPlaces";
+    menuMoveRandomPlacesButton.onmouseover = function()
+    {
+        hoverSound();
+    };
     menuMoveRandomPlacesButton.onclick = function()
     {
         clickSound();
@@ -340,6 +416,10 @@ function menuMenus()
     menuChangeTextureOfCharacterButton.textContent = "Change the Texture of the Character";
     menuChangeTextureOfCharacterButton.className = "ourButton";
     menuChangeTextureOfCharacterButton.title = "menuChangeTextureOfCharacter";
+    menuChangeTextureOfCharacterButton.onmouseover = function()
+    {
+        hoverSound();
+    };
     menuChangeTextureOfCharacterButton.onclick = function()
     {
         clickSound();
@@ -354,6 +434,10 @@ function menuMenus()
     menuAnimationsArrayOfObjectsNICEButton.textContent = "ANIMATION Menu";
     menuAnimationsArrayOfObjectsNICEButton.className = "ourButton";
     menuAnimationsArrayOfObjectsNICEButton.title = "menuAnimationsArrayOfObjectsNICE";
+    menuAnimationsArrayOfObjectsNICEButton.onmouseover = function()
+    {
+        hoverSound();
+    };
     menuAnimationsArrayOfObjectsNICEButton.onclick = function()
     {
         clickSound();
@@ -368,6 +452,10 @@ function menuMenus()
     menuAnimationsArrayOfObjectsHereButton.textContent = "ANIMATION Details Menu";
     menuAnimationsArrayOfObjectsHereButton.className = "ourButton";
     menuAnimationsArrayOfObjectsHereButton.title = "menuAnimationsArrayOfObjectsHere";
+    menuAnimationsArrayOfObjectsHereButton.onmouseover = function()
+    {
+        hoverSound();
+    };
     menuAnimationsArrayOfObjectsHereButton.onclick = function()
     {
         clickSound();
@@ -382,6 +470,10 @@ function menuMenus()
     menuCharacterTextureButton.textContent = "CHARACTER - Texture Change";
     menuCharacterTextureButton.className = "ourButton";
     menuCharacterTextureButton.title = "menuCharacterTexture";
+    menuCharacterTextureButton.onmouseover = function()
+    {
+        hoverSound();
+    };
     menuCharacterTextureButton.onclick = function()
     {
         clickSound();
@@ -396,6 +488,10 @@ function menuMenus()
     menuScenesButton.textContent = "SCENES";
     menuScenesButton.className = "ourButton";
     menuScenesButton.title = "menuScenes";
+    menuScenesButton.onmouseover = function()
+    {
+        hoverSound();
+    };
     menuScenesButton.onclick = function()
     {
         clickSound();
@@ -410,6 +506,10 @@ function menuMenus()
     menuDropDownMenuButton.textContent = "Maven COMIC BUBBLES";
     menuDropDownMenuButton.className = "ourButton";
     menuDropDownMenuButton.title = "menuDropDownMenu";
+    menuDropDownMenuButton.onmouseover = function()
+    {
+        hoverSound();
+    };
     menuDropDownMenuButton.onclick = function()
     {
         clickSound();
@@ -424,6 +524,10 @@ function menuMenus()
     menuTvLoopButton.textContent = "TV - Gif Loop";
     menuTvLoopButton.className = "ourButton";
     menuTvLoopButton.title = "menuTvLoop";
+    menuTvLoopButton.onmouseover = function()
+    {
+        hoverSound();
+    };
     menuTvLoopButton.onclick = function()
     {
         clickSound();
@@ -438,6 +542,10 @@ function menuMenus()
     menuGifButton.textContent = "TV - Gif Menu";
     menuGifButton.className = "ourButton";
     menuGifButton.title = "menuGif";
+    menuGifButton.onmouseover = function()
+    {
+        hoverSound();
+    };
     menuGifButton.onclick = function()
     {
         clickSound();
@@ -452,6 +560,10 @@ function menuMenus()
     bottomMenuButton.textContent = "Bottom Menu";
     bottomMenuButton.className = "ourButton";
     bottomMenuButton.title = "bottomMenu";
+    bottomMenuButton.onmouseover = function()
+    {
+        hoverSound();
+    };
     bottomMenuButton.onclick = function()
     {
         clickSound();
@@ -466,6 +578,10 @@ function menuMenus()
     menuBackgroundMoviesFullButton.textContent = "TV - Background Movie Menu - Full";
     menuBackgroundMoviesFullButton.className = "ourButton";
     menuBackgroundMoviesFullButton.title = "menuBackgroundMoviesHERE";
+    menuBackgroundMoviesFullButton.onmouseover = function()
+    {
+        hoverSound();
+    };
     menuBackgroundMoviesFullButton.onclick = function()
     {
         clickSound();
@@ -480,6 +596,10 @@ function menuMenus()
     menuBackgroundMoviesSizedButton.textContent = "TV - Background Movie Menu - Sized";
     menuBackgroundMoviesSizedButton.className = "ourButton";
     menuBackgroundMoviesSizedButton.title = "menuBackgroundMoviesHERE";
+    menuBackgroundMoviesSizedButton.onmouseover = function()
+    {
+        hoverSound();
+    };
     menuBackgroundMoviesSizedButton.onclick = function()
     {
         clickSound();
@@ -494,6 +614,10 @@ function menuMenus()
     backgroundGifButton.textContent = "Animated Gif Background";
     backgroundGifButton.className = "ourButton";
     backgroundGifButton.title = "backgroundGif";
+    backgroundGifButton.onmouseover = function()
+    {
+        hoverSound();
+    };
     backgroundGifButton.onclick = function()
     {
         clickSound();
@@ -508,6 +632,10 @@ function menuMenus()
     menuPlayMovieButton.textContent = "TV - Video";
     menuPlayMovieButton.className = "ourButton";
     menuPlayMovieButton.title = "menuPlayMovie";
+    menuPlayMovieButton.onmouseover = function()
+    {
+        hoverSound();
+    };
     menuPlayMovieButton.onclick = function()
     {
         clickSound();
@@ -522,6 +650,10 @@ function menuMenus()
     menuCharacterChooserInputButton.textContent = "MODEL - Choose or Drag Character";
     menuCharacterChooserInputButton.className = "ourButton";
     menuCharacterChooserInputButton.title = "menuCharacterChooserInput";
+    menuCharacterChooserInputButton.onmouseover = function()
+    {
+        hoverSound();
+    };
     menuCharacterChooserInputButton.onclick = function()
     {
         clickSound();
@@ -536,6 +668,10 @@ function menuMenus()
     menuZoomButton.textContent = "Zoom";
     menuZoomButton.className = "ourButton";
     menuZoomButton.title = "menuZoom";
+    menuZoomButton.onmouseover = function()
+    {
+        hoverSound();
+    };
     menuZoomButton.onclick = function()
     {
         clickSound();
@@ -550,6 +686,10 @@ function menuMenus()
     makeInputContainerButton.textContent = "makeInputContainer";
     makeInputContainerButton.className = "ourButton";
     makeInputContainerButton.title = "makeInputContainer";
+    makeInputContainerButton.onmouseover = function()
+    {
+        hoverSound();
+    };
     makeInputContainerButton.onclick = function()
     {
         clickSound();
