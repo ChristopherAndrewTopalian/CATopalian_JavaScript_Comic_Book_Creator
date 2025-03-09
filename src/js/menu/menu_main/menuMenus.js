@@ -280,8 +280,14 @@ function menuMenus()
     makeScriptEditorButton.onclick = function()
     {
         clickSound();
-        makeScriptEditor();
-        cl("makeScriptEditor");
+        if (online == false)
+        {
+            makeScriptEditor();
+        }
+        else if (online == true)
+        {
+            alert('No Script Editor Online Yet');
+        }
     };
     subDiv.append(makeScriptEditorButton);
 
