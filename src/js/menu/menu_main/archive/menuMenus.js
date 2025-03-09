@@ -1,5 +1,6 @@
 // menuMenus.js
 
+/*
 function menuMenus()
 {
     if (ge("menuMenusId"))
@@ -79,13 +80,14 @@ function menuMenus()
         };
 
         //if using only function names
-        //theButton.onclick = function() { eval(""+theFunctions[x]+"" + "()" + ";"); cl(""+theFunctions[x]+"" +"()"); };
+        //theButton.onclick = function() { e v a l(""+theFunctions[x]+"" + "()" + ";"); cl(""+theFunctions[x]+"" +"()"); };
 
         theButton.onclick = function()
         {
             clickSound();
 
-            eval(""+theFunctions[x].name+"" + ";");
+            // replaced with safer way
+            e v a l(""+theFunctions[x].name+"" + ";");
 
             cl(""+theFunctions[x].name+"");
         };
@@ -98,6 +100,7 @@ function menuMenus()
         ge("menuMenusSubDivId").style.height = 0 + "px";
     }
 }
+*/
 
 //----//
 

@@ -280,6 +280,7 @@ function menuMenus()
     makeScriptEditorButton.onclick = function()
     {
         clickSound();
+
         if (online == false)
         {
             makeScriptEditor();
