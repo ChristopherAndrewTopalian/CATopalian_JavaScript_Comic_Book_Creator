@@ -221,50 +221,38 @@ function scene(whichArray)
         // if file type is .mp4
         if (whichArray[x].type == "mp4")
         {
-            // type of element to create
-            let theMovieDiv = ce("div");
+            let videoElement = ce("video");
+            videoElement.id = whichArray[x].theId;
+            videoElement.className = whichArray[x].className;
+            videoElement.style.position = "absolute";
+            videoElement.style.left = whichArray[x].theX;
+            videoElement.style.top = whichArray[x].theY;
+            videoElement.style.zIndex = whichArray[x].theLayer;
+            videoElement.style.width = whichArray[x].sizeX + "px";
+            videoElement.style.height = "auto"; // height according to aspect ratio
+            videoElement.style.objectFit = "cover";
+            videoElement.loop = true;
+            videoElement.muted = true;
+            //videoElement.controls = true;
+            ba(videoElement);
 
-            // id
-            theMovieDiv.id = whichArray[x].theId + "div";
+            //-//
 
-            // class
-            theMovieDiv.className = whichArray[x].className;
+            let videoSource = ce("source");
+            videoSource.src = whichArray[x].theUrl;
+            videoSource.type = "video/mp4"; 
+            videoElement.append(videoSource);
 
-            // position type
-            theMovieDiv.style.position = "absolute";
+            //-//
 
-            // x
-            theMovieDiv.style.left = whichArray[x].theX;
-
-            // y
-            theMovieDiv.style.top = whichArray[x].theY;
-
-            //theMovieDiv.style.width = whichArray[x].sizeX;
-
-            //theMovieDiv.style.backgroundSize = "cover";
-
-            // layer
-            theMovieDiv.style.zIndex = whichArray[x].theLayer;
-
-            // video
-            theMovieDiv.innerHTML = '<video width =  \''+whichArray[x].sizeX+'\' height = "100%" loop id =\''+whichArray[x].theId+'\' style = "background-size: cover;" muted><source src= \''+whichArray[x].theUrl+'\' type = "video\/mp4"><\/video> ';
-
-            //theMovieDiv.innerHTML = '<video width="300" height = "30%" controls id =\''+whichArray[x].name+'\' style = "background-size: cover;"><source src= \''+whichArray[x].theUrl+'\' type="video\/mp4"><\/video> ';
-
-            // when right clicked
-            theMovieDiv.oncontextmenu = function()
+            videoElement.oncontextmenu = function()
             {
-                playSound(sfx[3], 0.1);
-
+                hoverSound();
                 menuOptions(whichArray[x].theId);
-
                 idToMove = whichArray[x].theId;
             };
-
-            // add element to document
-            ba(theMovieDiv);
-
-            makeElementDraggable(theMovieDiv);
+        
+            makeElementDraggable(videoElement);
         }
 
         if (whichArray[x].type == 'div')
