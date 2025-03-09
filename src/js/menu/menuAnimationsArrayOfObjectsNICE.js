@@ -12,19 +12,18 @@ function menuAnimationsArrayOfObjectsNICE(whichArray, whichCategory)
 
     let mainDiv = ce("div");
     mainDiv.style.position = "absolute";
-    mainDiv.style.left = 300 + "px";
-    mainDiv.style.top = 40 + "px";
-    mainDiv.style.width = 730 + "px";
+    mainDiv.style.left = "300px";
+    mainDiv.style.top = "40px";
+    mainDiv.style.width = "730px";
     mainDiv.id = theMenuId;
     mainDiv.style.zIndex = 10;
     mainDiv.style.backgroundColor = "rgba(0, 0, 0, 0.4)";
     mainDiv.style.float = "left";
     mainDiv.style.overflowY = "auto";
-    mainDiv.style.height = 100 + "px";
-    mainDiv.style.padding = 10 + "px";
-    mainDiv.style.borderRadius = 5 + "px";
+    mainDiv.style.height = "100px";
+    mainDiv.style.padding = "10px";
+    mainDiv.style.borderRadius = "5px";
     mainDiv.className = "scrolling";
-    mainDiv.id = theMenuId;
     ba(mainDiv);
 
     //-//
@@ -60,19 +59,35 @@ function menuAnimationsArrayOfObjectsNICE(whichArray, whichCategory)
     {
         if (whichArray[x].category == 'animation')
         {
-            // eval turns it from 'nameOfHandle' to nameOfHandle without quotes
+            counterButtons++;
 
-            counterButtons = counterButtons + 1;
+            let clearButton = ce("button");
+            clearButton.className = "ourButton";
+            clearButton.onclick = function() {
+                clearAnimation(window[whichArray[x].timerName], whichArray[x].name);
+            };
+            clearButton.textContent = "Clear";
+            subDiv.append(clearButton);
 
-            subDiv.innerHTML +=  '<button onclick = "clearAnimation(eval(\''+whichArray[x].timerName+'\'), \''+whichArray[x].name+'\');" class = "ourButton")> Clear </button>';
+            //-//
 
-            subDiv.innerHTML += '<button onclick = "'+whichArray[x].name+'(\''+idToMove+'\')" class = "ourButton tags" gloss = \''+whichArray[x].description+'\' id ='+whichArray[x].name+'> '+whichArray[x].name+' '+whichArray[x].descriptiveName+'  '+idToMove+' </button>';
+            let animationButton = ce("button");
+            animationButton.className = "ourButton tags";
+            animationButton.setAttribute("gloss", whichArray[x].description);
+            animationButton.id = whichArray[x].name;
+            animationButton.textContent = whichArray[x].name + ' ' + whichArray[x].descriptiveName + ' ' + idToMove;
+            animationButton.onclick = function()
+            {
+                window[whichArray[x].name](idToMove);
+            };
+            subDiv.append(animationButton);
         }
 
-        subDiv.innerHTML += "<br>";
-
-        mainDiv.append(subDiv);
+        let lineBreak = ce("br");
+        subDiv.append(lineBreak);
     }
+
+    mainDiv.append(subDiv);
 }
 
 //----//
