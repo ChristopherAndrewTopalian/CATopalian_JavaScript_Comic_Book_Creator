@@ -77,20 +77,6 @@ function menuMenus()
 
     //-//
 
-    let backgroundsButton = ce("button");
-    backgroundsButton.textContent = "BACKGROUNDS";
-    backgroundsButton.className = "ourButton";
-    backgroundsButton.title = "menuBackground";
-    backgroundsButton.onclick = function()
-    {
-        clickSound();
-        menuBackground("house_001", "theBgId", "Backgrounds", "sfx_warp_001", 550, 0, "house_001", "inside");
-        cl("menuBackground");
-    };
-    subDiv.append(backgroundsButton);
-
-    //-//
-
     let charactersButton = ce("button");
     charactersButton.textContent = "CHARACTERS";
     charactersButton.className = "ourButton";
