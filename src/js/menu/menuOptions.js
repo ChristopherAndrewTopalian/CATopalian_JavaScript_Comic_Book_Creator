@@ -1165,6 +1165,8 @@ function menuOptions(whichId)
     titleOfApp.target = '_blank';
     thePanel.append(titleOfApp);
 
+    //-//
+
     let credits = ce('div');
     credits.textContent = 'All Rights Reserved (c) Copyright 2000-2025';
     credits.style.fontSize = '15px';
