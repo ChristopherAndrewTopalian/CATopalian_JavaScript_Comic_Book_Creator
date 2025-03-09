@@ -193,7 +193,7 @@ function galleryMakerVideos(whichArray, whichCategory)
 
                         dragElement(theCreatedVideo.id);
 
-                        menuAnimationsArrayOfObjectsHere("animationsArrayOfObjects", "animation");
+                        menuAnimationsArrayOfObjectsHere(animationsArrayOfObjects, "animation");
 
                         setMenuOptionsValues(whichArray, x);
                     };

@@ -53,7 +53,7 @@ function makeButtonsForEachCharacter()
 
             menuOptions(theCharacters2[x].getAttribute('id'));
 
-            menuAnimationsArrayOfObjectsHere("animationsArrayOfObjects", "animation");
+            menuAnimationsArrayOfObjectsHere(animationsArrayOfObjects, "animation");
         };
         mainDiv.append(theButton);
     }

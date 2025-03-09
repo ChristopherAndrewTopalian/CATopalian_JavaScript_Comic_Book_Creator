@@ -87,7 +87,7 @@ function galleryMakerArray(whichArray, whichCategory)
 
                     dragElement(theCreatedPerson.id);
 
-                    menuAnimationsArrayOfObjectsHere("animationsArrayOfObjects", "animation");
+                    menuAnimationsArrayOfObjectsHere(animationsArrayOfObjects, "animation");
                 };
                 ba(theCreatedPerson);
             };

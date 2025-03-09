@@ -1,9 +1,7 @@
 // menuCharacterTexture.js
 
-function menuCharacterTexture(whichArray, whichFolder, whichSubFolder, whichId, menuName, whichSound, theX, theY)
+function menuCharacterTexture(whichArray, whichId, menuName, whichSound, theX, theY)
 {
-    whichArray = eval(whichArray);
-
     let theMenuId = "menuGifId";
 
     // if the menu exists, remove it
@@ -59,12 +57,17 @@ function menuCharacterTexture(whichArray, whichFolder, whichSubFolder, whichId, 
     for (let x = 0; x < whichArray.length; x++)
     {
         let theButton = ce("button");
+
+        theButton.textContent = whichArray[x].name;
+
         // get last part of file path, meaning name.extension
-        theButton.textContent = whichArray[x].substring(whichArray[x].lastIndexOf('/') + 1);
+        //theButton.textContent = whichArray[x].substring(whichArray[x].lastIndexOf('/') + 1);
 
         theButton.onclick = function()
         {
-            ge(whichId).src = "texture\/model\/" + whichFolder + "\/" + whichSubFolder + "\/" + whichArray[x];
+            ge(whichId).src = whichArray[x].textureOffline;
+
+            //ge(whichId).src = "texture\/model\/" + whichFolder + "\/" + whichSubFolder + "\/" + whichArray[x];
 
             playSound(whichSound, 1.0);
         };

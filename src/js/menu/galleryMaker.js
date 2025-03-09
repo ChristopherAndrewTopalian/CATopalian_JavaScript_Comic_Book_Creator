@@ -113,7 +113,7 @@ function galleryMaker(whichArray, whichCategory)
 
                         menuOptions(theCreatedPerson.id);
 
-                        menuAnimationsArrayOfObjectsHere("animationsArrayOfObjects", "animation");
+                        menuAnimationsArrayOfObjectsHere(animationsArrayOfObjects, "animation");
 
                         setMenuOptionsValues(whichArray, x);
                     };

@@ -4,27 +4,13 @@ let whichNumber = 0;
 
 function pageForward(whichArray, whichId)
 {
-    whichArray = eval(whichArray);
-
-    if (whichNumber < whichArray.length) // - 1)
+    if (whichNumber < whichArray.length)
     {
-        // whichNumber += 1;
-
         let theImage = ge(whichId);
-
-        // if using the url as the source
-        // theImage.src = textureArray[whichNumber].theURL;
-
-        // if using the folder as the source
-        // theImage.src = textureArray[whichNumber].theLocation;
 
         theImage.src = whichArray[whichNumber].textureOffline;
 
         whichNumber += 1;
-
-        // ge("pageNumber").textContent = whichNumber;
-
-        // ge("imageName").textContent = whichArray[whichNumber].name;
     }
     if (whichNumber == whichArray.length) // - 1)
     {

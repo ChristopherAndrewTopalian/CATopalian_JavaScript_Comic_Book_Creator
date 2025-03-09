@@ -9,8 +9,6 @@ function menuAnimationsArrayOfObjectsHere(whichArray, whichCategory)
         eraseDivs('menuLeftMain');
     }
 
-    whichArray = eval(whichArray);
-
     let mainDiv = ce("div");
     mainDiv.className = "menuLeftMain";
     mainDiv.style.position = "fixed";

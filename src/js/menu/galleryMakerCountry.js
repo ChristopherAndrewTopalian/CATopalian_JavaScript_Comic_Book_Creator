@@ -123,7 +123,7 @@ function galleryMakerCountry(whichArray, whichCategory, whichCountry)
 
                         dragElement(theCreatedPerson.id);
 
-                        menuAnimationsArrayOfObjectsHere("animationsArrayOfObjects", "animation");
+                        menuAnimationsArrayOfObjectsHere(animationsArrayOfObjects, "animation");
 
                         setMenuOptionsValues(whichArray, x);
                     };

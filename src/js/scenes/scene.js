@@ -176,7 +176,7 @@ function scene(whichArray)
 
                 // menuAnimationsJustArray('animationsAll');
 
-                // menuAnimationsArrayOfObjectsHere("animationsArrayOfObjects", "animation");
+                // menuAnimationsArrayOfObjectsHere(animationsArrayOfObjects, "animation");
 
                 // updateFilters(whichArray);
 

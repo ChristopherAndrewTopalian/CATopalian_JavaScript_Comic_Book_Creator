@@ -43,7 +43,7 @@ function menuCharacterChooserInput()
 
             menuOptions(idToMove);
 
-            menuAnimationsArrayOfObjectsHere("animationsArrayOfObjects", "animation");
+            menuAnimationsArrayOfObjectsHere(animationsArrayOfObjects, "animation");
 
             // set the size value of the text area to the current value width of the object
             ge("sizeTextarea").value = Math.round(ge(idToMove).getBoundingClientRect().width);

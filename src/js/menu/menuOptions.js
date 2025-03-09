@@ -91,39 +91,6 @@ function menuOptions(whichId)
 
     //-//
 
-    let backButton = ce('button');
-    backButton.textContent = '<=';
-    backButton.className = 'ourButton';
-    backButton.onmouseover = function()
-    {
-        hoverSound();
-    };
-    backButton.onclick = function()
-    {
-        clickSound();
-        backPageAny(whichId);
-    };
-    backButton.id = 'backButton';
-    thePanel.append(backButton);
-
-    //-//
-
-    let forwardButton = ce('button');
-    forwardButton.textContent = '=>';
-    forwardButton.className = 'ourButton';
-    forwardButton.onmouseover = function()
-    {
-        hoverSound();
-    };
-    forwardButton.onclick = function()
-    {
-        clickSound();
-        forwardPageAny(whichId);
-    };
-    thePanel.append(forwardButton);
-
-    //-//
-
     thePanel.append(ce('hr'));
 
     //-//

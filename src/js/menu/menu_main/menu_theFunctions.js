@@ -128,25 +128,19 @@ let theFunctions = [
     },
 
     {
-        name: "menuChangeTextureOfCharacter()",
-        fullName: "menuChangeTextureOfCharacter",
-        description: "Change the Texture of the Character"
-    },
-    
-    {
         name: "menuAnimationsArrayOfObjectsNICE('animationsArrayOfObjects', 'animation')",
         fullName: "menuAnimationsArrayOfObjectsNICE",
         description: "ANIMATION Menu"
     },
     
     {
-        name: "menuAnimationsArrayOfObjectsHere('animationsArrayOfObjects', 'animation')",
+        name: "menuAnimationsArrayOfObjectsHere(animationsArrayOfObjects, 'animation')",
         fullName: "menuAnimationsArrayOfObjectsHere",
         description: "ANIMATION Details Menu"
     },
 
     {
-        name: "menuCharacterTexture('ayan_clothes_blue', 'ayan', 'ayan_clothes_blue', 'ayan1', 'Ayan', 'sfx_warp_001', 700, 0)",
+        name: "menuCharacterTexture(ayan_clothes_blue, 'ayan', 'ayan_clothes_blue', 'ayan1', 'Ayan', 'sfx_warp_001', 700, 0)",
         fullName: "menuCharacterTexture",
         description: "CHARACTER - Texture Change"
     },

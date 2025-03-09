@@ -8,8 +8,6 @@ function comicBubbleTargetIdArrayOfObjects(whichId, whichArray, whichIndex)
         eraseDivs('comicBubble');
     }
 
-    whichArray = eval(whichArray);
-
     let whichWords = 0;
 
     // or choose to place comic above the idToMove element
