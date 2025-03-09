@@ -17,9 +17,7 @@
     display: inline-flex; /* Use flex for centering */
     justify-content: center; /* Centers text horizontally */
     align-items: center; /* Centers text vertically */
-    height: auto; /* Adjust height automatically based on content */
-    min-height: 10px; /* Ensures button maintains a minimum height */
-    word-wrap: break-word; /* Allows word wrapping for long text */
+    word-wrap: break-word;
     cursor: pointer;
 }
 

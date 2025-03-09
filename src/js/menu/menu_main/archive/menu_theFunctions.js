@@ -128,7 +128,13 @@ let theFunctions = [
     },
 
     {
-        name: "menuAnimationsArrayOfObjectsNICE(animationsArrayOfObjects, 'animation')",
+        name: "menuChangeTextureOfCharacter()",
+        fullName: "menuChangeTextureOfCharacter",
+        description: "Change the Texture of the Character"
+    },
+    
+    {
+        name: "menuAnimationsArrayOfObjectsNICE('animationsArrayOfObjects', 'animation')",
         fullName: "menuAnimationsArrayOfObjectsNICE",
         description: "ANIMATION Menu"
     },
