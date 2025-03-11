@@ -18,12 +18,15 @@ function makeButtonsForEachCharacter()
     mainDiv.id = "buttonsForEachCharacterId";
     mainDiv.style.position = "fixed";
     mainDiv.style.left = 30 + "px";
-    mainDiv.style.top = 200 + "px";
+    mainDiv.style.top = 100 + "px";
     mainDiv.style.width = 500 + "px";
     mainDiv.style.height = 300 + "px";
     mainDiv.style.overflowY = "scroll";
+    mainDiv.style.backgroundColor = 'rgba(30, 30, 30, 0.9)';
     mainDiv.style.zIndex = 20000;
     ba(mainDiv);
+
+    makeElementDraggable(mainDiv);
 
     //-//
 
@@ -45,8 +48,14 @@ function makeButtonsForEachCharacter()
         let theButton = ce("button");
         theButton.className = "ourButton";
         theButton.textContent = theCharacters2[x].getAttribute('id');
+        theButton.onmouseover = function()
+        {
+            hoverSound();
+        };
         theButton.onclick = function()
         {
+            clickSound();
+
             //alert(theCharacters[x].getAttribute( 'id' )); //.src
 
             idToMove = theCharacters2[x].getAttribute('id');

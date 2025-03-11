@@ -94,7 +94,7 @@ function menuZoom()
         zoom(1.35);
     }
 
-    playSound("sfx_warp_001", 1.0);
+    // playSound("sfx_warp_001", 1.0);
 
     theButton.textContent = "1.0";
     theButton.className = "ourButton";
