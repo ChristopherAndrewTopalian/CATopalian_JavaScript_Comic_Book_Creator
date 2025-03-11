@@ -105,6 +105,8 @@ function galleryMaker(whichArray, whichCategory)
 
                 thePerson.onclick = function()
                 {
+                    clickSound();
+
                     let theCreatedPerson = ce("img");
 
                     theCreatedPerson.style.position = "absolute";
