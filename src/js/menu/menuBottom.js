@@ -89,7 +89,9 @@ function bottomMenu()
     {
         clickSound();
 
-        galleryMakerArray(galleryCharactersArray, 'character');
+        galleryMaker(galleryCharactersAOO, 'maven');
+
+        //galleryMakerArray(galleryCharactersArray, 'character');
     };
 
     characterGalleryArrayButton.onmouseover = function()

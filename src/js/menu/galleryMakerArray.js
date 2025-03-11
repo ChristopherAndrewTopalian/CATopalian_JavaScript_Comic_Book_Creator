@@ -1,10 +1,42 @@
-// galleryCharactersArray.js
+// galleryMakerArray.js
 
 let galleryCharactersArray = [
     'src/media/texture/model/maven/full/front.webp',
     'src/media/texture/model/maven/full/back.webp',
     'src/media/texture/model/maven/full/left.webp',
     'src/media/texture/model/maven/full/diagonal_right.webp'
+];
+
+// or is we are using the aoo function
+let galleryCharactersAOO = [
+    {
+        name: 'Maven',
+        id: 'maven_front',
+        texture: 'src/media/texture/model/maven/full/front.webp',
+        sizeX: 100,
+        category: 'maven'
+    },
+
+    {
+        id: 'maven_back',
+        texture: 'src/media/texture/model/maven/full/back.webp',
+        sizeX: 100,
+        category: 'maven'
+    },
+
+    {
+        id: 'maven_left',
+        texture: 'src/media/texture/model/maven/full/left.webp',
+        sizeX: 100,
+        category: 'maven'
+    },
+
+    {
+        id: 'maven_left',
+        texture: 'src/media/texture/model/maven/full/diagonal_right.webp',
+        sizeX: 100,
+        category: 'maven'
+    },
 ];
 
 function galleryMakerArray(whichArray, whichCategory)
@@ -25,25 +57,8 @@ function galleryMakerArray(whichArray, whichCategory)
         mainDiv.style.top = 30 + "px";
         mainDiv.style.width = 800 + "px";
         mainDiv.style.height = 350 + "px";
-        //mainDiv.style.overflowY = "scroll";
         mainDiv.style.zIndex = "10000";
         ba(mainDiv);
-    
-        /*
-        let mainDiv = ce("div");
-        mainDiv.id = "characterGalleryId";
-        mainDiv.className = "gridContainerStyle";
-        mainDiv.style.position = "fixed";
-        mainDiv.style.left = 20 + "px";
-        mainDiv.style.top = 30 + "px";
-        mainDiv.style.width = 800 + "px";
-        mainDiv.style.height = 430 + "px";
-        mainDiv.style.overflowY = "scroll";
-        mainDiv.style.zIndex = "2000000";
-        ba(mainDiv);
-        */
-
-        //-//
 
         //-//
 
