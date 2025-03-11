@@ -32,9 +32,9 @@ function galleryMaker(whichArray, whichCategory)
         mainDiv.style.position = "fixed";
         mainDiv.style.left = 30 + "px";
         mainDiv.style.top = 30 + "px";
-        mainDiv.style.width = 700 + "px";
+        mainDiv.style.width = 800 + "px";
         mainDiv.style.height = 350 + "px";
-        mainDiv.style.overflowY = "scroll";
+        //mainDiv.style.overflowY = "scroll";
         mainDiv.style.zIndex = "10000";
         ba(mainDiv);
 
@@ -43,7 +43,7 @@ function galleryMaker(whichArray, whichCategory)
         let subDiv = ce('div');
         subDiv.style.display = 'grid';
         subDiv.style.gridTemplateColumns = 'auto auto auto';
-        subDiv.style.width = 600 + "px";
+        subDiv.style.width = 800 + "px";
         subDiv.style.height = 350 + "px";
         subDiv.style.overflowY = "scroll";
         subDiv.style.backgroundColor = 'rgba(30, 30, 30, 0.9)';
