@@ -119,6 +119,8 @@ function galleryMakerArray(whichArray, whichCategory)
             thePerson.style.width = '50px';
             thePerson.title = whichArray[x];
 
+            thePerson.style.cursor = 'pointer';
+
             idToMove = whichArray[x].id;
 
             thePerson.onmouseover = function()

@@ -74,7 +74,6 @@ function galleryMaker(whichArray, whichCategory)
         };
         mainDiv.append(theCloseX);
 
-
         //-//
 
         for (let x = 0; x < whichArray.length; x++)
@@ -87,6 +86,8 @@ function galleryMaker(whichArray, whichCategory)
                 thePerson.style.width = whichArray[x].sizeX;
 
                 thePerson.title = whichArray[x].name + "\n" + whichArray[x].texture;
+
+                thePerson.style.cursor = 'pointer';
 
                 thePerson.style.position = "relative";
 

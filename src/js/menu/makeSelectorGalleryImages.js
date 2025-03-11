@@ -15,22 +15,39 @@ function makeSelectorGalleryImages()
 
     let mainDiv = ce("div");
     mainDiv.id = "characterGalleryId";
-    mainDiv.title = 'makeSelectorGalleryImages()';
-    mainDiv.className = "gridContainerStyle";
     mainDiv.style.position = "fixed";
-    mainDiv.style.left = 20 + "px";
+    mainDiv.style.left = 30 + "px";
     mainDiv.style.top = 30 + "px";
     mainDiv.style.width = 800 + "px";
-    mainDiv.style.height = 600 + "px";
-    mainDiv.style.overflowY = "scroll";
-    mainDiv.style.zIndex = "2000000";
+    mainDiv.style.height = 350 + "px";
+    mainDiv.style.zIndex = "10000";
     ba(mainDiv);
+
+    //-//
+
+    let subDiv = ce('div');
+    subDiv.style.display = 'grid';
+    subDiv.style.gridTemplateColumns = 'auto auto auto';
+    subDiv.style.width = 800 + "px";
+    subDiv.style.height = 350 + "px";
+    subDiv.style.overflowY = "scroll";
+    subDiv.style.backgroundColor = 'rgba(30, 30, 30, 0.9)';
+    mainDiv.append(subDiv);
 
     //-//
 
     let theCloseX = ce("button");
     theCloseX.textContent = "X";
     theCloseX.className = "ourButton";
+    theCloseX.style.position = 'absolute';
+    theCloseX.style.left = 0 + 'px';
+    theCloseX.style.top = -2 + 'px';
+    theCloseX.style.width = 25 + "px";
+    theCloseX.style.height = 25 + "px";
+    theCloseX.onmouseover = function()
+    {
+        hoverSound();
+    };
     theCloseX.onclick = function()
     {
         ge("characterGalleryId").remove();
@@ -63,7 +80,7 @@ function makeSelectorGalleryImages()
             // closeMenu
             ge("characterGalleryId").remove();
         };
-        mainDiv.append(thePerson);
+        subDiv.append(thePerson);
     }
 }
 

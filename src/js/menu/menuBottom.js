@@ -49,7 +49,7 @@ function bottomMenu()
     selectorGalleryButton.onclick = function()
     {
         clickSound();
-        
+
         makeSelectorGalleryImages(currentScene, 'background');
     };
 
