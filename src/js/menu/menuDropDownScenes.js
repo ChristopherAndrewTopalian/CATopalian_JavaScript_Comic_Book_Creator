@@ -18,6 +18,8 @@ function menuDropDownScenes(whichArray, whichId, menuName, whichSound, theX, the
     };
     theSelect.onmouseover = function()
     {
+        hoverSound();
+
         ge("menuDropDownScenes").style.opacity = "1.0";
     };
     ba(theSelect);
@@ -35,7 +37,9 @@ function menuDropDownScenes(whichArray, whichId, menuName, whichSound, theX, the
         theOption.className = "tags";
         theOption.onclick = function()
         {
-            playSound(whichSound, 1.0);
+            clickSound();
+
+            // playSound(whichSound, 1.0);
 
             scene(whichArray[x].obj);
 

@@ -34,7 +34,7 @@ function menuMenus()
     //-//
 
     let theMaximize = ce("button");
-    theMaximize.textContent = "□";
+    theMaximize.textContent = "O";
     theMaximize.className = "ourButton";
     theMaximize.style.position = "absolute";
     theMaximize.style.left = 30 + "px";
