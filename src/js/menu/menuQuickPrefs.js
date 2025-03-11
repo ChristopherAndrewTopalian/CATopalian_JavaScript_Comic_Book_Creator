@@ -25,8 +25,14 @@ function menuQuickPrefs()
     camStayButton.textContent = "CamS";
     camStayButton.style.backgroundColor = "rgb(0, 0, 0)";
     camStayButton.style.color = "rgb(255, 255, 255)";
+    camStayButton.onmouseover = function()
+    {
+        hoverSound();
+    };
     camStayButton.onclick = function()
     {
+        clickSound();
+
         cl("camera stay button");
         cameraFlag = "stay";
     };
@@ -43,8 +49,14 @@ function menuQuickPrefs()
     camFollowButton.style.color = "rgb(255, 255, 255)";
     camFollowButton.setAttribute("gloss","Camera Follow");
     camFollowButton.className = "ourButton tags2";
+    camFollowButton.onmouseover = function()
+    {
+        hoverSound();
+    };
     camFollowButton.onclick = function()
     {
+        clickSound();
+
         cl("camera follow button");
         cameraFlag = "follow";
     };
@@ -55,8 +67,14 @@ function menuQuickPrefs()
 
     let textureBox = ce("button");
     textureBox.textContent = "Tex";
+    textureBox.onmouseover = function()
+    {
+        hoverSound();
+    };
     textureBox.onclick = function()
     {
+        clickSound();
+
         makeTextureInfoBox();
     };
     textureBox.setAttribute("gloss","Texture Box");
@@ -70,8 +88,14 @@ function menuQuickPrefs()
     rightClickOffButton.textContent = 'RC Off';
     rightClickOffButton.title = 'Right Click Off';
     rightClickOffButton.setAttribute("gloss","Right Click OFF");
+    rightClickOffButton.onmouseover = function()
+    {
+        hoverSound();
+    };
     rightClickOffButton.onclick = function()
     {
+        clickSound();
+
         rightClickOff();
     };
     bottomDiv.append(rightClickOffButton);
@@ -83,8 +107,13 @@ function menuQuickPrefs()
     rightClickOnButton.textContent = 'RC On';
     rightClickOnButton.title = 'Right Click On';
     rightClickOnButton.setAttribute("gloss","Right Click ON");
+    rightClickOnButton.onmouseover = function()
+    {
+        hoverSound();
+    };
     rightClickOnButton.onclick = function()
     {
+        clickSound();
         rightClickOn();
     };
     bottomDiv.append(rightClickOnButton);
