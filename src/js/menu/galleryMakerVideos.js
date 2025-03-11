@@ -108,6 +108,18 @@ function galleryMakerVideos(whichArray, whichCategory)
         sortByNameAndCategory(everythingVideos, "up");
 
         let mainDiv = ce("div");
+        mainDiv.id = "characterGalleryId";
+        mainDiv.style.position = "fixed";
+        mainDiv.style.left = 30 + "px";
+        mainDiv.style.top = 30 + "px";
+        mainDiv.style.width = 800 + "px";
+        mainDiv.style.height = 350 + "px";
+        //mainDiv.style.overflowY = "scroll";
+        mainDiv.style.zIndex = "10000";
+        ba(mainDiv);
+
+        /*
+        let mainDiv = ce("div");
         mainDiv.style.position = "fixed";
         mainDiv.style.left = 20 + "px";
         mainDiv.style.top = 30 + "px";
@@ -118,11 +130,25 @@ function galleryMakerVideos(whichArray, whichCategory)
         mainDiv.id = "characterGalleryId";
         mainDiv.style.zIndex = "2000000";
         ba(mainDiv);
+        */
 
         //-//
 
         // close button
         // mainDiv.append(closeButton('characterGalleryId'));
+
+        //-//
+
+        //-//
+
+        let subDiv = ce('div');
+        subDiv.style.display = 'grid';
+        subDiv.style.gridTemplateColumns = 'auto auto auto';
+        subDiv.style.width = 800 + "px";
+        subDiv.style.height = 350 + "px";
+        subDiv.style.overflowY = "scroll";
+        subDiv.style.backgroundColor = 'rgba(30, 30, 30, 0.9)';
+        mainDiv.append(subDiv);
 
         //-//
 
@@ -135,7 +161,7 @@ function galleryMakerVideos(whichArray, whichCategory)
         {
             ge("characterGalleryId").remove();
         };
-        mainDiv.append(theCloseX);
+        subDiv.append(theCloseX);
 
         //-//
 
@@ -166,12 +192,18 @@ function galleryMakerVideos(whichArray, whichCategory)
 
                     theCreatedVideo.style.position = "absolute";
 
-                    theCreatedVideo.style.left = 400 + "px";
-                    theCreatedVideo.style.top = 400 + "px";
+                    theCreatedVideo.style.left = 300 + "px";
+                    theCreatedVideo.style.top = 100 + "px";
 
                     theCreatedVideo.style.width = whichArray[x].sizeX + "px";
 
                     theCreatedVideo.style.zIndex = 5;
+
+                    theCreatedVideo.loop = true;
+
+                    theCreatedVideo.autoplay = true;
+
+                    theCreatedVideo.play();
 
                     theCreatedVideo.id = whichArray[x].name + "_" + x;
 
@@ -198,8 +230,10 @@ function galleryMakerVideos(whichArray, whichCategory)
                         setMenuOptionsValues(whichArray, x);
                     };
                     ba(theCreatedVideo);
+
+                    makeElementDraggable(theCreatedVideo);
                 };
-                mainDiv.append(theVideo);
+                subDiv.append(theVideo);
             }
         }
     }
