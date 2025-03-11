@@ -201,8 +201,6 @@ function galleryMakerVideos(whichArray, whichCategory)
 
                     theCreatedVideo.autoplay = true;
 
-                    theCreatedVideo.play();
-
                     theCreatedVideo.id = whichArray[x].name + "_" + x;
 
                     menuOptions(theCreatedVideo.id);
