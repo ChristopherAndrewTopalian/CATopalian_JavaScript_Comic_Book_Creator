@@ -78,7 +78,7 @@
 {
     padding: 0px;
     display: grid;
-    grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
+    grid-template-columns: auto auto auto auto;
     /* grid-template-columns: 1fr 1fr 1fr; */
     /* grid-template-columns: repeat(3, 1fr); */
     background-color: rgba(40, 40, 40, 0.9);

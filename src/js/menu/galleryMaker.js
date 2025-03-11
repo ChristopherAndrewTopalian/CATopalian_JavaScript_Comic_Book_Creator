@@ -29,9 +29,8 @@ function galleryMaker(whichArray, whichCategory)
 
         let mainDiv = ce("div");
         mainDiv.id = "characterGalleryId";
-        mainDiv.className = "gridContainerStyle";
         mainDiv.style.position = "fixed";
-        mainDiv.style.left = 20 + "px";
+        mainDiv.style.left = 30 + "px";
         mainDiv.style.top = 30 + "px";
         mainDiv.style.width = 700 + "px";
         mainDiv.style.height = 350 + "px";
@@ -41,15 +40,28 @@ function galleryMaker(whichArray, whichCategory)
 
         //-//
 
-        // close button
-        mainDiv.append(closeButton('characterGalleryId'));
+        let subDiv = ce('div');
+        subDiv.style.display = 'grid';
+        subDiv.style.gridTemplateColumns = 'auto auto auto';
+        subDiv.style.width = 600 + "px";
+        subDiv.style.height = 350 + "px";
+        subDiv.style.overflowY = "scroll";
+        subDiv.style.backgroundColor = 'rgba(30, 30, 30, 0.9)';
+        mainDiv.append(subDiv);
 
         //-//
 
-        /*
+        // close button
+        // mainDiv.append(closeButton('characterGalleryId'));
+
+        //-//
+
         let theCloseX = ce("button");
         theCloseX.textContent = "X";
         theCloseX.className = "ourButton";
+        theCloseX.style.position = 'absolute';
+        theCloseX.style.left = 0 + 'px';
+        theCloseX.style.top = -3 + 'px';
         theCloseX.style.width = 25 + "px";
         theCloseX.style.height = 25 + "px";
         theCloseX.onclick = function()
@@ -57,7 +69,7 @@ function galleryMaker(whichArray, whichCategory)
             ge("characterGalleryId").remove();
         };
         mainDiv.append(theCloseX);
-        */
+
 
         //-//
 
@@ -121,7 +133,7 @@ function galleryMaker(whichArray, whichCategory)
 
                     makeElementDraggable(theCreatedPerson);
                 };
-                mainDiv.append(thePerson);
+                subDiv.append(thePerson);
             }
         }
     }
