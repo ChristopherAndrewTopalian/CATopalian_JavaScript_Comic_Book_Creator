@@ -179,7 +179,13 @@ function galleryMakerVideos(whichArray, whichCategory)
 
                 theVideo.onmouseover = function()
                 {
+                    theVideo.play();
                     hoverSound();
+                }
+
+                theVideo.onmouseout = function()
+                {
+                    theVideo.pause();
                 }
 
                 theVideo.onclick = function()
