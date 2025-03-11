@@ -61,9 +61,13 @@ function galleryMaker(whichArray, whichCategory)
         theCloseX.className = "ourButton";
         theCloseX.style.position = 'absolute';
         theCloseX.style.left = 0 + 'px';
-        theCloseX.style.top = -3 + 'px';
+        theCloseX.style.top = -2 + 'px';
         theCloseX.style.width = 25 + "px";
         theCloseX.style.height = 25 + "px";
+        theCloseX.onmouseover = function()
+        {
+            hoverSound();
+        };
         theCloseX.onclick = function()
         {
             ge("characterGalleryId").remove();
@@ -93,6 +97,11 @@ function galleryMaker(whichArray, whichCategory)
                 idToMove = whichArray[x].theId;
 
                 //-//
+
+                thePerson.onmouseover = function()
+                {
+                    hoverSound();
+                };
 
                 thePerson.onclick = function()
                 {
