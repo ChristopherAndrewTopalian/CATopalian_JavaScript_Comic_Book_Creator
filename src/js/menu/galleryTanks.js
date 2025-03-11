@@ -90,6 +90,35 @@ let galleryTanks = [
     theDropShadowColor: "black",
 },
 
+{
+    name: "drone_tank_001",
+    texture: "src/media/texture/prop/tank/drone_tanks/drone_tank_001.webp",
+    theId: "drone_tank_001",
+    category: "tank",
+    country: "America",
+    sizeX: 200,
+    theX: 1215,
+    theY: 674,
+    type: "webp",
+    theLayer: 5,
+    flipHorizontal: false,
+    flipVertical: false,
+    className: "propStyle",
+    rotationAmount: 0 + "deg",
+    theBrightness: 1.0,
+    theContrast: 1.3,
+    theHue: 0,
+    theSaturation: 1.0,
+    theBlur: 0,
+    theInvert: 0,
+    theGrayscale: 0,
+    theSepia: 0,
+    theDropShadowX: "10px",
+    theDropShadowY: "10px",
+    theDropShadowBlurRadius: "10px",
+    theDropShadowColor: "black",
+},
+
 ];
 
 //----//

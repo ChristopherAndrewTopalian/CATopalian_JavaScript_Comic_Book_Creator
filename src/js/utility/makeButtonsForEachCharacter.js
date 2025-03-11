@@ -68,9 +68,6 @@ function makeButtonsForEachCharacter()
     }
 }
 
-// let elements = document.getElementsByName( 'yourname' );
-// let id = elements[0].getAttribute( 'id' );
-
 //----//
 
 // Dedicated to God the Father
