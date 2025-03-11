@@ -155,13 +155,20 @@ function galleryMakerVideos(whichArray, whichCategory)
         let theCloseX = ce("button");
         theCloseX.textContent = "X";
         theCloseX.className = "ourButton";
+        theCloseX.style.position = 'absolute';
+        theCloseX.style.left = 0 + 'px';
+        theCloseX.style.top = -2 + 'px';
         theCloseX.style.width = 25 + "px";
         theCloseX.style.height = 25 + "px";
+        theCloseX.onmouseover = function()
+        {
+            hoverSound();
+        };
         theCloseX.onclick = function()
         {
             ge("characterGalleryId").remove();
         };
-        subDiv.append(theCloseX);
+        mainDiv.append(theCloseX);
 
         //-//
 
@@ -186,8 +193,15 @@ function galleryMakerVideos(whichArray, whichCategory)
 
                 //-//
 
+                theVideo.onmouseover = function()
+                {
+                    hoverSound();
+                }
+
                 theVideo.onclick = function()
                 {
+                    clickSound();
+
                     let theCreatedVideo = ce("video");
 
                     theCreatedVideo.style.position = "absolute";
