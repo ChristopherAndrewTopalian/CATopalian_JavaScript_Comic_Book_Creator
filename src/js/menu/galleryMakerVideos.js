@@ -118,20 +118,6 @@ function galleryMakerVideos(whichArray, whichCategory)
         mainDiv.style.zIndex = "10000";
         ba(mainDiv);
 
-        /*
-        let mainDiv = ce("div");
-        mainDiv.style.position = "fixed";
-        mainDiv.style.left = 20 + "px";
-        mainDiv.style.top = 30 + "px";
-        mainDiv.style.width = 800 + "px";
-        mainDiv.style.height = 600 + "px";
-        mainDiv.style.overflowY = "scroll";
-        mainDiv.className = "gridContainerStyle";
-        mainDiv.id = "characterGalleryId";
-        mainDiv.style.zIndex = "2000000";
-        ba(mainDiv);
-        */
-
         //-//
 
         // close button
