@@ -130,6 +130,7 @@ function galleryMaker(whichArray, whichCategory)
 
                     idToMove = theCreatedPerson.id;
 
+                    // when right clicked
                     theCreatedPerson.oncontextmenu = function()
                     {
                         idToMove = theCreatedPerson.id;
