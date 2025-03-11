@@ -183,6 +183,8 @@ function galleryMakerVideos(whichArray, whichCategory)
                     hoverSound();
                 }
 
+                theVideo.muted = true;
+
                 theVideo.onmouseout = function()
                 {
                     theVideo.pause();
