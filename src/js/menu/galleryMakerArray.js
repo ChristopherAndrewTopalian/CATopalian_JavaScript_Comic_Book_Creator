@@ -1,4 +1,4 @@
-// galleryMakerArray.js
+// galleryCharactersArray.js
 
 let galleryCharactersArray = [
     'src/media/texture/model/maven/full/front.webp',
@@ -20,6 +20,18 @@ function galleryMakerArray(whichArray, whichCategory)
 
         let mainDiv = ce("div");
         mainDiv.id = "characterGalleryId";
+        mainDiv.style.position = "fixed";
+        mainDiv.style.left = 30 + "px";
+        mainDiv.style.top = 30 + "px";
+        mainDiv.style.width = 800 + "px";
+        mainDiv.style.height = 350 + "px";
+        //mainDiv.style.overflowY = "scroll";
+        mainDiv.style.zIndex = "10000";
+        ba(mainDiv);
+    
+        /*
+        let mainDiv = ce("div");
+        mainDiv.id = "characterGalleryId";
         mainDiv.className = "gridContainerStyle";
         mainDiv.style.position = "fixed";
         mainDiv.style.left = 20 + "px";
@@ -29,13 +41,45 @@ function galleryMakerArray(whichArray, whichCategory)
         mainDiv.style.overflowY = "scroll";
         mainDiv.style.zIndex = "2000000";
         ba(mainDiv);
+        */
+
+        //-//
+
+        //-//
+
+        let subDiv = ce('div');
+        subDiv.style.display = 'grid';
+        subDiv.style.gridTemplateColumns = 'auto auto auto';
+        subDiv.style.width = 800 + "px";
+        subDiv.style.height = 350 + "px";
+        subDiv.style.overflowY = "scroll";
+        subDiv.style.backgroundColor = 'rgba(30, 30, 30, 0.9)';
+        mainDiv.append(subDiv);
 
         //-//
 
         // close button
-        mainDiv.append(closeButton('characterGalleryId'));
+        //mainDiv.append(closeButton('characterGalleryId'));
 
         //-//
+
+        let theCloseX = ce("button");
+        theCloseX.textContent = "X";
+        theCloseX.className = "ourButton";
+        theCloseX.style.position = 'absolute';
+        theCloseX.style.left = 0 + 'px';
+        theCloseX.style.top = -2 + 'px';
+        theCloseX.style.width = 25 + "px";
+        theCloseX.style.height = 25 + "px";
+        theCloseX.onmouseover = function()
+        {
+            hoverSound();
+        };
+        theCloseX.onclick = function()
+        {
+            ge("characterGalleryId").remove();
+        };
+        mainDiv.append(theCloseX);
 
         /*
         let theCloseX = ce("button");
@@ -62,13 +106,20 @@ function galleryMakerArray(whichArray, whichCategory)
 
             idToMove = whichArray[x].id;
 
+            thePerson.onmouseover = function()
+            {
+                hoverSound();
+            };
+
             thePerson.onclick = function()
             {
+                clickSound();
+
                 let theCreatedPerson = ce("img");
                 theCreatedPerson.style.position = "absolute";
                 theCreatedPerson.style.left = 400 + "px";
-                theCreatedPerson.style.top = 400 + "px";
-                theCreatedPerson.style.width = 50 + "px";
+                theCreatedPerson.style.top = 100 + "px";
+                theCreatedPerson.style.width = 100 + "px";
                 theCreatedPerson.style.zIndex = 5;
                 theCreatedPerson.id = whichArray[x] + "_" + x;
 
@@ -90,8 +141,10 @@ function galleryMakerArray(whichArray, whichCategory)
                     menuAnimationsArrayOfObjectsHere(animationsArrayOfObjects, "animation");
                 };
                 ba(theCreatedPerson);
+
+                makeElementDraggable(theCreatedPerson);
             };
-            mainDiv.append(thePerson);
+            subDiv.append(thePerson);
         }
     }
 }

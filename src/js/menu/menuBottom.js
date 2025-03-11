@@ -89,7 +89,7 @@ function bottomMenu()
     {
         clickSound();
 
-        galleryMaker(galleryCharactersArray, 'character');
+        galleryMakerArray(galleryCharactersArray, 'character');
     };
 
     characterGalleryArrayButton.onmouseover = function()
