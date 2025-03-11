@@ -125,8 +125,6 @@ function galleryMakerVideos(whichArray, whichCategory)
 
         //-//
 
-        //-//
-
         let subDiv = ce('div');
         subDiv.style.display = 'grid';
         subDiv.style.gridTemplateColumns = 'auto auto auto';
