@@ -78,7 +78,8 @@ function whenLoaded()
     //loadSounds("sfx", "sfx");
     loadSounds(sfx);
 
-    menuDropDownScenes(scenes, 'ayan1', 'Greetings', 'sfx_warp_001.mp4', 5, 5);
+    // archived
+    // menuDropDownScenes(scenes, 'ayan1', 'Greetings', 'sfx_warp_001.mp4', 5, 5);
 
     // listen for mouse click and activate mousePos function
     window.addEventListener("click", mousePos, false);

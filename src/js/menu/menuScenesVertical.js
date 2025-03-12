@@ -12,7 +12,7 @@ function menuScenesVertical()
     let mainDiv = ce("div");
     mainDiv.id = menuId;
     mainDiv.style.position = "fixed";
-    mainDiv.style.right = 200 + "px";
+    mainDiv.style.right = 0 + "px";
     mainDiv.style.top = 22 + "px";
     mainDiv.style.zIndex = 1000;
     mainDiv.style.backgroundColor = "rgba(0, 0, 0, 0.4)";
@@ -54,7 +54,6 @@ function menuScenesVertical()
     subDiv.style.resize = "both";
     subDiv.style.height = 200 + "px";
     subDiv.id = 'scenesSubDiv';
-    subDiv.style.width = "290px";
     subDiv.style.marginLeft = "5px";
     subDiv.style.marginRight = "5px";
     subDiv.className = "scrolling";
