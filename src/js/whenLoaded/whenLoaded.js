@@ -47,18 +47,6 @@ function whenLoaded()
     // make character chooser menu section
     //menuCharacterChooserInput();
 
-    //let theEvent;
-
-    if (preventRightClickFlag == true)
-    {
-        // prevent right click
-        theEvent = window.addEventListener("contextmenu", e => e.preventDefault());
-    }
-    else if (preventRightClickFlag == false)
-    {
-         window.removeEventListener("contextmenu", theEvent);
-     }
-
     // prevent right click contextmenu
     rightClickOff();
 
@@ -68,14 +56,8 @@ function whenLoaded()
     window.addEventListener("keyup", theControls, false);
 
     // load scene, with props and characters
-    // scene(whichScene);
-    // scene(scene_beach_001);
-
     scene(scene_tv_room_001);
 
-    // load sfx sounds to screen
-    // whichArray, whichFolder
-    //loadSounds("sfx", "sfx");
     loadSounds(sfx);
 
     // archived
