@@ -14,16 +14,16 @@ function menuGifs()
     mainDiv.style.position = "absolute";
     mainDiv.style.left = 325 + "px";
     mainDiv.style.top = 100 + "px";
-    mainDiv.style.width = 500 + "px";
+    mainDiv.style.width = 300 + "px";
     mainDiv.id = "menuBackgroundId";
     mainDiv.style.zIndex = 10;
-    mainDiv.style.backgroundColor = "rgba(0, 0, 0, 0.4)";
+    mainDiv.style.backgroundColor = "rgba(0, 0, 0, 0.8)";
     mainDiv.style.float = "left";
-    mainDiv.style.overflowY = "auto";
+    mainDiv.style.overflowY = "scroll";
     mainDiv.style.height = 100 + "px";
     mainDiv.style.padding = 10 + "px";
     mainDiv.style.borderRadius = 5 + "px";
-    mainDiv.className = "scrolling";
+    // mainDiv.className = "scrolling";
     mainDiv.id = theMenuId;
     ba(mainDiv);
 
@@ -36,8 +36,13 @@ function menuGifs()
     let theCloseX = ce("button");
     theCloseX.textContent = "X";
     theCloseX.className = "ourButton";
+    theCloseX.onmouseover = function()
+    {
+        hoverSound();
+    }
     theCloseX.onclick = function()
     {
+        clickSound();
         ge(theMenuId).remove();
     };
     mainDiv.append(theCloseX);
@@ -61,8 +66,14 @@ function menuGifs()
     let treesBlowingButton = ce("button");
     treesBlowingButton.textContent = "Trees Blowing";
     treesBlowingButton.className = "ourButton";
+    treesBlowingButton.onmouseover = function()
+    {
+        hoverSound();
+    }
     treesBlowingButton.onclick = function()
     {
+        clickSound();
+
         if (ge('gifBackground'))
         {
             ge('gifBackground').remove();
@@ -84,8 +95,14 @@ function menuGifs()
     let beachWavesButton = ce("button");
     beachWavesButton.textContent = "Beach Waves";
     beachWavesButton.className = "ourButton";
+    beachWavesButton.onmouseover = function()
+    {
+        hoverSound();
+    }
     beachWavesButton.onclick = function()
     {
+        clickSound();
+
         if (ge('gifBackground'))
         {
             ge('gifBackground').remove();
