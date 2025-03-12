@@ -1,5 +1,26 @@
 // menuGifs.js
 
+let bgGifs = 
+[
+    {
+        name: 'Trees Blowing',
+        theUrl: 'src/media/texture/gif/treesBlowing.gif',
+        theWidth: 400
+    },
+
+    {
+        name: 'Beach Waves',
+        theUrl: 'src/media/texture/gif/beachWaves.gif',
+        theWidth: 400
+    },
+
+    {
+        name: 'Ocean Waves',
+        theUrl: 'src/media/texture/gif/ocean_waves.gif',
+        theWidth: 500
+    }
+];
+
 function menuGifs()
 {
     let theMenuId = "menuGif";
@@ -85,7 +106,7 @@ function menuGifs()
         theImage.style.position = 'absolute';
         theImage.style.left = 300 + 'px';
         theImage.style.top = 0 + 'px';
-        theImage.style.width = 400 + 'px';
+        theImage.style.width = bgGifs[fibn(bgGifs, 'Trees Blowing')].theWidth; + 'px';
         ba(theImage);
 
         makeElementDraggable(theImage);
@@ -115,12 +136,42 @@ function menuGifs()
         theImage.style.position = 'absolute';
         theImage.style.left = 300 + 'px';
         theImage.style.top = 0 + 'px';
-        theImage.style.width = 400 + 'px';
+        theImage.style.width = bgGifs[fibn(bgGifs, 'Beach Waves')].theWidth + 'px';
         ba(theImage);
 
         makeElementDraggable(theImage);
     };
     mainDiv.append(beachWavesButton);
+
+    //-//
+
+    let oceanWavesButton = ce("button");
+    oceanWavesButton.textContent = "Ocean Waves";
+    oceanWavesButton.className = "ourButton";
+    oceanWavesButton.onmouseover = function()
+    {
+        hoverSound();
+    }
+    oceanWavesButton.onclick = function()
+    {
+        clickSound();
+
+        if (ge('gifBackground'))
+        {
+            ge('gifBackground').remove();
+        }
+        let theImage = ce('img');
+        theImage.id = 'gifBackground';
+        theImage.src = bgGifs[fibn(bgGifs, 'Ocean Waves')].theUrl;
+        theImage.style.position = 'absolute';
+        theImage.style.left = 300 + 'px';
+        theImage.style.top = 0 + 'px';
+        theImage.style.width = bgGifs[fibn(bgGifs, 'Ocean Waves')].theWidth + 'px';
+        ba(theImage);
+
+        makeElementDraggable(theImage);
+    };
+    mainDiv.append(oceanWavesButton);
 }
 
 //----//

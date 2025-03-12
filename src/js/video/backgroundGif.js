@@ -1,18 +1,5 @@
 // backgroundGif.js
 
-let bgGifs = 
-[
-    {
-        name: 'Trees Blowing',
-        theUrl: 'src/media/texture/gif/treesBlowing.gif'
-    },
-
-    {
-        name: 'Beach Waves',
-        theUrl: 'src/media/texture/gif/beachWaves.gif'
-    }
-];
-
 function backgroundGif()
 {
     let theImage = ce('img');
