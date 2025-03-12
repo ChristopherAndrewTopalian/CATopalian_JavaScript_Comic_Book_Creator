@@ -702,6 +702,23 @@ function menuMenus()
 
     //-//
 
+    let menuGifsButton = ce("button");
+    menuGifsButton.textContent = "Gif Backgrounds";
+    menuGifsButton.className = "ourButton";
+    menuGifsButton.title = "Gif Background";
+    menuGifsButton.onmouseover = function()
+    {
+        hoverSound();
+    };
+    menuGifsButton.onclick = function()
+    {
+        clickSound();
+        menuGifs();
+    };
+    subDiv.append(menuGifsButton);
+
+    //-//
+
     // set initial height
     ge("menuMenusSubDivId").style.height = 0 + "px";
 }

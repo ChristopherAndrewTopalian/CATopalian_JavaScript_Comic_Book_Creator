@@ -3,17 +3,17 @@
 let bgGifs = 
 [
     {
-        name: 'treesBlowing',
+        name: 'Trees Blowing',
         theUrl: 'src/media/texture/gif/treesBlowing.gif'
     },
 
     {
-        name: 'beachWaves',
+        name: 'Beach Waves',
         theUrl: 'src/media/texture/gif/beachWaves.gif'
     }
 ];
 
-function backgroundGif(whichArray, whichItem)
+function backgroundGif()
 {
     let theImage = ce('img');
     theImage.src = bgGifs[1].theUrl;
