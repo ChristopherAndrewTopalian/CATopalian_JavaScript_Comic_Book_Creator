@@ -24,7 +24,7 @@ function whenLoaded()
 
     bottomMenu();
 
-    makeTextureInfoBox();
+    //makeTextureInfoBox();
 
     menuQuickPrefs();
 
