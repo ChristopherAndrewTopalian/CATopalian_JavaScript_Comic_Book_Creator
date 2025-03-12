@@ -16,8 +16,14 @@ let bgGifs =
 function backgroundGif(whichArray, whichItem)
 {
     let theImage = ce('img');
-    theImage.src = bgGifs[0].theUrl;
+    theImage.src = bgGifs[1].theUrl;
+    theImage.style.position = 'absolute';
+    theImage.style.left = 300 + 'px';
+    theImage.style.top = 0 + 'px';
+    theImage.style.width = 400 + 'px';
     ba(theImage);
+
+    makeElementDraggable(theImage);
 }
 
 //----//
