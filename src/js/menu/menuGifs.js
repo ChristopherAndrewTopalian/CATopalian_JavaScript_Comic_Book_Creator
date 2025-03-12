@@ -78,6 +78,7 @@ function menuGifs()
         {
             ge('gifBackground').remove();
         }
+
         let theImage = ce('img');
         theImage.id = 'gifBackground';
         theImage.src = bgGifs[fibn(bgGifs, 'Trees Blowing')].theUrl;
@@ -86,6 +87,7 @@ function menuGifs()
         theImage.style.top = 0 + 'px';
         theImage.style.width = 400 + 'px';
         ba(theImage);
+
         makeElementDraggable(theImage);
     };
     mainDiv.append(treesBlowingButton);
@@ -114,8 +116,8 @@ function menuGifs()
         theImage.style.left = 300 + 'px';
         theImage.style.top = 0 + 'px';
         theImage.style.width = 400 + 'px';
-
         ba(theImage);
+
         makeElementDraggable(theImage);
     };
     mainDiv.append(beachWavesButton);
