@@ -31,6 +31,8 @@ function whenLoaded()
     // menu for - camera - follow - stay
     //menuSettings();
 
+    menuScenesVertical();
+
     cameraFlag = 'stay';
 
     // menu for - play Movie - stop Movie

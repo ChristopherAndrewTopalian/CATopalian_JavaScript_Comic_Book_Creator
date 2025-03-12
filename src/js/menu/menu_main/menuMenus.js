@@ -1,4 +1,4 @@
-// menuMenus2.js
+// menuMenus.js
 
 function menuMenus()
 {
@@ -495,7 +495,9 @@ function menuMenus()
     menuScenesButton.onclick = function()
     {
         clickSound();
+
         menuScenes(scenes, 'something', 'Scenes', 'sfx_warp_001', 900, 540);
+
         cl("menuScenes");
     };
     subDiv.append(menuScenesButton);

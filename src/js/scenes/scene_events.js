@@ -26,11 +26,6 @@ function sceneEvents(whichArray, x)
         comicBubbleTargetIdArrayOfObjects("ayan1", greetingMessage, 0);
     }
 
-    if (THE_SCENE == "scene_protest_001")
-    {
-        cl('Protest 001');
-    }
-
     if (THE_SCENE == "scene_kitchen_001")
     {
         cl('Kitchen 001');

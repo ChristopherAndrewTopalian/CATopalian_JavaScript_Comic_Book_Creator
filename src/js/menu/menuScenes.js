@@ -69,7 +69,7 @@ function menuScenes(whichArray, whichId, menuName, whichSound, theX, theY)
 
             scene(whichArray[x].obj);
 
-            sceneEvents(whichArray[x].obj, x);
+            sceneEvents(whichArray, x);
 
             // used for menuSelectorGallery
             currentScene = whichArray[x].obj;

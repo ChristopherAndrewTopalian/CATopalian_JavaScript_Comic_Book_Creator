@@ -37,8 +37,6 @@ function menuDropDownScenes(whichArray, whichId, menuName, whichSound, theX, the
         theOption.className = "tags";
         theOption.onclick = function()
         {
-            clickSound();
-
             // playSound(whichSound, 1.0);
 
             scene(whichArray[x].obj);
