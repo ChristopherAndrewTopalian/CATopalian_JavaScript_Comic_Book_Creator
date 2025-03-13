@@ -77,9 +77,9 @@ let scene_kitchen_001  = [
     name: "ayan1",
     texture: "src/media/texture/model/ayan/standing/model_ayan_standing_right.webp",
     theId: "ayan1",
-    sizeX: 144,
-    theX: 214,
-    theY: 361,
+    sizeX: 94,
+    theX: 140,
+    theY: 160,
     flipHorizontal: false,
     flipVertical: false,
     className: "characterStyle",
@@ -102,6 +102,7 @@ let scene_kitchen_001  = [
     */
 },
 
+/*
 // character - ayan1 arm
 {
     type: "webp",
@@ -111,14 +112,13 @@ let scene_kitchen_001  = [
     theId: "ayan1armRight",
     sizeX: 90,
     theX: 215,
-    theY: 471,
+    theY: 100,
     flipHorizontal: false,
     flipVertical: false,
     className: "characterStyle",
     theLayer: 5,
     rotationAmount: -5 + "deg",
 
-    /*
     theBrightness: 1.0,
     theContrast: 1.3,
     theHue: 0,
@@ -131,9 +131,9 @@ let scene_kitchen_001  = [
     theDropShadowY: "10px",
     theDropShadowBlurRadius: "10px",
     theDropShadowColor: "black",
-    */
     animationToTrigger: "animate023()"
 },
+*/
 
 {
     type: "webp",
@@ -141,9 +141,9 @@ let scene_kitchen_001  = [
     name: "maven",
     texture: "src/media/texture/model/maven/full/front.webp",
     theId: "maven",
-    sizeX: 400,
-    theX: 700,
-    theY: 600,
+    sizeX: 100,
+    theX: 540,
+    theY: 175,
     rotationAmount: 0 + "deg",
     theLayer: 4,
     flipHorizontal: false,
