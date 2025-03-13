@@ -38,8 +38,7 @@ function whenLoaded()
     // menu for - play Movie - stop Movie
     //menuPlayMovie();
 
-    // mouse position, bottom left of screen
-    // mousePositionShow();
+    mousePositionShow();
 
     // shows all image info in box on left bottom of screen
     //makeDataArea();
