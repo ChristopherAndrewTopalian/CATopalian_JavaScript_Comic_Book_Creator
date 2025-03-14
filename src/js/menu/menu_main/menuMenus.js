@@ -225,6 +225,23 @@ function menuMenus()
 
     //-//
 
+    let deskButton = ce("button");
+    deskButton.textContent = "DESKS";
+    deskButton.className = "ourButton";
+    deskButton.title = "galleryMaker";
+    deskButton.onmouseover = function()
+    {
+        hoverSound();
+    };
+    deskButton.onclick = function()
+    {
+        clickSound();
+        galleryMaker(everything, "desk");
+    };
+    subDiv.append(deskButton);
+
+    //-//
+
     let hideMouseInfoButton = ce("button");
     hideMouseInfoButton.textContent = "Mouse Info OFF";
     hideMouseInfoButton.className = "ourButton";
