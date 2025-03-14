@@ -29,7 +29,8 @@ let galleryDronesMilitary = [
     theDropShadowY: "10px",
     theDropShadowBlurRadius: "10px",
     theDropShadowColor: "black",
-    info: "Information"
+    info: "Information",
+    rotationAmount: 0 + 'deg'
     // https://en.wikipedia.org/wiki/File:MQ-1C_Warrior_(2005-08-11).jpg
 }
 
