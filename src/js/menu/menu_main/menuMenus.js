@@ -535,24 +535,6 @@ function menuMenus()
 
     //-//
 
-    let menuCharacterTextureButton = ce("button");
-    menuCharacterTextureButton.textContent = "CHARACTER - Texture Change";
-    menuCharacterTextureButton.className = "ourButton";
-    menuCharacterTextureButton.title = "menuCharacterTexture";
-    menuCharacterTextureButton.onmouseover = function()
-    {
-        hoverSound();
-    };
-    menuCharacterTextureButton.onclick = function()
-    {
-        clickSound();
-        menuCharacterTexture(ayan_clothes_blue, 'ayan', 'ayan_clothes_blue', 'ayan1', 'Ayan', 'sfx_warp_001', 700, 0);
-        cl("menuCharacterTexture");
-    };
-    subDiv.append(menuCharacterTextureButton);
-
-    //-//
-
     let menuScenesButton = ce("button");
     menuScenesButton.textContent = "SCENES";
     menuScenesButton.className = "ourButton";
@@ -754,7 +736,7 @@ function menuMenus()
     //-//
 
     let makeInputContainerButton = ce("button");
-    makeInputContainerButton.textContent = "makeInputContainer";
+    makeInputContainerButton.textContent = "File Chooser";
     makeInputContainerButton.className = "ourButton";
     makeInputContainerButton.title = "makeInputContainer";
     makeInputContainerButton.onmouseover = function()
