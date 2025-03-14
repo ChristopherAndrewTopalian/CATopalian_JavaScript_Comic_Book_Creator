@@ -110,8 +110,12 @@ function makeCharacterGalleryChooser(whichX, whichY, whichId) {
                     theChoice.style.top = 100 + 'px';
                     theChoice.style.zIndex = 500000;
                     theChoice.style.width = 200 + 'px';
-                    theChoice.oncontextmenu = function () {
+
+                    theChoice.oncontextmenu = function()
+                    {
                         idToMove = theChoice.id;
+
+                        //setMenuOptionsValuesOnRightClick(theChoice.id);
 
                         menuOptions(theChoice.id);
                     }

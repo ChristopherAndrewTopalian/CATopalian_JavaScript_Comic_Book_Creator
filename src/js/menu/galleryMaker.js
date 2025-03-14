@@ -140,7 +140,9 @@ function galleryMaker(whichArray, whichCategory)
 
                         menuAnimationsArrayOfObjectsHere(animationsArrayOfObjects, "animation");
 
-                        setMenuOptionsValues(whichArray, x);
+                        setMenuOptionsValuesOnRightClick(theCreatedPerson.id);
+
+                        //setMenuOptionsValues(whichArray, x);
                     };
                     ba(theCreatedPerson);
 
