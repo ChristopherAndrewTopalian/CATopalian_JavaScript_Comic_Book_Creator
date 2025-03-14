@@ -10,6 +10,7 @@ let galleryBody = [
     posY: "20",
     rotationAmount: 0 + "deg",
     theLayer: 5,
+    theOpacity: 1,
     flipHorizontal: false,
     flipVertical: false,
     className: "characterStyle",

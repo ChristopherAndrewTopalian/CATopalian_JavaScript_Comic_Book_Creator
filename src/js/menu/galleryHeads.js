@@ -11,6 +11,7 @@ let galleryHeads = [
     theY: 0,
     type: "webp",
     theLayer: 5,
+    theOpacity: 1,
     flipHorizontal: false,
     flipVertical: false,
     className: "characterStyle",
