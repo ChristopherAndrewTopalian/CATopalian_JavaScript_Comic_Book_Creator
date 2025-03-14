@@ -225,6 +225,23 @@ function menuMenus()
 
     //-//
 
+    let humveeButton = ce("button");
+    humveeButton.textContent = "HUMVEE";
+    humveeButton.className = "ourButton";
+    humveeButton.title = "galleryMaker";
+    humveeButton.onmouseover = function()
+    {
+        hoverSound();
+    };
+    humveeButton.onclick = function()
+    {
+        clickSound();
+        galleryMaker(galleryHumvees, "humvee");
+    };
+    subDiv.append(humveeButton);
+
+    //-//
+
     let militaryMalesButton = ce("button");
     militaryMalesButton.textContent = "MILITARY_MALES";
     militaryMalesButton.className = "ourButton";
