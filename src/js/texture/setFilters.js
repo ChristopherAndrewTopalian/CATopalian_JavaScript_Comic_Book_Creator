@@ -1,43 +1,41 @@
-// contrastSlider.js
+// setFilters.js
 
 function setFilters(whichId)
 {
     let theDeg = 'deg';
     let thePx = 'px';
-    let dropShadowColor = 'rgb(0, 0, 0)';
+
+    let dropShadowOpacity = ge("dropShadowOpacityInput").value;
+    let dropShadowColor = 'rgba(0, 0, 0, ' + dropShadowOpacity + ')';
 
     let contrast = ge("contrastInput").value;
-
     let brightness = ge("brightnessInput").value;
-
     let hue = ge("hueInput").value;
-
     let saturation = ge("saturationInput").value;
-
     let grayScale = ge("grayScaleInput").value;
-
     let blur = ge("blurInput").value;
-
     let invert = ge("invertInput").value;
-
     let sepia = ge("sepiaInput").value;
 
     let dropShadowX = ge("dropShadowXSlider").value;
-
     let dropShadowY = ge("dropShadowYSlider").value;
-
     let dropShadowBlurRadius = ge("dropShadowBlurRadiusSlider").value;
 
-    //ge(whichId).style.filter = "contrast("+theContrastValue+") brightness("+brightness+")";
-    //ge(whichId).style.filter = theFilters;
+    let theFilters = "contrast(" + contrast + ") " + 
+    "brightness(" + brightness + ") " + 
+    "saturate(" + saturation + ") " + 
+    "grayscale(" + grayScale + ") " + 
+    "hue-rotate(" + hue + "" + theDeg + ") " + 
+    "invert(" + invert + ") " + 
+    "blur(" + blur + "" + thePx + ") " + 
+    "sepia(" + sepia + ") " + 
+    "drop-shadow(" + dropShadowX + "" + thePx + " " + 
+    dropShadowY + "" + thePx + " " + 
+    dropShadowBlurRadius + "" + thePx + " " + 
+    dropShadowColor + ")";
 
-    let theFilters = ge(whichId).style.filter = "contrast("+contrast+") brightness("+brightness+") saturate("+saturation+") grayscale("+grayScale+") hue-rotate("+hue+""+theDeg+") invert("+invert+") blur("+blur+""+thePx+") sepia("+sepia+") drop-shadow("+dropShadowX+""+thePx+" "+dropShadowY+""+thePx+" "+dropShadowBlurRadius+""+thePx+" "+dropShadowColor+")";
-
+    // apply the filters to the element
     ge(whichId).style.filter = theFilters;
-
-    // ge("contrastInput").value = contrast;
-
-    //ge(whichId).style.filter = "contrast("+theValue+")";
 }
 
 //----//

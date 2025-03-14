@@ -137,7 +137,7 @@ function menuMenus()
     //-//
 
     let humveeButton = ce("button");
-    humveeButton.textContent = "HUMVEE";
+    humveeButton.textContent = "HUMVEES";
     humveeButton.className = "ourButton";
     humveeButton.title = "galleryMaker";
     humveeButton.onmouseover = function()

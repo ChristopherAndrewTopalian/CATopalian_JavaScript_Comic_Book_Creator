@@ -1146,12 +1146,60 @@ function menuOptions(whichId)
     {
         inputSound();
 
-        // update the dropShadowBlurRadiusInput
         ge('dropShadowBlurRadiusInput').value = dropShadowBlurRadiusSlider.value;
 
         setFilters(whichId);
     };
     thePanel.append(dropShadowBlurRadiusSlider);
+
+    //-//
+
+    thePanel.append(ce('hr'));
+
+    //-//
+
+    let dropShadowOpacityLabel = ce('div');
+    dropShadowOpacityLabel.textContent = 'Drop Shadow Opacity';
+    thePanel.append(dropShadowOpacityLabel);
+
+    //-//
+
+    let dropShadowOpacityInput = ce('input');
+    dropShadowOpacityInput.id = 'dropShadowOpacityInput';
+    dropShadowOpacityInput.type = 'number';
+    dropShadowOpacityInput.className = 'textAreaMenuOptionsStyle';
+    dropShadowOpacityInput.min = 0;
+    dropShadowOpacityInput.max = 1;
+    dropShadowOpacityInput.step = 0.01;
+    dropShadowOpacityInput.value = 0.5; // default opacity value
+    dropShadowOpacityInput.oninput = function()
+    {
+        inputSound();
+
+        ge('dropShadowOpacitySlider').value = dropShadowOpacityInput.value;
+
+        setFilters(whichId);
+    };
+    thePanel.append(dropShadowOpacityInput);
+
+    //-//
+
+    let dropShadowOpacitySlider = ce('input');
+    dropShadowOpacitySlider.id = 'dropShadowOpacitySlider';
+    dropShadowOpacitySlider.type = 'range';
+    dropShadowOpacitySlider.min = 0;
+    dropShadowOpacitySlider.max = 1;
+    dropShadowOpacitySlider.step = 0.01;
+    dropShadowOpacitySlider.value = 0.5; // default opacity value
+    dropShadowOpacitySlider.oninput = function()
+    {
+        inputSound();
+
+        ge('dropShadowOpacityInput').value = dropShadowOpacitySlider.value;
+
+        setFilters(whichId);
+    };
+    thePanel.append(dropShadowOpacitySlider);
 
     //-//
 
