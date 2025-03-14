@@ -258,6 +258,38 @@ let galleryDronesMilitary = [
     rotationAmount: 0 + 'deg'
 },
 
+{
+    name: "drone_008",
+    texture: "src/media/texture/prop/drones/military/drone_008.webp",
+    theId: "drone_008",
+    sizeX: "300",
+    posX: "0", 
+    posY: "20",
+    theOpacity: 1,
+    type: "webp",
+    category: "drone_military",
+    realName: "drone_008",
+    theLayer: 5,
+    flipHorizontal: false,
+    flipVertical: false,
+    className: "characterStyle",
+    rotationAmount: 0 + "deg",
+    theBrightness: 1.0,
+    theContrast: 1.3,
+    theHue: 0,
+    theSaturation: 1.0,
+    theBlur: 0,
+    theInvert: 0,
+    theGrayscale: 0,
+    theSepia: 0,
+    theDropShadowX: "10px",
+    theDropShadowY: "10px",
+    theDropShadowBlurRadius: "10px",
+    theDropShadowColor: "black",
+    info: "Information",
+    rotationAmount: 0 + 'deg'
+},
+
 ];
 
 //----//
