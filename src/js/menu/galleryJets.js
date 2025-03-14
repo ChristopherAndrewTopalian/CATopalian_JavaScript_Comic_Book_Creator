@@ -184,6 +184,36 @@ let galleryJets =
     theDropShadowColor: "black",
 },
 
+{
+    name: "jet_004",
+    texture: "src/media/texture/prop/jet/jet_004.webp",
+    theId: "jet_004",
+    category: "jet",
+    country: "Unknown",
+    sizeX: 256,
+    posX: 0,
+    posY: 20,
+    type: "webp",
+    theLayer: 5,
+    theOpacity: 1,
+    flipHorizontal: false,
+    flipVertical: false,
+    className: "propStyle",
+    rotationAmount: 0 + "deg",
+    theBrightness: 1.0,
+    theContrast: 1.3,
+    theHue: 0,
+    theSaturation: 1.0,
+    theBlur: 0,
+    theInvert: 0,
+    theGrayscale: 0,
+    theSepia: 0,
+    theDropShadowX: "10px",
+    theDropShadowY: "10px",
+    theDropShadowBlurRadius: "10px",
+    theDropShadowColor: "black",
+},
+
 ];
 
 //----//
