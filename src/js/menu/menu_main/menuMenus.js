@@ -259,6 +259,23 @@ function menuMenus()
 
     //-//
 
+    let tablesButton = ce("button");
+    tablesButton.textContent = "TABLES";
+    tablesButton.className = "ourButton";
+    tablesButton.title = "galleryMaker";
+    tablesButton.onmouseover = function()
+    {
+        hoverSound();
+    };
+    tablesButton.onclick = function()
+    {
+        clickSound();
+        galleryMaker(everything, "table");
+    };
+    subDiv.append(tablesButton);
+
+    //-//
+
     let hideMouseInfoButton = ce("button");
     hideMouseInfoButton.textContent = "Mouse Info OFF";
     hideMouseInfoButton.className = "ourButton";
