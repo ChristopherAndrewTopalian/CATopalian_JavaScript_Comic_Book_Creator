@@ -242,23 +242,6 @@ function menuMenus()
 
     //-//
 
-    let peopleButton = ce("button");
-    peopleButton.textContent = "PEOPLE";
-    peopleButton.className = "ourButton";
-    peopleButton.title = "galleryMaker";
-    peopleButton.onmouseover = function()
-    {
-        hoverSound();
-    };
-    peopleButton.onclick = function()
-    {
-        clickSound();
-        galleryMaker(everything, "person");
-    };
-    subDiv.append(peopleButton);
-
-    //-//
-
     let tablesButton = ce("button");
     tablesButton.textContent = "TABLES";
     tablesButton.className = "ourButton";
@@ -273,6 +256,23 @@ function menuMenus()
         galleryMaker(everything, "table");
     };
     subDiv.append(tablesButton);
+
+    //-//
+
+    let peopleButton = ce("button");
+    peopleButton.textContent = "PEOPLE";
+    peopleButton.className = "ourButton";
+    peopleButton.title = "galleryMaker";
+    peopleButton.onmouseover = function()
+    {
+        hoverSound();
+    };
+    peopleButton.onclick = function()
+    {
+        clickSound();
+        galleryMaker(everything, "person");
+    };
+    subDiv.append(peopleButton);
 
     //-//
 
