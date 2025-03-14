@@ -242,6 +242,23 @@ function menuMenus()
 
     //-//
 
+    let peopleButton = ce("button");
+    peopleButton.textContent = "PEOPLE";
+    peopleButton.className = "ourButton";
+    peopleButton.title = "galleryMaker";
+    peopleButton.onmouseover = function()
+    {
+        hoverSound();
+    };
+    peopleButton.onclick = function()
+    {
+        clickSound();
+        galleryMaker(everything, "person");
+    };
+    subDiv.append(peopleButton);
+
+    //-//
+
     let hideMouseInfoButton = ce("button");
     hideMouseInfoButton.textContent = "Mouse Info OFF";
     hideMouseInfoButton.className = "ourButton";
