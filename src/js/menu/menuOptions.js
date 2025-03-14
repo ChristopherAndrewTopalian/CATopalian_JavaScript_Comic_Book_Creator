@@ -105,6 +105,7 @@ function menuOptions(whichId)
     zIndexInput.type = 'number';
     zIndexInput.id = 'zIndexInput';
     zIndexInput.className = 'textAreaMenuOptionsStyle';
+    zIndexInput.style.width = 150 + 'px';
     zIndexInput.onkeyup = function()
     {
         ge(whichId).style.zIndex = zIndexInput.value;
@@ -123,6 +124,183 @@ function menuOptions(whichId)
 
     //-//
 
+    thePanel.append(ce('hr'));
+
+    //-//
+
+    let sizeOutputDiv = ce('div');
+    sizeOutputDiv.textContent = 'Size';
+    thePanel.append(sizeOutputDiv);
+
+    //-//
+
+    let sizeInput = ce('input');
+    sizeInput.type = 'number';
+    sizeInput.id = 'sizeInput';
+    sizeInput.className = 'textAreaMenuOptionsStyle';
+    sizeInput.onmouseover = function()
+    {
+        hoverSound();
+    };
+    sizeInput.oninput = function()
+    {
+        inputSound();
+
+        // size element
+        ge(whichId).style.width = sizeInput.value;
+
+        // update sizeSlider
+        ge('sizeSlider').value = sizeInput.value;
+    };
+    thePanel.append(sizeInput);
+
+    //-//
+
+    let sizeSlider = ce('input');
+    sizeSlider.type = 'range';
+    sizeSlider.id = 'sizeSlider';
+    sizeSlider.min = 0;
+    sizeSlider.max = 2000;
+    sizeSlider.onmouseover = function()
+    {
+        hoverSound();
+    };
+    sizeSlider.oninput = function()
+    {
+        inputSound();
+
+        // size element
+        ge(whichId).style.width = ge('sizeSlider').value;
+
+        // update sizeInput
+        ge('sizeInput').value = sizeSlider.value;
+    };
+    sizeSlider.onmousedown = function()
+    {
+        ge(menuId).style.opacity = 0.5;
+    };
+    sizeSlider.onmouseup = function()
+    {
+        ge(menuId).style.opacity = 1.0;
+    };
+    thePanel.append(sizeSlider);
+
+    //-//
+
+    thePanel.append(ce('hr'));
+
+    //-//
+
+    let posXLabel = ce('div');
+    posXLabel.textContent = 'PosX';
+    thePanel.append(posXLabel);
+
+    //-//
+
+    let posXInput = ce('input');
+    posXInput.type = 'number';
+    posXInput.id = 'posXInput';
+    posXInput.className = 'textAreaMenuOptionsStyle';
+    posXInput.onmouseover = function()
+    {
+        hoverSound();
+    };
+    posXInput.oninput = function()
+    {
+        inputSound();
+
+        // position element
+        ge(whichId).style.left = posXInput.value;
+
+        // update posXSlider
+        ge('posXSlider').value = posXInput.value;
+    };
+    thePanel.append(posXInput);
+
+    //-//
+
+    let posXSlider = ce('input');
+    posXSlider.type = 'range';
+    posXSlider.id = 'posXSlider';
+    posXSlider.min = -500;
+    posXSlider.max = 500;
+    posXSlider.onmouseover = function()
+    {
+        hoverSound();
+    };
+    posXSlider.oninput = function()
+    {
+        inputSound();
+
+        // position element
+        ge(whichId).style.left = posXSlider.value;
+
+        // update posXInput
+        ge('posXInput').value = posXSlider.value;
+    };
+    thePanel.append(posXSlider);
+
+    //-//
+
+    thePanel.append(ce('hr'));
+
+    //-//
+
+    let posYLabel = ce('div');
+    posYLabel.textContent = 'Pos Y';
+    thePanel.append(posYLabel);
+
+    //-//
+
+    let posYInput = ce('input');
+    posYInput.type = 'number';
+    posYInput.id = 'posYInput';
+    posYInput.className = 'textAreaMenuOptionsStyle';
+    posYInput.onmouseover = function()
+    {
+        hoverSound();
+    };
+    posYInput.oninput = function()
+    {
+        inputSound();
+
+        // position element
+        ge(whichId).style.top = posYInput.value;
+
+        // update posYSlider
+        ge('posYSlider').value = posYInput.value;
+    };
+    thePanel.append(posYInput);
+
+    //-//
+
+    let posYSlider = ce('input');
+    posYSlider.id = 'posYSlider';
+    posYSlider.type = 'range';
+    posYSlider.min = -500;
+    posYSlider.max = 500;
+    posYSlider.onmouseover = function()
+    {
+        inputSound();
+    };
+    posYSlider.oninput = function()
+    {
+        inputSound();
+
+        // position element
+        ge(whichId).style.top = posYSlider.value;
+
+        // update posYInput
+        ge('posYInput').value = posYSlider.value;
+    };
+    thePanel.append(posYSlider);
+
+    //-//
+
+    thePanel.append(ce('hr'));
+
+    //-//
+
     let rotationLabel = ce('div');
     rotationLabel.textContent = 'Rotation';
     thePanel.append(rotationLabel);
@@ -133,6 +311,7 @@ function menuOptions(whichId)
     rotationInput.type = 'number';
     rotationInput.id = 'rotationInput';
     rotationInput.className = 'textAreaMenuOptionsStyle';
+    rotationInput.style.width = 100 + 'px';
     rotationInput.onmouseover = function()
     {
         hoverSound();
@@ -362,183 +541,6 @@ function menuOptions(whichId)
     };
     flipBRButton.className = 'ourButton';
     thePanel.append(flipBRButton);
-
-    //-//
-
-    thePanel.append(ce('hr'));
-
-    //-//
-
-    let sizeOutputDiv = ce('div');
-    sizeOutputDiv.textContent = 'Size';
-    thePanel.append(sizeOutputDiv);
-
-    //-//
-
-    let sizeInput = ce('input');
-    sizeInput.type = 'number';
-    sizeInput.id = 'sizeInput';
-    sizeInput.className = 'textAreaMenuOptionsStyle';
-    sizeInput.onmouseover = function()
-    {
-        hoverSound();
-    };
-    sizeInput.oninput = function()
-    {
-        inputSound();
-
-        // size element
-        ge(whichId).style.width = sizeInput.value;
-
-        // update sizeSlider
-        ge('sizeSlider').value = sizeInput.value;
-    };
-    thePanel.append(sizeInput);
-
-    //-//
-
-    let sizeSlider = ce('input');
-    sizeSlider.type = 'range';
-    sizeSlider.id = 'sizeSlider';
-    sizeSlider.min = 0;
-    sizeSlider.max = 2000;
-    sizeSlider.onmouseover = function()
-    {
-        hoverSound();
-    };
-    sizeSlider.oninput = function()
-    {
-        inputSound();
-
-        // size element
-        ge(whichId).style.width = ge('sizeSlider').value;
-
-        // update sizeInput
-        ge('sizeInput').value = sizeSlider.value;
-    };
-    sizeSlider.onmousedown = function()
-    {
-        ge(menuId).style.opacity = 0.5;
-    };
-    sizeSlider.onmouseup = function()
-    {
-        ge(menuId).style.opacity = 1.0;
-    };
-    thePanel.append(sizeSlider);
-
-    //-//
-
-    thePanel.append(ce('hr'));
-
-    //-//
-
-    let posXLabel = ce('div');
-    posXLabel.textContent = 'PosX';
-    thePanel.append(posXLabel);
-
-    //-//
-
-    let posXInput = ce('input');
-    posXInput.type = 'number';
-    posXInput.id = 'posXInput';
-    posXInput.className = 'textAreaMenuOptionsStyle';
-    posXInput.onmouseover = function()
-    {
-        hoverSound();
-    };
-    posXInput.oninput = function()
-    {
-        inputSound();
-
-        // position element
-        ge(whichId).style.left = posXInput.value;
-
-        // update posXSlider
-        ge('posXSlider').value = posXInput.value;
-    };
-    thePanel.append(posXInput);
-
-    //-//
-
-    let posXSlider = ce('input');
-    posXSlider.type = 'range';
-    posXSlider.id = 'posXSlider';
-    posXSlider.min = -500;
-    posXSlider.max = 500;
-    posXSlider.onmouseover = function()
-    {
-        hoverSound();
-    };
-    posXSlider.oninput = function()
-    {
-        inputSound();
-
-        // position element
-        ge(whichId).style.left = posXSlider.value;
-
-        // update posXInput
-        ge('posXInput').value = posXSlider.value;
-    };
-    thePanel.append(posXSlider);
-
-    //-//
-
-    thePanel.append(ce('hr'));
-
-    //-//
-
-    let posYLabel = ce('div');
-    posYLabel.textContent = 'Pos Y';
-    thePanel.append(posYLabel);
-
-    //-//
-
-    let posYInput = ce('input');
-    posYInput.type = 'number';
-    posYInput.id = 'posYInput';
-    posYInput.className = 'textAreaMenuOptionsStyle';
-    posYInput.onmouseover = function()
-    {
-        hoverSound();
-    };
-    posYInput.oninput = function()
-    {
-        inputSound();
-
-        // position element
-        ge(whichId).style.top = posYInput.value;
-
-        // update posYSlider
-        ge('posYSlider').value = posYInput.value;
-    };
-    thePanel.append(posYInput);
-
-    //-//
-
-    let posYSlider = ce('input');
-    posYSlider.id = 'posYSlider';
-    posYSlider.type = 'range';
-    posYSlider.min = -500;
-    posYSlider.max = 500;
-    posYSlider.onmouseover = function()
-    {
-        inputSound();
-    };
-    posYSlider.oninput = function()
-    {
-        inputSound();
-
-        // position element
-        ge(whichId).style.top = posYSlider.value;
-
-        // update posYInput
-        ge('posYInput').value = posYSlider.value;
-    };
-    thePanel.append(posYSlider);
-
-    //-//
-
-    thePanel.append(ce('hr'));
 
     //-//
 
