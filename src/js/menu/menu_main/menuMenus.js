@@ -236,7 +236,8 @@ function menuMenus()
     militaryMalesButton.onclick = function()
     {
         clickSound();
-        galleryMaker(everything, "military_males");
+        // we can use the specific gallery instead of using the everything array
+        galleryMaker(galleryMilitaryMales, "military_males");
     };
     subDiv.append(militaryMalesButton);
 
