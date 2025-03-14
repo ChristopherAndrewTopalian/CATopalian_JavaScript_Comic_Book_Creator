@@ -153,6 +153,23 @@ function menuMenus()
 
     //-//
 
+    let jeepsButton = ce("button");
+    jeepsButton.textContent = "JEEPS";
+    jeepsButton.className = "ourButton";
+    jeepsButton.title = "galleryMaker";
+    jeepsButton.onmouseover = function()
+    {
+        hoverSound();
+    };
+    jeepsButton.onclick = function()
+    {
+        clickSound();
+        galleryMaker(galleryJeeps, "jeep");
+    };
+    subDiv.append(jeepsButton);
+
+    //-//
+
     let militaryMalesButton = ce("button");
     militaryMalesButton.textContent = "MILITARY_MALES";
     militaryMalesButton.className = "ourButton";

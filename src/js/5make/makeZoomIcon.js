@@ -42,6 +42,8 @@ function makeZoomIcon()
     };
 
     ba(theZoomIcon);
+
+    makeElementDraggable(theZoomIcon);
 }
 
 //----//
