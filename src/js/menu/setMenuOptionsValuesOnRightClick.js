@@ -38,10 +38,9 @@ function setMenuOptionsValuesOnRightClick(whichId)
     ge("opacitySlider").value = window.getComputedStyle(ge(whichId)).getPropertyValue('opacity');
 
     // contrast textarea value
-    ge("contrastInput").value = 2;
+    //ge("contrastInput").value = window.getComputedStyle(ge(whichId)).getPropertyValue('contrast');
 
-
-    ge("contrastSlider").value = window.getComputedStyle(ge(whichId)).getPropertyValue('contrast');
+    //ge("contrastSlider").value = window.getComputedStyle(ge(whichId)).getPropertyValue('contrast');
 
     //ge("contrastInput").value = whichArray[x].theContrast;
 

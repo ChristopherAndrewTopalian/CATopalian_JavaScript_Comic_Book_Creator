@@ -21,12 +21,9 @@ function setFilters(whichId)
     let dropShadowY = ge("dropShadowYSlider").value;
     let dropShadowBlurRadius = ge("dropShadowBlurRadiusSlider").value;
 
-    let theFilters = "contrast(" + contrast + ") " + 
-    "brightness(" + brightness + ") " + 
-    "saturate(" + saturation + ") " + 
+    let theFilters = "contrast(" + contrast + ") " + "brightness(" + brightness + ") " + "saturate(" + saturation + ") " + 
     "grayscale(" + grayScale + ") " + 
-    "hue-rotate(" + hue + "" + theDeg + ") " + 
-    "invert(" + invert + ") " + 
+    "hue-rotate(" + hue + "" + theDeg + ") " + "invert(" + invert + ") " + 
     "blur(" + blur + "" + thePx + ") " + 
     "sepia(" + sepia + ") " + 
     "drop-shadow(" + dropShadowX + "" + thePx + " " + 

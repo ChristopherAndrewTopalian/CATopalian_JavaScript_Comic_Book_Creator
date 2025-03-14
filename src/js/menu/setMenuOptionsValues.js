@@ -71,9 +71,9 @@ function setMenuOptionsValues(whichArray, x)
     //-//
 
     // contrast textarea value
-    if (ge('contrastTextarea'))
+    if (ge('contrastInput'))
     {
-        ge("contrastTextarea").value = whichArray[x].theContrast;
+        ge("contrastInput").value = whichArray[x].theContrast;
     }
 
     // contrast slider value
@@ -85,9 +85,9 @@ function setMenuOptionsValues(whichArray, x)
     //-//
 
     // brightness textarea value
-    if (ge('brightnessTextarea'))
+    if (ge('brightnessInput'))
     {
-        ge("brightnessTextarea").value = whichArray[x].theBrightness;
+        ge("brightnessInput").value = whichArray[x].theBrightness;
     }
 
     // brightness slider value
@@ -99,9 +99,9 @@ function setMenuOptionsValues(whichArray, x)
     //-//
 
     // hue textarea value
-    if (ge('hueSetTextarea'))
+    if (ge('hueSetInput'))
     {
-        ge("hueSetTextarea").value = whichArray[x].theHue;
+        ge("hueSetInput").value = whichArray[x].theHue;
     }
 
     // hue slider value
@@ -113,9 +113,9 @@ function setMenuOptionsValues(whichArray, x)
     //-//
 
     // saturate textarea value
-    if (ge('saturateTextarea'))
+    if (ge('saturateInput'))
     {
-        ge("saturateTextarea").value = whichArray[x].theSaturation;
+        ge("saturateInput").value = whichArray[x].theSaturation;
     }
 
     // saturate slider value
@@ -127,9 +127,9 @@ function setMenuOptionsValues(whichArray, x)
     //-//
 
     // grayscale textarea value
-    if (ge('grayScaleTextarea'))
+    if (ge('grayScaleInput'))
     {
-        ge("grayScaleTextarea").value = whichArray[x].theGrayscale;
+        ge("grayScaleInput").value = whichArray[x].theGrayscale;
     }
 
     // grayscale slider value
@@ -141,9 +141,9 @@ function setMenuOptionsValues(whichArray, x)
     //-//
 
     // invert textarea value
-    if (ge('invertTextarea'))
+    if (ge('invertInput'))
     {
-        ge("invertTextarea").value = whichArray[x].theInvert;
+        ge("invertInput").value = whichArray[x].theInvert;
     }
 
     // invert slider value
@@ -155,9 +155,9 @@ function setMenuOptionsValues(whichArray, x)
     //-//
 
     // blur textarea value
-    if (ge('blurTextarea'))
+    if (ge('blurInput'))
     {
-        ge("blurTextarea").value = whichArray[x].theBlur;
+        ge("blurInput").value = whichArray[x].theBlur;
     }
 
     // blur slider value
@@ -169,9 +169,9 @@ function setMenuOptionsValues(whichArray, x)
     //-//
 
     // sepia textarea value
-    if (ge('sepiaTextarea'))
+    if (ge('sepiaInput'))
     {
-        ge("sepiaTextarea").value = whichArray[x].theSepia;
+        ge("sepiaInput").value = whichArray[x].theSepia;
     }
 
     // sepia slider value
