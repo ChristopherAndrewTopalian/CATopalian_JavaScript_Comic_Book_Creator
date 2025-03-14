@@ -243,6 +243,23 @@ function menuMenus()
 
     //-//
 
+    let yachtsButton = ce("button");
+    yachtsButton.textContent = "YACHTS";
+    yachtsButton.className = "ourButton";
+    yachtsButton.title = "galleryMaker";
+    yachtsButton.onmouseover = function()
+    {
+        hoverSound();
+    };
+    yachtsButton.onclick = function()
+    {
+        clickSound();
+        galleryMaker(galleryYachts, "yacht");
+    };
+    subDiv.append(yachtsButton);
+
+    //-//
+
     let deskButton = ce("button");
     deskButton.textContent = "DESKS";
     deskButton.className = "ourButton";
