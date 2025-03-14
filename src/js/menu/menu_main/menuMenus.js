@@ -225,6 +225,23 @@ function menuMenus()
 
     //-//
 
+    let militaryMalesButton = ce("button");
+    militaryMalesButton.textContent = "MILITARY_MALES";
+    militaryMalesButton.className = "ourButton";
+    militaryMalesButton.title = "galleryMaker";
+    militaryMalesButton.onmouseover = function()
+    {
+        hoverSound();
+    };
+    militaryMalesButton.onclick = function()
+    {
+        clickSound();
+        galleryMaker(everything, "military_males");
+    };
+    subDiv.append(militaryMalesButton);
+
+    //-//
+
     let deskButton = ce("button");
     deskButton.textContent = "DESKS";
     deskButton.className = "ourButton";
