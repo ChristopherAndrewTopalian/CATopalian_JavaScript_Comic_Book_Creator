@@ -64,95 +64,6 @@ function menuMenus()
 
     //-//
 
-    let selectorButton = ce("button");
-    selectorButton.textContent = "SELECTOR";
-    selectorButton.className = "ourButton";
-    selectorButton.title = "makeButtonsForEachCharacter";
-    selectorButton.onmouseover = function()
-    {
-        hoverSound();
-    };
-    selectorButton.onclick = function()
-    {
-        clickSound();
-        makeButtonsForEachCharacter();
-    };
-    subDiv.append(selectorButton);
-
-    //-//
-
-    let charactersButton = ce("button");
-    charactersButton.textContent = "CHARACTERS";
-    charactersButton.className = "ourButton";
-    charactersButton.title = "galleryMaker";
-    charactersButton.onmouseover = function()
-    {
-        hoverSound();
-    };
-    charactersButton.onclick = function()
-    {
-        clickSound();
-        galleryMaker(everything, "character");
-        cl("galleryMaker");
-    };
-    subDiv.append(charactersButton);
-
-    //-//
-
-    let headButton = ce("button");
-    headButton.textContent = "HEAD";
-    headButton.className = "ourButton";
-    headButton.title = "galleryMaker";
-    headButton.onmouseover = function()
-    {
-        hoverSound();
-    };
-    headButton.onclick = function()
-    {
-        clickSound();
-        galleryMaker(everything, "head");
-        cl("galleryMaker");
-    };
-    subDiv.append(headButton);
-
-    //-//
-
-    let bodyButton = ce("button");
-    bodyButton.textContent = "BODY";
-    bodyButton.className = "ourButton";
-    bodyButton.title = "galleryMaker";
-    bodyButton.onmouseover = function()
-    {
-        hoverSound();
-    };
-    bodyButton.onclick = function()
-    {
-        clickSound();
-        galleryMaker(everything, "body");
-        cl("galleryMaker");
-    };
-    subDiv.append(bodyButton);
-
-    //-//
-
-    let propsButton = ce("button");
-    propsButton.textContent = "PROPS";
-    propsButton.className = "ourButton";
-    propsButton.title = "galleryMaker";
-    propsButton.onmouseover = function()
-    {
-        hoverSound();
-    };
-    propsButton.onclick = function()
-    {
-        clickSound();
-        galleryMaker(everything, "props");
-        cl("galleryMaker");
-    };
-    subDiv.append(propsButton);
-
-    //-//
-
     let jetsButton = ce("button");
     jetsButton.textContent = "JETS";
     jetsButton.className = "ourButton";
@@ -325,6 +236,78 @@ function menuMenus()
         galleryMaker(everything, "person");
     };
     subDiv.append(peopleButton);
+
+    //-//
+
+    let charactersButton = ce("button");
+    charactersButton.textContent = "CHARACTERS";
+    charactersButton.className = "ourButton";
+    charactersButton.title = "galleryMaker";
+    charactersButton.onmouseover = function()
+    {
+        hoverSound();
+    };
+    charactersButton.onclick = function()
+    {
+        clickSound();
+        galleryMaker(everything, "character");
+        cl("galleryMaker");
+    };
+    subDiv.append(charactersButton);
+
+    //-//
+
+    let headButton = ce("button");
+    headButton.textContent = "HEAD";
+    headButton.className = "ourButton";
+    headButton.title = "galleryMaker";
+    headButton.onmouseover = function()
+    {
+        hoverSound();
+    };
+    headButton.onclick = function()
+    {
+        clickSound();
+        galleryMaker(everything, "head");
+        cl("galleryMaker");
+    };
+    subDiv.append(headButton);
+
+    //-//
+
+    let bodyButton = ce("button");
+    bodyButton.textContent = "BODY";
+    bodyButton.className = "ourButton";
+    bodyButton.title = "galleryMaker";
+    bodyButton.onmouseover = function()
+    {
+        hoverSound();
+    };
+    bodyButton.onclick = function()
+    {
+        clickSound();
+        galleryMaker(everything, "body");
+        cl("galleryMaker");
+    };
+    subDiv.append(bodyButton);
+
+    //-//
+
+    let propsButton = ce("button");
+    propsButton.textContent = "PROPS";
+    propsButton.className = "ourButton";
+    propsButton.title = "galleryMaker";
+    propsButton.onmouseover = function()
+    {
+        hoverSound();
+    };
+    propsButton.onclick = function()
+    {
+        clickSound();
+        galleryMaker(everything, "props");
+        cl("galleryMaker");
+    };
+    subDiv.append(propsButton);
 
     //-//
 
@@ -801,6 +784,23 @@ function menuMenus()
         menuGifs();
     };
     subDiv.append(menuGifsButton);
+
+    //-//
+
+    let selectorButton = ce("button");
+    selectorButton.textContent = "SELECTOR";
+    selectorButton.className = "ourButton";
+    selectorButton.title = "makeButtonsForEachCharacter";
+    selectorButton.onmouseover = function()
+    {
+        hoverSound();
+    };
+    selectorButton.onclick = function()
+    {
+        clickSound();
+        makeButtonsForEachCharacter();
+    };
+    subDiv.append(selectorButton);
 
     //-//
 
