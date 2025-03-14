@@ -129,20 +129,6 @@ function galleryMaker(whichArray, whichCategory)
 
                     setMenuOptionsValues(whichArray, x);
 
-                    // layer value to menu
-                    ge('zIndexInput').value = whichArray[x].theLayer;
-
-                    // rotation value to menu, get rid of 'deg'
-                    ge('rotationInput').value = whichArray[x].rotationAmount.replace('deg', '');
-
-                    ge('sizeInput').value = whichArray[x].sizeX;
-
-                    ge('posXInput').value = whichArray[x].posX;
-
-                    ge('posYInput').value = whichArray[x].posY;
-
-                    ge('opacityInput').value = whichArray[x].theOpacity;
-
                     idToMove = theCreatedPerson.id;
 
                     // when right clicked

@@ -2,10 +2,16 @@
 
 function setMenuOptionsValues(whichArray, x)
 {
-    // sizeTextarea
-    if (ge('sizeTextarea'))
+    // zIndex
+    if (ge('zIndexInput'))
     {
-        ge("sizeTextarea").value = whichArray[x].sizeX;
+        ge('zIndexInput').value = whichArray[x].theLayer;
+    }
+
+    // size
+    if (ge('sizeInput'))
+    {
+        ge("sizeInput").value = whichArray[x].sizeX;
     }
 
     // sizeSlider
@@ -16,10 +22,10 @@ function setMenuOptionsValues(whichArray, x)
 
     //-//
 
-    // rotateTextarea
-    if (ge('rotateTextarea'))
+    // rotationInput
+    if (ge('rotationInput'))
     {
-        ge("rotateTextarea").value = whichArray[x].rotationAmount.replace("deg", "");
+        ge("rotationInput").value = whichArray[x].rotationAmount.replace("deg", "");
     }
 
     // rotateSlider
@@ -30,26 +36,36 @@ function setMenuOptionsValues(whichArray, x)
 
     //-//
 
-    if (ge('positionXTextarea'))
+    if (ge('posXInput'))
     {
-        ge("positionXTextarea").value = whichArray[x].posX;
+        ge("posXInput").value = whichArray[x].posX;
     }
 
-    if (ge('positionSliderX'))
+    if (ge('posXSlider'))
     {
-        ge("positionSliderX").value = whichArray[x].posX;
+        ge("posXSlider").value = whichArray[x].posX;
     }
 
     //-//
 
-    if (ge('positionYTextarea'))
+    if (ge('posYInput'))
     {
-        ge("positionYTextarea").value = whichArray[x].posY;
+        ge("posYInput").value = whichArray[x].posY;
     }
 
-    if (ge('positionSliderY'))
+    if (ge('posYSlider'))
     {
-        ge("positionSliderY").value = whichArray[x].posY;
+        ge("posYSlider").value = whichArray[x].posY;
+    }
+
+    if (ge('opacityInput'))
+    {
+        ge('opacityInput').value = whichArray[x].theOpacity;
+    }
+
+    if (ge('opacitySlider'))
+    {
+        ge('opacitySlider').value = whichArray[x].theOpacity;
     }
 
     //-//
