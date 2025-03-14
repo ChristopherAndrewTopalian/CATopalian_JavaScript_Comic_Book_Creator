@@ -137,6 +137,12 @@ function galleryMaker(whichArray, whichCategory)
 
                     ge('sizeInput').value = whichArray[x].sizeX;
 
+                    ge('posXInput').value = whichArray[x].posX;
+
+                    ge('posYInput').value = whichArray[x].posY;
+
+                    ge('opacityInput').value = whichArray[x].theOpacity;
+
                     idToMove = theCreatedPerson.id;
 
                     // when right clicked
