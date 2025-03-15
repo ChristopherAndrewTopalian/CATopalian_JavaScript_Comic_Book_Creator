@@ -27,6 +27,7 @@ function menuMenus()
     theCloseX.onclick = function()
     {
         clickSound();
+
         ge("menuMenusSubDivId").style.height = 0 + "px";
     };
     mainDiv.append(theCloseX);
@@ -625,24 +626,6 @@ function menuMenus()
 
     //-//
 
-    let bottomMenuButton = ce("button");
-    bottomMenuButton.textContent = "Bottom Menu";
-    bottomMenuButton.className = "ourButton";
-    bottomMenuButton.title = "bottomMenu";
-    bottomMenuButton.onmouseover = function()
-    {
-        hoverSound();
-    };
-    bottomMenuButton.onclick = function()
-    {
-        clickSound();
-        bottomMenu();
-        cl("bottomMenu");
-    };
-    subDiv.append(bottomMenuButton);
-
-    //-//
-
     let menuBackgroundMoviesFullButton = ce("button");
     menuBackgroundMoviesFullButton.textContent = "TV - BG Movies - Full";
     menuBackgroundMoviesFullButton.className = "ourButton";
@@ -676,24 +659,6 @@ function menuMenus()
         cl("menuBackgroundMoviesHERE (sized)");
     };
     subDiv.append(menuBackgroundMoviesSizedButton);
-
-    //-//
-
-    let backgroundGifButton = ce("button");
-    backgroundGifButton.textContent = "Animated Gif Background";
-    backgroundGifButton.className = "ourButton";
-    backgroundGifButton.title = "backgroundGif";
-    backgroundGifButton.onmouseover = function()
-    {
-        hoverSound();
-    };
-    backgroundGifButton.onclick = function()
-    {
-        clickSound();
-        backgroundGif('bgGifs', 0);
-        cl("backgroundGif");
-    };
-    subDiv.append(backgroundGifButton);
 
     //-//
 
@@ -769,6 +734,24 @@ function menuMenus()
 
     //-//
 
+    let backgroundGifButton = ce("button");
+    backgroundGifButton.textContent = "Animated Gif Background";
+    backgroundGifButton.className = "ourButton";
+    backgroundGifButton.title = "backgroundGif";
+    backgroundGifButton.onmouseover = function()
+    {
+        hoverSound();
+    };
+    backgroundGifButton.onclick = function()
+    {
+        clickSound();
+        backgroundGif('bgGifs', 0);
+        cl("backgroundGif");
+    };
+    subDiv.append(backgroundGifButton);
+
+    //-//
+
     let menuGifsButton = ce("button");
     menuGifsButton.textContent = "Gif Backgrounds";
     menuGifsButton.className = "ourButton";
@@ -783,6 +766,24 @@ function menuMenus()
         menuGifs();
     };
     subDiv.append(menuGifsButton);
+
+    //-//
+
+    let bottomMenuButton = ce("button");
+    bottomMenuButton.textContent = "Bottom Menu";
+    bottomMenuButton.className = "ourButton";
+    bottomMenuButton.title = "bottomMenu";
+    bottomMenuButton.onmouseover = function()
+    {
+        hoverSound();
+    };
+    bottomMenuButton.onclick = function()
+    {
+        clickSound();
+        bottomMenu();
+        cl("bottomMenu");
+    };
+    subDiv.append(bottomMenuButton);
 
     //-//
 

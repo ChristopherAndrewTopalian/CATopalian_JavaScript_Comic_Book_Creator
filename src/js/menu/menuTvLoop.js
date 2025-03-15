@@ -14,10 +14,10 @@ function menuTvLoop(whichArray, whichId, menuName, whichSound, theX, theY)
     mainDiv.style.position = "absolute";
     mainDiv.style.left = 325 + "px";
     mainDiv.style.top = 100 + "px";
-    mainDiv.style.width = 500 + "px";
+    mainDiv.style.width = 200 + "px";
     mainDiv.id = "menuBackgroundId";
     mainDiv.style.zIndex = 10;
-    mainDiv.style.backgroundColor = "rgba(0, 0, 0, 0.4)";
+    mainDiv.style.backgroundColor = "rgba(0, 0, 0, 0.7)";
     mainDiv.style.float = "left";
     mainDiv.style.overflowY = "auto";
     mainDiv.style.height = 100 + "px";

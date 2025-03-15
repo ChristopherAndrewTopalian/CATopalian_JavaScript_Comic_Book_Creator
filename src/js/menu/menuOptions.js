@@ -49,7 +49,7 @@ function menuOptions(whichId)
 
     let thePanel = ce("div");
     thePanel.id = menuId;
-    thePanel.style.height = '400px';
+    thePanel.style.height = 380 + 'px';
     thePanel.className = 'panel';
     mainDiv.append(thePanel);
 
