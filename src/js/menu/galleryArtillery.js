@@ -252,6 +252,37 @@ let galleryArtillery = [
     info: "Information"
 },
 
+{
+    name: "artillery_006",
+    texture: "src/media/texture/prop/artillery/artillery_006.webp",
+    theId: "artillery_006",
+    sizeX: "150",
+    posX: "0", 
+    posY: "20",
+    theOpacity: 1,
+    type: "webp",
+    category: "artillery",
+    realName: "artillery_006",
+    theLayer: 5,
+    flipHorizontal: false,
+    flipVertical: false,
+    className: "characterStyle",
+    rotationAmount: 0 + "deg",
+    theBrightness: 1.0,
+    theContrast: 1.3,
+    theHue: 0,
+    theSaturation: 1.0,
+    theBlur: 0,
+    theInvert: 0,
+    theGrayscale: 0,
+    theSepia: 0,
+    theDropShadowX: "10px",
+    theDropShadowY: "10px",
+    theDropShadowBlurRadius: "10px",
+    theDropShadowColor: "black",
+    info: "Information"
+},
+
 ];
 
 //----//
