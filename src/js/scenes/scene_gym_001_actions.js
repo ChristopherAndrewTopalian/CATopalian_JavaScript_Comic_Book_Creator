@@ -4,7 +4,7 @@ function scene_gym_001_actions()
 {
     if (ge('ayan'))
     {
-        alert('Ayan is here at the Gym');
+        cl('Ayan is here at the Gym');
     }
 }
 

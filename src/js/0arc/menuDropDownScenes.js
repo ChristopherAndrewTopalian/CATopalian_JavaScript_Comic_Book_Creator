@@ -1,7 +1,5 @@
 // menuDropDownScenes.js
 
-let currentScene;
-
 function menuDropDownScenes(whichArray, whichId, menuName, whichSound, theX, theY)
 {
     let theSelect = ce("select");

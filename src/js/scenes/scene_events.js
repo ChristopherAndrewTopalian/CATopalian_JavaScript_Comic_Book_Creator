@@ -1,5 +1,7 @@
 // scene_events.js
 
+// note: scene actions are now handled in separate scripts.
+
 function sceneEvents(whichArray, x)
 {
     // to know which scene is selected

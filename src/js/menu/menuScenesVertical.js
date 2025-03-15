@@ -1,5 +1,7 @@
 // menuScenesVertical.js
 
+let currentScene;
+
 function menuScenesVertical()
 {
     let menuId = 'menuScenes';
