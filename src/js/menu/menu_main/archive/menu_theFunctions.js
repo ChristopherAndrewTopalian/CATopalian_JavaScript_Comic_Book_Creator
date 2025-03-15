@@ -182,14 +182,14 @@ let theFunctions = [
     },
 
     {
-        name: "menuBackgroundMoviesHERE('full', movies, 'sfx_warp_001')",
-        fullName: "menuBackgroundMoviesHERE",
+        name: "menuBgVideoFull('full', movies, 'sfx_warp_001')",
+        fullName: "menuBgVideoFull",
         description: "TV - Background Movie Menu - Full"
     },
 
     {
-        name: "menuBackgroundMoviesHERE('sized', movies, 'tvMovies', 'Menu Background Movies Size', 'sfx_warp_001', 250, 0)",
-        fullName: "menuBackgroundMoviesHERE",
+        name: "menuBgVideoFull('sized', movies, 'tvMovies', 'Menu Background Movies Size', 'sfx_warp_001', 250, 0)",
+        fullName: "menuBgVideoFull",
         description: "TV - Background Movie Menu - Sized"
     },
 

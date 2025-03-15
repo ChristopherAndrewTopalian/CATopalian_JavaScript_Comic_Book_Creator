@@ -647,7 +647,7 @@ function menuMenus()
     let menuBackgroundMoviesFullButton = ce("button");
     menuBackgroundMoviesFullButton.textContent = "BG Movies - Full";
     menuBackgroundMoviesFullButton.className = "ourButton";
-    menuBackgroundMoviesFullButton.title = "menuBackgroundMoviesHERE";
+    menuBackgroundMoviesFullButton.title = "menuBgVideoFull";
     menuBackgroundMoviesFullButton.onmouseover = function()
     {
         hoverSound();
@@ -655,28 +655,28 @@ function menuMenus()
     menuBackgroundMoviesFullButton.onclick = function()
     {
         clickSound();
-        menuBackgroundMoviesHERE('full', movies, 'sfx_warp_001');
-        cl("menuBackgroundMoviesHERE (full)");
+
+        menuBgVideoFull(movies);
     };
     subDiv.append(menuBackgroundMoviesFullButton);
 
     //-//
 
-    let menuBackgroundMoviesSizedButton = ce("button");
-    menuBackgroundMoviesSizedButton.textContent = "Bg Movies - Sized";
-    menuBackgroundMoviesSizedButton.className = "ourButton";
-    menuBackgroundMoviesSizedButton.title = "menuBackgroundMoviesHERE";
-    menuBackgroundMoviesSizedButton.onmouseover = function()
+    let menuBgMoviesSizedButton = ce("button");
+    menuBgMoviesSizedButton.textContent = "Bg Movies - Sized";
+    menuBgMoviesSizedButton.className = "ourButton";
+    menuBgMoviesSizedButton.title = "menuBgVideoSized";
+    menuBgMoviesSizedButton.onmouseover = function()
     {
         hoverSound();
     };
-    menuBackgroundMoviesSizedButton.onclick = function()
+    menuBgMoviesSizedButton.onclick = function()
     {
         clickSound();
-        menuBackgroundMoviesHERE('sized', movies, 'tvMovies', 'Menu Background Movies Size', 'sfx_warp_001', 250, 0);
-        cl("menuBackgroundMoviesHERE (sized)");
+
+        menuBgVideoSized(movies);
     };
-    subDiv.append(menuBackgroundMoviesSizedButton);
+    subDiv.append(menuBgMoviesSizedButton);
 
     //-//
 

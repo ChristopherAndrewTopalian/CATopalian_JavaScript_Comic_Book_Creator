@@ -1,8 +1,8 @@
-// menuTvLoop.js
+// menuBgVideoSized.js
 
-function menuTvLoop(whichArray, whichId, menuName, whichSound, theX, theY)
+function menuBgVideoSized(whichArray)
 {
-    let theMenuId = "menuGifId";
+    let theMenuId = "menuBgFullId";
 
     // if the menu exists, remove it
     if (ge(theMenuId))
@@ -11,21 +11,18 @@ function menuTvLoop(whichArray, whichId, menuName, whichSound, theX, theY)
     }
 
     let mainDiv = ce("div");
-    mainDiv.style.position = "absolute";
+    mainDiv.style.position = "fixed";
     mainDiv.style.left = 250 + "px";
     mainDiv.style.top = 25 + "px";
-    mainDiv.style.width = 200 + "px";
     mainDiv.id = "menuBackgroundId";
     mainDiv.style.zIndex = 10;
     mainDiv.style.backgroundColor = "rgba(0, 0, 0, 0.8)";
-    mainDiv.style.overflowY = "auto";
     mainDiv.style.height = 100 + "px";
     mainDiv.style.padding = 10 + "px";
     mainDiv.style.borderRadius = 5 + "px";
+    mainDiv.className = "scrolling";
     mainDiv.id = theMenuId;
     ba(mainDiv);
-
-    //-//
 
     makeElementDraggable(mainDiv);
 
@@ -38,43 +35,42 @@ function menuTvLoop(whichArray, whichId, menuName, whichSound, theX, theY)
     {
         ge(theMenuId).remove();
     };
+
     mainDiv.append(theCloseX);
+
+    //-//
+
+    let titleDiv = ce("div");
+    titleDiv.textContent = "BG Vids - Sized";
+    titleDiv.style.color = "rgb(255, 255, 255)";
+    mainDiv.append(titleDiv);
 
     //-//
 
     let subDiv = ce("div");
     subDiv.style.color = "rgb(70, 70, 70)";
     subDiv.title = theMenuId + "()";
+    subDiv.style.display = "flex";
+    subDiv.style.flexDirection = "column";
     mainDiv.append(subDiv);
 
     //-//
 
-    let titleDiv = ce("div");
-    titleDiv.textContent = "TV OPTION GIFS";
-    titleDiv.style.color = "rgb(255, 255, 255)";
-    mainDiv.append(titleDiv);
-
-    //-//
-
-    let loopButton = ce("button");
-    loopButton.textContent = "Tv Loop";
-    loopButton.className = "ourButton";
-    loopButton.onclick = function()
+    for (let x = 0; x < whichArray.length; x++)
     {
-        textureTimerRepeat(gifsLand, 'prop_tv_screen_dark', 5000);
-    };
-    mainDiv.append(loopButton);
+        let theButton = ce("button");
 
-    //-//
+        theButton.textContent = whichArray[x].name;
 
-    let clearButton = ce("button");
-    clearButton.textContent = "Stop Gifs";
-    clearButton.className = "ourButton";
-    clearButton.onclick = function()
-    {
-        clearInterval(textureTimerRepeatTimer);
-    };
-    mainDiv.append(clearButton);
+        theButton.onclick = function()
+        {
+            backgroundMovieCreateSize(movies, x);
+        };
+
+        theButton.className = "ourButton";
+        theButton.style.textAlign = "left";
+        subDiv.append(theButton);
+    }
 }
 
 //----//

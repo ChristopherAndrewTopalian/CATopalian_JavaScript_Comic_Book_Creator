@@ -1,6 +1,6 @@
-// menuBackgroundMoviesHERE.js
+// menuBgVideoFull.js
 
-function menuBackgroundMoviesHERE(whichSize, whichArray, whichSound)
+function menuBgVideoFull(whichArray)
 {
     let theMenuId = "menuBackgroundMoviesHEREId";
 
@@ -16,9 +16,7 @@ function menuBackgroundMoviesHERE(whichSize, whichArray, whichSound)
     mainDiv.style.top = 25 + "px";
     mainDiv.id = "menuBackgroundId";
     mainDiv.style.zIndex = 10;
-    mainDiv.style.backgroundColor = "rgba(0, 0, 0, 0.4)";
-    mainDiv.style.float = "left";
-    mainDiv.style.overflowY = "auto";
+    mainDiv.style.backgroundColor = "rgba(0, 0, 0, 0.8)";
     mainDiv.style.height = 100 + "px";
     mainDiv.style.padding = 10 + "px";
     mainDiv.style.borderRadius = 5 + "px";
@@ -43,7 +41,7 @@ function menuBackgroundMoviesHERE(whichSize, whichArray, whichSound)
     //-//
 
     let titleDiv = ce("div");
-    titleDiv.textContent = "Videos";
+    titleDiv.textContent = "BG Vids - Sized";
     titleDiv.style.color = "rgb(255, 255, 255)";
     mainDiv.append(titleDiv);
 
@@ -66,18 +64,9 @@ function menuBackgroundMoviesHERE(whichSize, whichArray, whichSound)
 
         theButton.onclick = function()
         {
-            if (whichSize == "sized")
-            {
-                // whichArray, whichItem, theX, theY, sizeX
-                backgroundMovieCreateSize(movies, x);
-            }
-            if (whichSize == "full")
-            {
-                backgroundMovieCreate(movies, x);
-            }
+            backgroundMovieCreate(movies, x);
+        };
 
-            playSound(whichSound, 1.0);
-         };
         theButton.className = "ourButton";
         theButton.style.textAlign = "left";
         subDiv.append(theButton);
