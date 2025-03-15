@@ -18,7 +18,7 @@ let galleryArtillery = [
     flipVertical: false,
     className: "characterStyle",
     theBrightness: 1.0,
-    theContrast: 1.3,
+    theContrast: 1.0,
     theHue: 0,
     theSaturation: 1.0,
     theBlur: 0,
