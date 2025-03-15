@@ -12,8 +12,8 @@ function menuBackgroundMoviesHERE(whichSize, whichArray, whichSound)
 
     let mainDiv = ce("div");
     mainDiv.style.position = "fixed";
-    mainDiv.style.left = 0 + "px";
-    mainDiv.style.top = 260 + "px";
+    mainDiv.style.left = 250 + "px";
+    mainDiv.style.top = 25 + "px";
     mainDiv.id = "menuBackgroundId";
     mainDiv.style.zIndex = 10;
     mainDiv.style.backgroundColor = "rgba(0, 0, 0, 0.4)";

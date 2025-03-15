@@ -16,17 +16,16 @@ function menuPlayMovie()
     mainDiv.id = menuId;
     mainDiv.title = menuId;
     mainDiv.style.position = "absolute";
-    mainDiv.style.left = 350 + "px";
-    mainDiv.style.top = 100 + "px";
+    mainDiv.style.left = 250 + "px";
+    mainDiv.style.top = 25 + "px";
     mainDiv.style.minWidth = 200 + "px";
     mainDiv.style.zIndex = 10;
-    mainDiv.style.backgroundColor = "rgba(0, 0, 0, 0.4)";
+    mainDiv.style.backgroundColor = "rgba(0, 0, 0, 0.8)";
     mainDiv.style.float = "left";
     mainDiv.style.overflowY = "auto";
     mainDiv.style.height = 100 + "px";
     mainDiv.style.padding = 10 + "px";
     mainDiv.style.borderRadius = 5 + "px";
-    mainDiv.className = "scrolling";
     ba(mainDiv);
 
     //-//
@@ -54,7 +53,7 @@ function menuPlayMovie()
     //-//
 
     let titleDiv = ce("div");
-    titleDiv.textContent = "Play";
+    titleDiv.textContent = "TV - Video";
     titleDiv.style.color = "rgb(255, 255, 255)";
     mainDiv.append(titleDiv);
 
@@ -96,7 +95,9 @@ function menuPlayMovie()
     playGifButton.textContent = "Play Gifs";
     playGifButton.onclick = function()
     {
-        textureTimerRepeat(gifsLand, 'prop_tv_screen_dark', 'src/media/texture/gif/', 5000);
+        textureTimerRepeat(gifsLand, 'prop_tv_screen_dark', 5000);
+
+       //textureTimerRepeat(gifsLand, 'prop_tv_screen_dark', 'src/media/texture/gif/', 5000);
     };
     playGifButton.className = "ourButton";
     mainDiv.append(playGifButton);
@@ -111,14 +112,6 @@ function menuPlayMovie()
     };
     stopGifButton.className = "ourButton";
     mainDiv.append(stopGifButton);
-
-    //-//
-
-    let theText = ce("div");
-    theText.textContent = "Movies - Background Movies";
-    theText.style.display = "block";
-    //inline //block //none //inline-block
-    mainDiv.append(theText);
 }
 
 //----//
