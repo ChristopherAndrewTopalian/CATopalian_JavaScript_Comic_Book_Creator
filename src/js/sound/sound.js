@@ -40,7 +40,7 @@ function hoverSound()
         300,     // frequency
         100,     // duration
         'triangle',  // waveType
-        0.05,      // volume
+        0.04,      // volume
         0,       // detune
         0.05,      // attackTime
         0.05,      // releaseTime

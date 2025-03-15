@@ -52,7 +52,7 @@ function menuMenus()
     subDiv.style.resize = "both";
     subDiv.style.height = 200 + "px";
     subDiv.id = "menuMenusSubDivId";
-    subDiv.style.width = "290px";
+    subDiv.style.width = "230px";
     subDiv.style.marginLeft = "5px";
     subDiv.style.marginRight = "5px";
     subDiv.className = "scrolling";
@@ -515,24 +515,6 @@ function menuMenus()
 
     //-//
 
-    let menuChangeTextureOfCharacterButton = ce("button");
-    menuChangeTextureOfCharacterButton.textContent = "Change the Texture of the Character";
-    menuChangeTextureOfCharacterButton.className = "ourButton";
-    menuChangeTextureOfCharacterButton.title = "menuChangeTextureOfCharacter";
-    menuChangeTextureOfCharacterButton.onmouseover = function()
-    {
-        hoverSound();
-    };
-    menuChangeTextureOfCharacterButton.onclick = function()
-    {
-        clickSound();
-        menuChangeTextureOfCharacter();
-        cl("menuChangeTextureOfCharacter");
-    };
-    subDiv.append(menuChangeTextureOfCharacterButton);
-
-    //-//
-
     let menuAnimationsArrayOfObjectsNICEButton = ce("button");
     menuAnimationsArrayOfObjectsNICEButton.textContent = "ANIMATION Menu";
     menuAnimationsArrayOfObjectsNICEButton.className = "ourButton";
@@ -662,7 +644,7 @@ function menuMenus()
     //-//
 
     let menuBackgroundMoviesFullButton = ce("button");
-    menuBackgroundMoviesFullButton.textContent = "TV - Background Movie Menu - Full";
+    menuBackgroundMoviesFullButton.textContent = "TV - BG Movies - Full";
     menuBackgroundMoviesFullButton.className = "ourButton";
     menuBackgroundMoviesFullButton.title = "menuBackgroundMoviesHERE";
     menuBackgroundMoviesFullButton.onmouseover = function()
@@ -680,7 +662,7 @@ function menuMenus()
     //-//
 
     let menuBackgroundMoviesSizedButton = ce("button");
-    menuBackgroundMoviesSizedButton.textContent = "TV - Background Movie Menu - Sized";
+    menuBackgroundMoviesSizedButton.textContent = "TV - Bg Movies - Sized";
     menuBackgroundMoviesSizedButton.className = "ourButton";
     menuBackgroundMoviesSizedButton.title = "menuBackgroundMoviesHERE";
     menuBackgroundMoviesSizedButton.onmouseover = function()
@@ -734,7 +716,7 @@ function menuMenus()
     //-//
 
     let menuCharacterChooserInputButton = ce("button");
-    menuCharacterChooserInputButton.textContent = "MODEL - Choose or Drag Character";
+    menuCharacterChooserInputButton.textContent = "Input Drag from Drag Folder";
     menuCharacterChooserInputButton.className = "ourButton";
     menuCharacterChooserInputButton.title = "menuCharacterChooserInput";
     menuCharacterChooserInputButton.onmouseover = function()
@@ -821,8 +803,8 @@ function menuMenus()
 
     //-//
 
-    // set initial height
-    ge("menuMenusSubDivId").style.height = 0 + "px";
+    // set initial height to minimized
+    // ge("menuMenusSubDivId").style.height = 0 + "px";
 }
 
 //----//
