@@ -12,12 +12,12 @@ function menuGif(whichArray, whichId, menuName, whichSound, theX, theY)
 
     let mainDiv = ce("div");
     mainDiv.style.position = "absolute";
-    mainDiv.style.left = 300 + "px";
-    mainDiv.style.top = 100 + "px";
-    mainDiv.style.width = 500 + "px";
+    mainDiv.style.left = 250 + "px";
+    mainDiv.style.top = 25 + "px";
+    mainDiv.style.width = 200 + "px";
     mainDiv.id = "menuBackgroundId";
     mainDiv.style.zIndex = 10;
-    mainDiv.style.backgroundColor = "rgba(0, 0, 0, 0.4)";
+    mainDiv.style.backgroundColor = "rgba(0, 0, 0, 0.8)";
     mainDiv.style.float = "left";
     mainDiv.style.overflowY = "auto";
     mainDiv.style.height = 100 + "px";
@@ -52,9 +52,9 @@ function menuGif(whichArray, whichId, menuName, whichSound, theX, theY)
     //-//
 
     let titleDiv = ce("div");
-    titleDiv.textContent = "Play";
+    titleDiv.textContent = "Gif Menu";
     titleDiv.style.color = "rgb(255, 255, 255)";
-    mainDiv.append(titleDiv);
+    subDiv.append(titleDiv);
 
     //-//
 
@@ -70,7 +70,8 @@ function menuGif(whichArray, whichId, menuName, whichSound, theX, theY)
 
             ge("tvMovies").style.visibility = "hidden";
 
-             playSound(whichSound, 1.0);
+             clickSound();
+             //playSound(whichSound, 1.0);
          };
 
         theButton.className = "ourButton";
