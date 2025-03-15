@@ -626,8 +626,26 @@ function menuMenus()
 
     //-//
 
+    let menuPlayMovieButton = ce("button");
+    menuPlayMovieButton.textContent = "TV - Video";
+    menuPlayMovieButton.className = "ourButton";
+    menuPlayMovieButton.title = "menuPlayMovie";
+    menuPlayMovieButton.onmouseover = function()
+    {
+        hoverSound();
+    };
+    menuPlayMovieButton.onclick = function()
+    {
+        clickSound();
+        menuPlayMovie();
+        cl("menuPlayMovie");
+    };
+    subDiv.append(menuPlayMovieButton);
+
+    //-//
+
     let menuBackgroundMoviesFullButton = ce("button");
-    menuBackgroundMoviesFullButton.textContent = "TV - BG Movies - Full";
+    menuBackgroundMoviesFullButton.textContent = "BG Movies - Full";
     menuBackgroundMoviesFullButton.className = "ourButton";
     menuBackgroundMoviesFullButton.title = "menuBackgroundMoviesHERE";
     menuBackgroundMoviesFullButton.onmouseover = function()
@@ -645,7 +663,7 @@ function menuMenus()
     //-//
 
     let menuBackgroundMoviesSizedButton = ce("button");
-    menuBackgroundMoviesSizedButton.textContent = "TV - Bg Movies - Sized";
+    menuBackgroundMoviesSizedButton.textContent = "Bg Movies - Sized";
     menuBackgroundMoviesSizedButton.className = "ourButton";
     menuBackgroundMoviesSizedButton.title = "menuBackgroundMoviesHERE";
     menuBackgroundMoviesSizedButton.onmouseover = function()
@@ -659,24 +677,6 @@ function menuMenus()
         cl("menuBackgroundMoviesHERE (sized)");
     };
     subDiv.append(menuBackgroundMoviesSizedButton);
-
-    //-//
-
-    let menuPlayMovieButton = ce("button");
-    menuPlayMovieButton.textContent = "TV - Video";
-    menuPlayMovieButton.className = "ourButton";
-    menuPlayMovieButton.title = "menuPlayMovie";
-    menuPlayMovieButton.onmouseover = function()
-    {
-        hoverSound();
-    };
-    menuPlayMovieButton.onclick = function()
-    {
-        clickSound();
-        menuPlayMovie();
-        cl("menuPlayMovie");
-    };
-    subDiv.append(menuPlayMovieButton);
 
     //-//
 

@@ -18,12 +18,10 @@ function menuTvLoop(whichArray, whichId, menuName, whichSound, theX, theY)
     mainDiv.id = "menuBackgroundId";
     mainDiv.style.zIndex = 10;
     mainDiv.style.backgroundColor = "rgba(0, 0, 0, 0.7)";
-    mainDiv.style.float = "left";
     mainDiv.style.overflowY = "auto";
     mainDiv.style.height = 100 + "px";
     mainDiv.style.padding = 10 + "px";
     mainDiv.style.borderRadius = 5 + "px";
-    mainDiv.className = "scrolling";
     mainDiv.id = theMenuId;
     ba(mainDiv);
 
