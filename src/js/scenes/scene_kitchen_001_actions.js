@@ -1,5 +1,10 @@
 // scene_kitchen_001_actions.js
 
+function scene_kitchen_001_actions()
+{
+    ge("bgVideo").play();
+}
+
 function turnLightOn(whichId, whichArray)
 {
     let lightOn = false;

@@ -1,10 +1,10 @@
-// scene_apartment_001_actions.js
+// scene_woods_002_actions.js
 
-function scene_apartment_001_actions()
+function scene_woods_002_actions()
 {
     if (ge('ayan'))
     {
-        cl('ayan is here');
+        alert('Ayan is here in the Woods');
     }
 }
 

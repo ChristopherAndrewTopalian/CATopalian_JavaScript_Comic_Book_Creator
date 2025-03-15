@@ -78,11 +78,14 @@ function menuScenesVertical()
 
         scene(scene_beach_001);
 
+        currentScene = 'scene_beach_001';
+    
         //sceneEvents(scene_beach_001, 'scene_beach_001');
 
-        ge("theBgId").play();
-
-        currentScene = 'scene_beach_001';
+        setTimeout(function()
+        {
+            scene_beach_001_actions();
+        }, 200);
     };
     subDiv.append(beachButton);
 
@@ -102,6 +105,11 @@ function menuScenesVertical()
         scene(scene_desert_001);
 
         currentScene = 'scene_desert_001';
+
+        setTimeout(function()
+        {
+            scene_desert_001_actions();
+        }, 200);
     };
     subDiv.append(desertButton);
 
@@ -118,14 +126,14 @@ function menuScenesVertical()
     {
         clickSound();
 
-        setTimeout(function()
-        {
-            ge("bgVideo").play();
-        }, 500);
-
         scene(scene_kitchen_001);
 
         currentScene = 'scene_kitchen_001';
+
+        setTimeout(function()
+        {
+            scene_kitchen_001_actions();
+        }, 200);
     };
     subDiv.append(kitchenButton);
 
@@ -148,11 +156,8 @@ function menuScenesVertical()
 
         setTimeout(function()
         {
-            ge("bgVideo").play();
-
-            comicBubbleTargetIdArrayOfObjects("ayan1", greetingMessage, 0);
-
-        }, 500);
+            scene_tv_room_001_actions();
+        }, 200);
     };
     subDiv.append(tvRoomButton);
 
@@ -175,9 +180,8 @@ function menuScenesVertical()
 
         setTimeout(function()
         {
-
-
-        }, 500);
+            scene_gym_001_actions();
+        }, 200);
     };
     subDiv.append(gymButton);
 
@@ -200,8 +204,7 @@ function menuScenesVertical()
 
         setTimeout(function()
         {
-
-
+            scene_apartment_001_actions();
         }, 500);
     };
     subDiv.append(apartmentButton);
@@ -225,10 +228,10 @@ function menuScenesVertical()
 
         setTimeout(function()
         {
-            if (ge('tvMovies'))
+            setTimeout(function()
             {
-                ge("tvMovies").play();
-            }
+                scene_theater_actions();
+            }, 200);
         }, 500);
     };
     subDiv.append(theaterButton);
@@ -252,9 +255,8 @@ function menuScenesVertical()
 
         setTimeout(function()
         {
-
-        }, 500);
+            scene_woods_002_actions();
+        }, 200);
     };
     subDiv.append(woodsButton);
-
 }

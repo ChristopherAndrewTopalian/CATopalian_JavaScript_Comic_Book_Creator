@@ -1,10 +1,15 @@
-// scene_apartment_001_actions.js
+// scene_theater_actions.js
 
-function scene_apartment_001_actions()
+function scene_theater_actions()
 {
+    if (ge('tvMovies'))
+    {
+        ge("tvMovies").play();
+    }
+
     if (ge('ayan'))
     {
-        cl('ayan is here');
+        alert('Ayan is here at the Theater');
     }
 }
 

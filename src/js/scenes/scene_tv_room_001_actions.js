@@ -1,5 +1,12 @@
 // scene_tv_room_001_actions
 
+function scene_tv_room_001_actions()
+{
+    ge("bgVideo").play();
+
+    comicBubbleTargetIdArrayOfObjects("ayan1", greetingMessage, 0);
+}
+
 // make height of the tv screen 30%
 // this makes the gifs fit in the tv screen frame
 function tvRoom001()

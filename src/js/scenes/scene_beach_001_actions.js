@@ -1,10 +1,12 @@
-// scene_apartment_001_actions.js
+// scene_beach_001_actions.js
 
-function scene_apartment_001_actions()
+function scene_beach_001_actions()
 {
-    if (ge('ayan'))
+    ge("theBgId").play();
+
+    if (ge('ayan1'))
     {
-        cl('ayan is here');
+        cl('Ayan1 is here at the Beach');
     }
 }
 
