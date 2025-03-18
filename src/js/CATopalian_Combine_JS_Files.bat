@@ -24,3 +24,4 @@ echo "JavaScript files combined into %output% successfully."
 :: https://sites.google.com/view/CollegeOfScripting
 :: This .bat File Combines All .js files in all folders of our project folder, into one main.js file.
 :: To activate this .bat file, we double click the .bat file, while it is located in our js folder.
+
