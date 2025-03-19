@@ -1,4 +1,4 @@
-:: Topalian_Combine_JS_Files.bat
+:: CATopalian_Combine_JS_Files.bat
 
 @echo off
 :: set the output file name
