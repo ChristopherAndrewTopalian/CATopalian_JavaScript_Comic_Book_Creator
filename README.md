@@ -9,6 +9,8 @@ USE APP: https://christopherandrewtopalian.github.io/CATopalian_JavaScript_Comic
 
 ![screenshot_003](src/media/texture/screenshots/003.PNG)
 
+If you enjoy my apps and tutorials consider buying me a coffee at [paypal.me/keystonermarch](https://www.paypal.com/paypalme/keystonermarch)  
+
 VIDEOS:  
 https://www.youtube.com/watch?v=aswd3T2nVdU
 
