@@ -65,6 +65,24 @@ function menuMenus()
 
     //-//
 
+    let electronicsBtn = ce("button");
+    electronicsBtn.textContent = "Electronics";
+    electronicsBtn.className = "ourButton";
+    electronicsBtn.title = "galleryMaker";
+    electronicsBtn.onmouseover = function()
+    {
+        hoverSound();
+    };
+    electronicsBtn.onclick = function()
+    {
+        clickSound();
+        galleryMaker(everything, "electronics");
+        cl("galleryMaker");
+    };
+    subDiv.append(electronicsBtn);
+
+    //-//
+
     let jetsButton = ce("button");
     jetsButton.textContent = "JETS";
     jetsButton.className = "ourButton";

@@ -1,3 +1,4 @@
+// worldVariables.js
 
 let online = false;
 

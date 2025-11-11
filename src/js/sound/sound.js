@@ -138,10 +138,10 @@ function inputSound()
         400,     // frequency
         100,     // duration
         'sine',  // waveType
-        0.01,      // volume
+        0.002,      // volume
         0,       // detune
         0.05,      // attackTime
-        0.2,      // releaseTime
+        0.1,      // releaseTime
         0.0      // panValue -0.5 is left
     );
 }
