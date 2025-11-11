@@ -138,7 +138,7 @@ function inputSound()
         400,     // frequency
         100,     // duration
         'sine',  // waveType
-        0.02,      // volume
+        0.01,      // volume
         0,       // detune
         0.05,      // attackTime
         0.2,      // releaseTime
