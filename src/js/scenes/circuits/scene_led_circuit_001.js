@@ -151,4 +151,22 @@ let scene_led_circuit_001 = [
     theContrast: 1.5,
 },
 
+{
+    type: "png",
+    category: "prop",
+    name: "wire-negative",
+    texture: "src/media/texture/prop/electronics/wire/lead/wire_negative_green.svg",
+    theId: "wire_negative_green",
+    sizeX: 6,
+    theX: 333,
+    theY: 253,
+    flipHorizontal: false,
+    flipVertical: false,
+    className: "propStyle",
+    theLayer: 4,
+    // rotationAmount: 90 + "deg",
+    theBrightness: 1.2,
+    theContrast: 1.5,
+},
+
 ];
