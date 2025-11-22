@@ -115,4 +115,22 @@ let scene_led_circuit_001 = [
     theContrast: 1.5,
 },
 
+{
+    type: "png",
+    category: "prop",
+    name: "batteries",
+    texture: "src/media/texture/prop/electronics/batteries/two_aa_batteries.svg",
+    theId: "two_aa_batteries",
+    sizeX: 21,
+    theX: 250,
+    theY: 125,
+    flipHorizontal: false,
+    flipVertical: false,
+    className: "propStyle",
+    theLayer: 4,
+    // rotationAmount: 90 + "deg",
+    theBrightness: 1.2,
+    theContrast: 1.5,
+},
+
 ];
