@@ -21,7 +21,7 @@ let scene_tv_room_001 = [
     texture: "src/media/texture/background/apartment_002/001.webp",
     theId: "apartmentStudio", //theBgId
     theLayer: 1,
-    sizeX: 1000,
+    sizeX: 800,
     theX: 0,
     theY: 0,
     rotationAmount: 0 + "deg",
