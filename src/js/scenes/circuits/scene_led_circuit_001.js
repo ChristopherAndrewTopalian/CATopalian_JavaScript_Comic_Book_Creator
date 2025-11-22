@@ -79,4 +79,22 @@ let scene_led_circuit_001 = [
     theContrast: 1.5,
 },
 
+{
+    type: "png",
+    category: "prop",
+    name: "led_green",
+    texture: "src/media/texture/prop/electronics/led/led_green.svg",
+    theId: "led_green",
+    sizeX: 21,
+    theX: 300,
+    theY: 95,
+    flipHorizontal: false,
+    flipVertical: false,
+    className: "propStyle",
+    theLayer: 4,
+    // rotationAmount: 90 + "deg",
+    theBrightness: 1.2,
+    theContrast: 1.5,
+},
+
 ];
