@@ -67,6 +67,30 @@ function menuScenesVertical()
 
     //-//
 
+    let led_circuit_001_btn = ce("button");
+    led_circuit_001_btn.textContent = "Led Circuit 001";
+    led_circuit_001_btn.className = "ourButton";
+    led_circuit_001_btn.onmouseover = function()
+    {
+        hoverSound();
+    };
+    led_circuit_001_btn.onclick = function()
+    {
+        clickSound();
+
+        scene(scene_led_circuit_001);
+
+        currentScene = 'scene_led_circuit_001';
+
+        setTimeout(function()
+        {
+            //scene_led_circuit_001_actions();
+        }, 200);
+    };
+    subDiv.append(led_circuit_001_btn);
+
+    //-//
+
     let beachButton = ce("button");
     beachButton.textContent = "Beach";
     beachButton.className = "ourButton";

@@ -2,6 +2,11 @@
 
 let scenes = [
     {
+        name: 'scene_led_circuit_001',
+        obj: scene_led_circuit_001
+    },
+
+    {
         name: 'scene_beach_001',
         obj: scene_beach_001
     },

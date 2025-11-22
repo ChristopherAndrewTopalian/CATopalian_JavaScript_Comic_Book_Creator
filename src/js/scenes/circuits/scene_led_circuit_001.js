@@ -1,0 +1,82 @@
+// scene_led_circuit_001.js
+
+let scene_led_circuit_001 = [
+{
+    // scene info
+    scene: "scene_led_circuit_001",
+    sceneTitle: "Light Circuit 001",
+    description: "Light Circuit 001 is a simple LED Circuit",
+    //theIdToMove: "ayan1",
+
+    daySetting: 1.0,
+    nightSetting: 0.3,
+
+    // background texture
+    type: "webp",
+    category: "background",
+    className: "theBackground2",
+    name: "The background",
+    texture: "src/media/texture/background/electronics/electronics_lab_001.jpg",
+    theId: "theBgId",
+    sizeX: 800,
+    //theX: 0,
+    //theY: 105,
+    // cover: "cover" // cover  // contain
+},
+
+// character - ayan1
+{
+    type: "webp",
+    category: "character",
+    name: "ayan1",
+    texture: "src/media/texture/model/ayan/standing/model_ayan_standing_right.webp",
+    theId: "ayan1",
+    sizeX: 50,
+    theX: 373,
+    theY: 245,
+    flipHorizontal: false,
+    flipVertical: false,
+    className: "characterStyle",
+    theLayer: 4,
+    // rotationAmount: 90 + "deg",
+    theBrightness: 1.2,
+    theContrast: 1.5,
+},
+
+{
+    type: "png",
+    category: "prop",
+    name: "circuit_board",
+    texture: "src/media/texture/prop/electronics/cardboard_box/cardboard_box.png",
+    theId: "ayan1",
+    sizeX: 400,
+    theX: 175,
+    theY: 10,
+    flipHorizontal: false,
+    flipVertical: false,
+    className: "propStyle",
+    theLayer: 4,
+    // rotationAmount: 90 + "deg",
+    theBrightness: 1.2,
+    theContrast: 1.5,
+},
+
+{
+    type: "png",
+    category: "prop",
+    name: "circuit_board",
+    texture: "src/media/texture/prop/electronics/rails/rails_paperclips_10.svg",
+    theId: "rails",
+    sizeX: 185,
+    theX: 280,
+    theY: 75,
+    flipHorizontal: false,
+    flipVertical: false,
+    className: "propStyle",
+    theLayer: 4,
+    // rotationAmount: 90 + "deg",
+    theBrightness: 1.2,
+    theContrast: 1.5,
+},
+
+];

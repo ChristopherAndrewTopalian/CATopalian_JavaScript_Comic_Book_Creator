@@ -48,7 +48,7 @@ let scene_kitchen_001  = [
     texture: "src/media/texture/background/living_room/nice_001.webp",
     theId: "theBgId",
     theLayer: 1,
-    sizeX: 1000,
+    sizeX: 800,
     theX: -10,
     theY: -10,
     rotationAmount: 0 + "deg",
