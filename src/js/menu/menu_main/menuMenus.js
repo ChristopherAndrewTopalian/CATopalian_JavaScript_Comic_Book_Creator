@@ -347,6 +347,7 @@ function menuMenus()
 
     //-//
 
+    /*
     let hideMouseInfoButton = ce("button");
     hideMouseInfoButton.textContent = "Mouse Info OFF";
     hideMouseInfoButton.className = "ourButton";
@@ -380,6 +381,42 @@ function menuMenus()
         cl("mousePositionShow");
     };
     subDiv.append(mousePositionShowButton);
+    */
+
+    //-//
+
+    let mouseInfoToggle = false;
+
+    let mouseInfoBtn = ce("button");
+    mouseInfoBtn.textContent = "Mouse Info";
+    mouseInfoBtn.className = "ourButton";
+    mouseInfoBtn.title = "mouseInfoBtn";
+    mouseInfoBtn.onmouseover = function()
+    {
+        // hover sound
+        hoverSound();
+    };
+    mouseInfoBtn.onclick = function()
+    {
+        // click sound
+        clickSound();
+
+        if (mouseInfoToggle == false)
+        {
+            hideMouseInfo();
+            cl("hideMouseInfo");
+            mouseInfoBtn.style.fontWeight = 'normal';
+            mouseInfoToggle = true;
+        }
+        else
+        {
+            mousePositionShow();
+            cl("mousePositionShow");
+            mouseInfoBtn.style.fontWeight = 'bold';
+            mouseInfoToggle = false;
+        }
+    };
+    subDiv.append(mouseInfoBtn);
 
     //-//
 

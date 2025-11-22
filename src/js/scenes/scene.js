@@ -13,6 +13,7 @@ function scene(whichArray)
         // if file type is png, webp, jpg, jpeg, or gif
         if (whichArray[x].type == "png" || whichArray[x].type == "webp" || whichArray[x].type == "jpg" ||
         whichArray[x].type == "jpeg" || 
+        whichArray[x].type == "svg" ||
         whichArray[x].type == "gif")
         {
             // create an image
