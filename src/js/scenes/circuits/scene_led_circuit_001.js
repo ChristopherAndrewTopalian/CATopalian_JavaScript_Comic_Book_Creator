@@ -97,4 +97,22 @@ let scene_led_circuit_001 = [
     theContrast: 1.5,
 },
 
+{
+    type: "png",
+    category: "prop",
+    name: "led_green",
+    texture: "src/media/texture/prop/electronics/resistor/resistor_100_ohm.svg",
+    theId: "resistor_100_ohm",
+    sizeX: 21,
+    theX: 317,
+    theY: 145,
+    flipHorizontal: false,
+    flipVertical: false,
+    className: "propStyle",
+    theLayer: 4,
+    // rotationAmount: 90 + "deg",
+    theBrightness: 1.2,
+    theContrast: 1.5,
+},
+
 ];
