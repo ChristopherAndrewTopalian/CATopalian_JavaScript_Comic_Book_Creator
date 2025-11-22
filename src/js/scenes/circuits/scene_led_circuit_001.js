@@ -194,7 +194,7 @@ let scene_led_circuit_001 = [
     texture: "src/media/texture/prop/electronics/wire/battery/wire_negative_green_curved.svg",
     theId: "wire_negative_green_curved",
     sizeX: 50,
-    theX: 246,
+    theX: 247,
     theY: 211,
     flipHorizontal: false,
     flipVertical: false,
