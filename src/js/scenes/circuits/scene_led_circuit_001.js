@@ -37,7 +37,7 @@ let scene_led_circuit_001 = [
     flipHorizontal: false,
     flipVertical: false,
     className: "characterStyle",
-    theLayer: 4,
+    theLayer: 5,
     // rotationAmount: 90 + "deg",
     theBrightness: 1.2,
     theContrast: 1.5,
