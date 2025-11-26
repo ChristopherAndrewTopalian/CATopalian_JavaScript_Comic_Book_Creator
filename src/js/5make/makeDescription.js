@@ -8,7 +8,7 @@ function makeDescription(whichArray)
     mainDiv.id = theId;
     mainDiv.style.position = "fixed";
     mainDiv.style.right = "15px";
-    mainDiv.style.bottom = "70px";
+    mainDiv.style.bottom = "40px";
     mainDiv.style.paddingLeft = "12px";
     mainDiv.style.paddingRight = "12px";
     mainDiv.style.paddingTop = "3px";
