@@ -14,8 +14,11 @@ function makeInputContainer(whichFlag)
     mainDiv.id = 'inputMain';
     mainDiv.style.zIndex = 10000;
     mainDiv.style.border = 'solid 1px rgb(255, 255, 255)';
+    mainDiv.style.backgroundColor = 'rgba(0, 0, 0, 0.8)';
     mainDiv.style.width = 150 + 'px';
     ba(mainDiv);
+
+    makeElementDraggable(mainDiv);
 
     //-//
 

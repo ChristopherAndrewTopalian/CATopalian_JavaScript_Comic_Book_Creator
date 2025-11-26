@@ -859,6 +859,28 @@ function menuMenus()
 
     //-//
 
+    let bgFitButton = ce("button");
+    bgFitButton.textContent = "BG FIT";
+    bgFitButton.className = "ourButton";
+    bgFitButton.title = "makeBgFit";
+    bgFitButton.onmouseover = function()
+    {
+        hoverSound();
+    };
+    bgFitButton.onclick = function()
+    {
+        clickSound();
+
+        let bg = ge("theBgId");
+        bg.style.width = "100%";
+        bg.style.height = "100%";
+        bg.style.objectFit = "cover";
+        bg.style.objectPosition = "center";
+    };
+    subDiv.append(bgFitButton);
+
+    //-//
+
     // set initial height to minimized
     // ge("menuMenusSubDivId").style.height = 0 + "px";
 }

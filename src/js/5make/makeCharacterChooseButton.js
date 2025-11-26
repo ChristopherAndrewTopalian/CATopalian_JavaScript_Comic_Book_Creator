@@ -28,6 +28,8 @@ function makeCharacterChooseButton(whichX, whichY, whichId)
     characterInput.type = 'file';
     characterInput.multiple = true;
     characterInput.id = whichId;
+    characterInput.style.display = 'none';
+
     characterInput.onchange = function(event)
     {
         characterFiles = event.target.files;
@@ -44,22 +46,32 @@ function makeCharacterChooseButton(whichX, whichY, whichId)
             let character = ce('img');
             character.id = 'character' + counter;
 
-            character.src = URL.createObjectURL(characterFiles[Math.floor(Math.random() * characterFiles.length)]);
+            character.src = URL.createObjectURL(
+                characterFiles[Math.floor(Math.random() * characterFiles.length)]
+            );
 
             character.style.position = 'absolute';
-
             character.style.left = rezPositionLeft + 'px';
-
             character.style.top = rezPositionTop + 'px';
-
             character.style.zIndex = 1000;
             character.style.height = characterHeight + 'px';
-            ba(character);
 
+            ba(character);
             makeElementDraggable(character);
         }
-    }
+    };
     mainDiv.append(characterInput);
+
+    //-//
+
+    let openCharacterButton = ce('button');
+    openCharacterButton.textContent = 'Load Character';
+
+    openCharacterButton.onclick = function()
+    {
+        characterInput.click();
+    };
+    mainDiv.append(openCharacterButton);
 
     //-//
 
