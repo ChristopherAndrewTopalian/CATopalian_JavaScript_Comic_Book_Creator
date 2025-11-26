@@ -15,7 +15,7 @@ function makeCharacterGalleryChooser(whichX, whichY, whichId)
     mainDiv.id = whichId;
     mainDiv.style.zIndex = layer;
     mainDiv.title = whichId;
-    mainDiv.style.width = 100 + 'px';
+    //mainDiv.style.width = 70 + 'px';
     mainDiv.style.overflowY = 'scroll';
     ge('inputContainer').append(mainDiv);
 
@@ -53,6 +53,28 @@ function makeCharacterGalleryChooser(whichX, whichY, whichId)
 
         if (characterFiles && characterFiles.length > 0)
         {
+            let galleryContainer = ce('div');
+            galleryContainer.id = 'galleryContainer';
+
+            // center the gallery on the screen
+            galleryContainer.style.position = 'fixed';
+            galleryContainer.style.top = '50%';
+            galleryContainer.style.left = '50%';
+            galleryContainer.style.transform = 'translate(-50%, -50%)'; // center it
+            galleryContainer.style.overflowY = 'scroll';
+            galleryContainer.style.overflowX = 'scroll';
+            galleryContainer.style.display = 'grid';
+            galleryContainer.style.gridTemplateColumns = 'auto auto auto';
+            galleryContainer.style.gap = '1px';
+
+            galleryContainer.style.width = 400 + 'px';
+            galleryContainer.style.height = 300 + 'px';
+            galleryContainer.style.border = 'solid 1px rgb(255, 255, 255)';
+            galleryContainer.style.zIndex = 40000;
+            ba(galleryContainer);
+
+            //-//
+
             let minimizeButton = ce('button');
             minimizeButton.textContent = '_';
             minimizeButton.id = 'minimizeButton';  // Give it a unique ID
@@ -72,28 +94,6 @@ function makeCharacterGalleryChooser(whichX, whichY, whichId)
                 ge('galleryContainer').style.display = 'block';
             };
             mainDiv.append(maximizeButton);
-
-            //-//
-
-            let galleryContainer = ce('div');
-            galleryContainer.id = 'galleryContainer';
-
-            // center the gallery on the screen
-            galleryContainer.style.position = 'fixed';
-            galleryContainer.style.top = '50%';
-            galleryContainer.style.left = '50%';
-            galleryContainer.style.transform = 'translate(-50%, -50%)'; // center it
-            galleryContainer.style.overflowY = 'scroll';
-            galleryContainer.style.overflowX = 'scroll';
-            galleryContainer.style.display = 'grid';
-            galleryContainer.style.gridTemplateColumns = 'auto auto auto';
-            galleryContainer.style.gap = '1px';
-
-            galleryContainer.style.width = 500 + 'px';
-            galleryContainer.style.height = 300 + 'px';
-            galleryContainer.style.border = 'solid 1px rgb(255, 255, 255)';
-            galleryContainer.style.zIndex = 40000;
-            ba(galleryContainer);
 
             //-//
 
@@ -143,7 +143,18 @@ function makeCharacterGalleryChooser(whichX, whichY, whichId)
             ba(galleryContainer);
         }
     };
+    characterInput.style.display = 'none';
     mainDiv.append(characterInput);
+
+    //-//
+
+    let openGalleryButton = ce('button');
+    openGalleryButton.textContent = 'Choose Images';
+    openGalleryButton.onclick = function()
+    {
+        characterInput.click();
+    };
+    mainDiv.append(openGalleryButton);
 
     //-//
 

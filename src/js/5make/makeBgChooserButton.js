@@ -11,9 +11,6 @@ function makeBgChooserButton(whichX, whichY, whichId)
 
     let mainDiv = ce('div');
     mainDiv.style.zIndex = 1000;
-    //mainDiv.style.position = 'fixed';
-    //mainDiv.style.left = whichX + 'px';
-    //mainDiv.style.top = whichY + 'px';
     mainDiv.id = chooserId;
     mainDiv.style.overflowY = 'scroll';
     mainDiv.title = whichId;
@@ -55,7 +52,18 @@ function makeBgChooserButton(whichX, whichY, whichId)
             ba(theBg);
         }
     }
+    bgInput.style.display = 'none';
     mainDiv.append(bgInput);
+
+    //-//
+
+    let openBgBtn = ce('button');
+    openBgBtn.textContent = 'Load BG';
+    openBgBtn.onclick = function()
+    {
+        bgInput.click();
+    };
+    mainDiv.append(openBgBtn);
 
     //-//
 
