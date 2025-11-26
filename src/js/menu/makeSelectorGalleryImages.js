@@ -18,8 +18,8 @@ function makeSelectorGalleryImages()
     mainDiv.style.position = "fixed";
     mainDiv.style.left = 30 + "px";
     mainDiv.style.top = 30 + "px";
-    mainDiv.style.width = 800 + "px";
-    mainDiv.style.height = 350 + "px";
+    mainDiv.style.width = 700 + "px";
+    mainDiv.style.height = 300 + "px";
     mainDiv.style.zIndex = "10000";
     ba(mainDiv);
 
@@ -28,8 +28,8 @@ function makeSelectorGalleryImages()
     let subDiv = ce('div');
     subDiv.style.display = 'grid';
     subDiv.style.gridTemplateColumns = 'auto auto auto';
-    subDiv.style.width = 800 + "px";
-    subDiv.style.height = 350 + "px";
+    subDiv.style.width = 700 + "px";
+    subDiv.style.height = 300 + "px";
     subDiv.style.overflowY = "scroll";
     subDiv.style.backgroundColor = 'rgba(30, 30, 30, 0.9)';
     mainDiv.append(subDiv);
