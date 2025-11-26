@@ -54,7 +54,7 @@ function menuMenus()
     subDiv.style.resize = "both";
     subDiv.style.height = 200 + "px";
     subDiv.id = "menuMenusSubDivId";
-    subDiv.style.width = "230px";
+    subDiv.style.width = "180px";
     subDiv.style.marginLeft = "5px";
     subDiv.style.marginRight = "5px";
     subDiv.className = "scrolling";

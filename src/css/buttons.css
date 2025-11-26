@@ -38,20 +38,29 @@ button:active
 .ourButton
 {
     margin: 1px;
-    /* horizontal and vertical padding */
-    padding: 2px 5px;
+
+    /* vertical and horizontal padding */
+    padding: 1px 3px;
+
     border: solid 1px rgb(100, 100, 100);
     border-radius: 3px;
     background-color: rgb(0, 0, 0);
     text-decoration: none;
     font-family: arial;
-    font-size: 14.5px;
+    font-size: 12px;
     font-weight: bold;
     color: rgb(247, 247, 247);
     text-align: center;
-    display: inline-flex; /* Use flex for centering */
-    justify-content: center; /* Centers text horizontally */
-    align-items: center; /* Centers text vertically */
+
+    /* use flex for centering */
+    display: inline-flex;
+
+    /* centers text horizontally */
+    justify-content: center;
+
+    /* centers text vertically */
+    align-items: center;
+
     word-wrap: break-word;
     cursor: pointer;
 }
