@@ -65,34 +65,6 @@ let scene_apartment_001  = [
         theDropShadowColor: "black",
     },
 
-    {
-        type: "webp",
-        category: "character",
-        name: "maven",
-        texture: "src/media/texture/model/maven/full/front.webp",
-        theId: "maven",
-        sizeX: 121,
-        theX: 350,
-        theY: 140,
-        flipHorizontal: false,
-        flipVertical: false,
-        className: "characterStyle",
-        theLayer: 3,
-        rotationAmount: 0 + "deg",
-        theBrightness: 1.0,
-        theContrast: 1.3,
-        theHue: 0,
-        theSaturation: 0.5,
-        theBlur: 0,
-        theInvert: 0,
-        theGrayscale: 0,
-        theSepia: 0,
-        theDropShadowX: "10px",
-        theDropShadowY: "10px",
-        theDropShadowBlurRadius: "10px",
-        theDropShadowColor: "black",
-    },
-
 ];
 
 //----//

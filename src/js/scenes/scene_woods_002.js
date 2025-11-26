@@ -19,7 +19,7 @@ let scene_woods_002 = [
     name: "Outdoors",
     texture: "src/media/texture/background/woods/winter/woods_001.webp",
     theId: "theBgId",
-    sizeX: 900,
+    sizeX: 850,
     theX: 0,
     theY: 0,
     tileLevel: false
