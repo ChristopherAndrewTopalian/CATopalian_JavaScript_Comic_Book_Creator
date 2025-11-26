@@ -8,6 +8,7 @@ function menuQuickPrefs()
     }
 
     let bottomDiv = ce("div");
+    bottomDiv.className = 'interface';
     bottomDiv.style.position = "fixed";
     bottomDiv.style.bottom = 0 + "px";
     bottomDiv.style.right = 0 + "px";

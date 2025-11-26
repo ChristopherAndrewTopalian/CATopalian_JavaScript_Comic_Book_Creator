@@ -64,6 +64,38 @@ function whenLoaded()
 
     // listen for mouse click and activate mousePos function
     window.addEventListener("click", mousePos, false);
+
+    //-//
+
+    let interfaceHidden = false;
+
+    // add escape key listener
+    window.addEventListener('keydown', function (event)
+    {
+        // check if escape was pressed
+        if (event.key === 'Escape')
+        {
+            // toggle the flag
+            interfaceHidden = !interfaceHidden;
+
+            let items = document.querySelectorAll('.interface');
+
+            // loop through the interface elements
+            for (let i = 0; i < items.length; i++)
+            {
+                if (interfaceHidden === true)
+                {
+                    // hide element
+                    items[i].style.display = 'none';
+                }
+                else
+                {
+                    // show element
+                    items[i].style.display = 'block';
+                }
+            }
+        }
+    });
 }
 
 //----//

@@ -4,6 +4,7 @@ function bottomMenu()
 {
     let mainDiv = ce("div");
     mainDiv.id = "bottomMenuId";
+    mainDiv.className = 'interface';
     mainDiv.style.position = "fixed";
     mainDiv.style.bottom = 0 + "px";
     mainDiv.style.left = 0 + "px";

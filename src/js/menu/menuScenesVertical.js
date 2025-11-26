@@ -13,6 +13,7 @@ function menuScenesVertical()
 
     let mainDiv = ce("div");
     mainDiv.id = menuId;
+    mainDiv.className = 'interface';
     mainDiv.style.position = "fixed";
     mainDiv.style.right = 0 + "px";
     mainDiv.style.top = 22 + "px";

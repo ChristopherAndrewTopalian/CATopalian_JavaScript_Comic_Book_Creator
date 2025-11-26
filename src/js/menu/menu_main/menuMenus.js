@@ -8,6 +8,7 @@ function menuMenus()
     }
 
     let mainDiv = ce("div");
+    mainDiv.className = 'interface';
     mainDiv.style.position = "fixed";
     mainDiv.style.left = 0 + "px";
     mainDiv.style.top = 22 + "px";

@@ -16,6 +16,7 @@ function mousePositionShow(whichId)
     }
 
     let mainDiv = ce("div");
+    mainDiv.className = 'interface';
     mainDiv.style.position = "absolute";
     mainDiv.style.left = 80 + "px";
     mainDiv.style.top = 0 + "px";
