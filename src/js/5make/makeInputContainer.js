@@ -55,12 +55,20 @@ function makeInputContainer(whichFlag)
 
     if (whichFlag == 'true')
     {
+        inputContainer.append(ce('hr'));
+
         makeCharacterChooseButton(0, 30, 'characterChooser');
+
+        inputContainer.append(ce('hr'));
 
         // bg chooser on the left
         makeBgChooserButton(0, 200, 'bgChooser');
 
+        inputContainer.append(ce('hr'));
+
         makeCharacterGalleryChooser(0, 200, 'characterGallery');
+
+        inputContainer.append(ce('hr'));
     }
 }
 
