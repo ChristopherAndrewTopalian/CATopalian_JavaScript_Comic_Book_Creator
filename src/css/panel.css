@@ -24,7 +24,7 @@
     background-color: rgb(10, 10, 10);
     color: rgb(245, 245, 245);
     font-family: arial;
-    font-size: 17px;
+    font-size: 15px;
     font-weight: bold;
 }
 
@@ -32,6 +32,23 @@
 {
     width: 200px;
     cursor: pointer;
+}
+
+/* slider track */
+.panel input[type = "range"]::-webkit-slider-runnable-track {
+    background: rgb(0, 50, 170);
+    height: 8px;
+    border-radius: 4px;
+}
+
+/* slider thumb */
+.panel input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Removes default styling */
+    height: 10px;
+    width: 200px;
+    background: #007bff;
+    border-radius: 50%;
+    margin-top: -5px; /* Centers the thumb on the track */
 }
 
 /* ---- */

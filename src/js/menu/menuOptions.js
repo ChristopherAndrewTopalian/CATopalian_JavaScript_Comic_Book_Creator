@@ -42,7 +42,7 @@ function menuOptions(whichId)
     {
         ge(menuId).remove();
 
-        eraseDivs("quickOptionsButtons");
+        eraseByClass("quickOptionsButtons");
     };
     mainDiv.append(theCloseX);
 

@@ -55,16 +55,6 @@
     color:white;
 }
 
-.characterGalleryStyle
-{
-    width: 100px;
-}
-
-.characterGalleryStyle:hover
-{
-    /* width: 200px ; */
-}
-
 .gridContainerStyle
 {
     padding: 0px;

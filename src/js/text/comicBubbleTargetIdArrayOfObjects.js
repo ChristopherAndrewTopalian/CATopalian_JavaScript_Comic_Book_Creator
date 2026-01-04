@@ -5,7 +5,7 @@ function comicBubbleTargetIdArrayOfObjects(whichId, whichArray, whichIndex)
 {
     if (document.getElementsByClassName("comicBubble"))
     {
-        eraseDivs('comicBubble');
+        eraseByClass('comicBubble');
     }
 
     let whichWords = 0;
@@ -30,7 +30,7 @@ function comicBubbleTargetIdArrayOfObjects(whichId, whichArray, whichIndex)
     theBubble.className = "comicBubble";
     theBubble.onclick = function()
     {
-        eraseDivs("comicBubble");
+        eraseByClass("comicBubble");
     };
     theBubble.style.zIndex = 30000;
     theBubble.textContent = whichArray[whichIndex].words;
@@ -40,7 +40,7 @@ function comicBubbleTargetIdArrayOfObjects(whichId, whichArray, whichIndex)
 //----//
 
 // Dedicated to God the Father
-// All Rights Reserved Christopher Andrew Topalian Copyright 2000-2025
+// All Rights Reserved Christopher Andrew Topalian Copyright 2000-2026
 // https://github.com/ChristopherTopalian
 // https://github.com/ChristopherAndrewTopalian
 // https://sites.google.com/view/CollegeOfScripting

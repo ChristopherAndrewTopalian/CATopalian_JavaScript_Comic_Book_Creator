@@ -39,7 +39,7 @@ function menuMenus()
     theMaximize.textContent = "O";
     theMaximize.className = "ourButton";
     theMaximize.style.position = "absolute";
-    theMaximize.style.left = 30 + "px";
+    theMaximize.style.left = 20 + "px";
     theMaximize.style.top = -22 + "px";
     theMaximize.onclick = function()
     {
@@ -889,7 +889,7 @@ function menuMenus()
 //----//
 
 // Dedicated to God the Father
-// All Rights Reserved Christopher Andrew Topalian Copyright 2000-2025
+// All Rights Reserved Christopher Andrew Topalian Copyright 2000-2026
 // https://github.com/ChristopherTopalian
 // https://github.com/ChristopherAndrewTopalian
 // https://sites.google.com/view/CollegeOfScripting

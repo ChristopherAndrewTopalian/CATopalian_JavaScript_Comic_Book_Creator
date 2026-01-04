@@ -2,32 +2,57 @@
 
 function eraseAll()
 {
-    // remove characters, props, backgrounds
+    // images
 
-    if (ge("theBgId"))
+    // get the list of images
+    let images = document.querySelectorAll('img');
+
+    // loop through them by index
+    for (let i = 0; i < images.length; i++)
     {
-        ge("theBgId").remove();
+        let img = images[i];
+
+        // if the id is NOT 'zoomIcon', remove it
+        if (img.id !== 'zoomIcon')
+        {
+            img.remove(img);
+        }
+
+        if (ge("theBgId"))
+        {
+            ge("theBgId").remove();
+        }
+
+        if (ge("tvMovies"))
+        {
+            ge("tvMovies").remove();
+        }
     }
 
-    eraseDivs("characterStyle");
-    eraseDivs("propStyle");
-    eraseDivs("menuStyle");
-    eraseDivs("theBackground");
-    eraseDivs("theBackground2");
-    eraseDivs("comicBubble");
+    //-//
 
-    if (ge('prop_tv_screen_dark'))
+    // videos
+
+    // get the list of videos
+    let videos = document.querySelectorAll('video');
+
+    // loop through them by index
+    for (let i = 0; i < videos.length; i++)
     {
-        ge('prop_tv_screen_dark').remove();
-    }
+        let vid = videos[i];
 
-    // eraseDivs("backgroundTiles");
+        // if the id is NOT 'zoomIcon', remove it
+        if (vid.id !== 'vidIcon')
+        {
+            vid.remove(vid);
+        }
+    }
 }
 
 //----//
 
 // Dedicated to God the Father
-// All Rights Reserved Christopher Andrew Topalian Copyright 2000-2025
+// All Rights Reserved Christopher Andrew Topalian Copyright 2000-2026
 // https://github.com/ChristopherTopalian
 // https://github.com/ChristopherAndrewTopalian
 // https://sites.google.com/view/CollegeOfScripting

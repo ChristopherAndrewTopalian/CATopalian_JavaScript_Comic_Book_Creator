@@ -4,7 +4,7 @@ function menuAnimationsArrayOfObjectsHere(whichArray, whichCategory)
 {
     if (ge("menuLeftId"))
     {
-        eraseDivs('menuLeftMain');
+        eraseByClass('menuLeftMain');
     }
 
     let mainDiv = ce("div");

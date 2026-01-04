@@ -74,7 +74,7 @@ function menuBackground(whichArray, whichId, whichSound)
 
         theButton.onclick = function()
         {
-            eraseDivs("backgroundTiles");
+            eraseByClass("backgroundTiles");
 
             ge(whichId).src = whichArray[x];
 

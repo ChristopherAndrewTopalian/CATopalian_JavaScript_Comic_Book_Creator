@@ -46,8 +46,8 @@ function backgroundMovieCreate(whichArray, whichItem)
     // if the background already exists remove it
     if (document.getElementsByClassName("theBackground2"))
     {
-        eraseDivs("theBackground2");
-        eraseDivs("backgroundMoviesStyle");
+        eraseByClass("theBackground2");
+        eraseByClass("backgroundMoviesStyle");
     }
     
 
