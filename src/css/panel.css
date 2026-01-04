@@ -10,15 +10,25 @@
     z-index: 5000;
     overflow-y: scroll;
     font-family: Arial;
-    font-size: 17px;
+    font-size: 13px;
     font-weight: bold;
     color: rgb(0, 255, 255);
+}
+
+.panel input
+{
+    width: 100px;
+    background-color: rgb(10, 10, 10);
+    color: rgb(245, 245, 245);
+    font-family: arial;
+    font-size: 17px;
+    font-weight: bold;
 }
 
 /* ---- */
 
 /* Dedicated to God the Father */
-/* All Rights Reserved Christopher Andrew Topalian Copyright 2000-2025 */
+/* All Rights Reserved Christopher Andrew Topalian Copyright 2000-2026 */
 /* https://github.com/ChristopherTopalian */
 /* https://github.com/ChristopherAndrewTopalian */
 /* https://sites.google.com/view/CollegeOfScripting */

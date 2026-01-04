@@ -22,6 +22,7 @@ function menuOptions(whichId)
     mainDiv.style.top = 50 + "px";
     mainDiv.style.width = 270 + 'px';
     mainDiv.style.zIndex = 9000;
+    mainDiv.style.fontSize = '14px';
     ba(mainDiv);
 
     //-//
@@ -49,7 +50,7 @@ function menuOptions(whichId)
 
     let thePanel = ce("div");
     thePanel.id = menuId;
-    thePanel.style.height = 380 + 'px';
+    thePanel.style.height ='370px';
     thePanel.className = 'panel';
     mainDiv.append(thePanel);
 
@@ -104,7 +105,6 @@ function menuOptions(whichId)
     let zIndexInput = ce('input');
     zIndexInput.type = 'number';
     zIndexInput.id = 'zIndexInput';
-    zIndexInput.className = 'textAreaMenuOptionsStyle';
     zIndexInput.style.width = 150 + 'px';
     zIndexInput.onkeyup = function()
     {
@@ -137,7 +137,6 @@ function menuOptions(whichId)
     let sizeInput = ce('input');
     sizeInput.type = 'number';
     sizeInput.id = 'sizeInput';
-    sizeInput.className = 'textAreaMenuOptionsStyle';
     sizeInput.onmouseover = function()
     {
         hoverSound();
@@ -192,7 +191,7 @@ function menuOptions(whichId)
     //-//
 
     let posXLabel = ce('div');
-    posXLabel.textContent = 'PosX';
+    posXLabel.textContent = 'Pos X';
     thePanel.append(posXLabel);
 
     //-//
@@ -200,7 +199,6 @@ function menuOptions(whichId)
     let posXInput = ce('input');
     posXInput.type = 'number';
     posXInput.id = 'posXInput';
-    posXInput.className = 'textAreaMenuOptionsStyle';
     posXInput.onmouseover = function()
     {
         hoverSound();
@@ -255,7 +253,6 @@ function menuOptions(whichId)
     let posYInput = ce('input');
     posYInput.type = 'number';
     posYInput.id = 'posYInput';
-    posYInput.className = 'textAreaMenuOptionsStyle';
     posYInput.onmouseover = function()
     {
         hoverSound();
@@ -310,7 +307,6 @@ function menuOptions(whichId)
     let rotationInput = ce('input');
     rotationInput.type = 'number';
     rotationInput.id = 'rotationInput';
-    rotationInput.className = 'textAreaMenuOptionsStyle';
     rotationInput.style.width = 100 + 'px';
     rotationInput.onmouseover = function()
     {
@@ -557,7 +553,6 @@ function menuOptions(whichId)
     let opacityInput = ce('input');
     opacityInput.type = 'number';
     opacityInput.id = 'opacityInput';
-    opacityInput.className = 'textAreaMenuOptionsStyle';
     opacityInput.min = 0;
     opacityInput.max = 1;
     opacityInput.step = 0.1;
@@ -608,7 +603,6 @@ function menuOptions(whichId)
     let contrastInput = ce('input');
     contrastInput.id = 'contrastInput';
     contrastInput.type = 'number';
-    contrastInput.className = 'textAreaMenuOptionsStyle';
     contrastInput.min = 0;
     contrastInput.max = 100;
     contrastInput.step = 0.1;
@@ -659,7 +653,6 @@ function menuOptions(whichId)
     let brightnessInput = ce('input');
     brightnessInput.id = 'brightnessInput';
     brightnessInput.type = 'number';
-    brightnessInput.className = 'textAreaMenuOptionsStyle';
     brightnessInput.min = 0;
     brightnessInput.max = 100;
     brightnessInput.step = 0.1;
@@ -710,7 +703,6 @@ function menuOptions(whichId)
     let hueInput = ce('input');
     hueInput.id = 'hueInput';
     hueInput.type = 'number';
-    hueInput.className = 'textAreaMenuOptionsStyle';
     hueInput.min = 0;
     hueInput.max = 100;
     hueInput.step = 0.1;
@@ -761,7 +753,6 @@ function menuOptions(whichId)
     let saturationInput = ce('input');
     saturationInput.type = 'number';
     saturationInput.id = 'saturationInput';
-    saturationInput.className = 'textAreaMenuOptionsStyle';
     saturationInput.min = 0;
     saturationInput.max = 100;
     saturationInput.step = 0.1;
@@ -812,7 +803,6 @@ function menuOptions(whichId)
     let grayScaleInput = ce('input');
     grayScaleInput.id = 'grayScaleInput';
     grayScaleInput.type = 'number';
-    grayScaleInput.className = 'textAreaMenuOptionsStyle';
     grayScaleInput.min = 0;
     grayScaleInput.max = 100;
     grayScaleInput.step = 0.1;
@@ -863,7 +853,6 @@ function menuOptions(whichId)
     let blurInput = ce('input');
     blurInput.id = 'blurInput';
     blurInput.type = 'number';
-    blurInput.className = 'textAreaMenuOptionsStyle';
     blurInput.min = 0;
     blurInput.max = 100;
     blurInput.step = 0.1;
@@ -914,7 +903,6 @@ function menuOptions(whichId)
     let invertInput = ce('input');
     invertInput.id = 'invertInput';
     invertInput.type = 'number';
-    invertInput.className = 'textAreaMenuOptionsStyle';
     invertInput.min = 0;
     invertInput.max = 100;
     invertInput.step = 0.1;
@@ -966,7 +954,6 @@ function menuOptions(whichId)
     sepiaInput.id = 'sepiaInput';
     sepiaInput.type = 'number';
     sepiaInput.id = 'sepiaInput';
-    sepiaInput.className = 'textAreaMenuOptionsStyle';
     sepiaInput.min = 0;
     sepiaInput.max = 100;
     sepiaInput.step = 0.1;
@@ -1017,7 +1004,6 @@ function menuOptions(whichId)
     let dropShadowXInput = ce('input');
     dropShadowXInput.id = 'dropShadowXInput';
     dropShadowXInput.type = 'number';
-    dropShadowXInput.className = 'textAreaMenuOptionsStyle';
     dropShadowXInput.min = 0;
     dropShadowXInput.max = 100;
     dropShadowXInput.step = 0.1;
@@ -1068,7 +1054,6 @@ function menuOptions(whichId)
     let dropShadowYInput = ce('input');
     dropShadowYInput.id = 'dropShadowYInput';
     dropShadowYInput.type = 'number';
-    dropShadowYInput.className = 'textAreaMenuOptionsStyle';
     dropShadowYInput.min = 0;
     dropShadowYInput.max = 100;
     dropShadowYInput.step = 0.1;
@@ -1119,7 +1104,6 @@ function menuOptions(whichId)
     let dropShadowBlurRadiusInput = ce('input');
     dropShadowBlurRadiusInput.id = 'dropShadowBlurRadiusInput';
     dropShadowBlurRadiusInput.type = 'number';
-    dropShadowBlurRadiusInput.className = 'textAreaMenuOptionsStyle';
     dropShadowBlurRadiusInput.min = 0;
     dropShadowBlurRadiusInput.max = 100;
     dropShadowBlurRadiusInput.step = 0.1;
@@ -1169,7 +1153,6 @@ function menuOptions(whichId)
     let dropShadowOpacityInput = ce('input');
     dropShadowOpacityInput.id = 'dropShadowOpacityInput';
     dropShadowOpacityInput.type = 'number';
-    dropShadowOpacityInput.className = 'textAreaMenuOptionsStyle';
     dropShadowOpacityInput.min = 0;
     dropShadowOpacityInput.max = 1;
     dropShadowOpacityInput.step = 0.01;
@@ -1213,20 +1196,22 @@ function menuOptions(whichId)
     titleOfApp.textContent = 'CATopalian JavaScript Comic Book Creator';
     titleOfApp.href = 'https://github.com/ChristopherAndrewTopalian/CATopalian_JavaScript_Comic_Book_Creator';
     titleOfApp.target = '_blank';
+    titleOfApp.style.color = 'rgba(179, 193, 255, 1)';
+    titleOfApp.style.textDecoration = 'none';
     thePanel.append(titleOfApp);
 
     //-//
 
     let credits = ce('div');
-    credits.textContent = 'All Rights Reserved (c) Copyright 2000-2025';
-    credits.style.fontSize = '15px';
+    credits.textContent = 'All Rights Reserved (c) Copyright 2000-2026';
+    credits.style.color = 'rgb(130, 130, 130)';
     thePanel.append(credits);
 }
 
 //----//
 
 // Dedicated to God the Father
-// All Rights Reserved Christopher Andrew Topalian Copyright 2000-2025
+// All Rights Reserved Christopher Andrew Topalian Copyright 2000-2026
 // https://github.com/ChristopherTopalian
 // https://github.com/ChristopherAndrewTopalian
 // https://sites.google.com/view/CollegeOfScripting

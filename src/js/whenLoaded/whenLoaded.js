@@ -2,23 +2,19 @@
 
 function whenLoaded()
 {
+    // camera setting
+    cameraFlag = 'stay';
+
     // lists all menus
     menuMenus();
 
     bottomMenu();
 
-    //makeTextureInfoBox();
-
     menuQuickPrefs();
-
-    // menu for - camera - follow - stay
-    //menuSettings();
 
     menuScenesVertical();
 
     makeZoomIcon();
-
-    cameraFlag = 'stay';
 
     mousePositionShow();
 
