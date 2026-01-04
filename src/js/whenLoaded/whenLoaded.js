@@ -26,8 +26,11 @@ function whenLoaded()
     rightClickOff();
 
     // game engine controls
+
+    // add event listener for keydown
     window.addEventListener("keydown", theControls, false);
 
+    // add event listener for keyup
     window.addEventListener("keyup", theControls, false);
 
     // load scene, with props and characters
@@ -35,7 +38,7 @@ function whenLoaded()
 
     loadSounds(sfx);
 
-    // listen for mouse click and activate mousePos function
+    // add event listener for left mouse click and activate mousePos function
     window.addEventListener("click", mousePos, false);
 
     //-//
