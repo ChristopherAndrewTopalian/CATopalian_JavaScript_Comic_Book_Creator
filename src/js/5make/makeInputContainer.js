@@ -9,8 +9,8 @@ function makeInputContainer(whichFlag)
 
     let mainDiv = ce('div');
     mainDiv.style.position = 'absolute';
-    mainDiv.style.right = 0 + 'px';
-    mainDiv.style.top = 70 + 'px';
+    mainDiv.style.right = 10 + 'px';
+    mainDiv.style.top = 20 + 'px';
     mainDiv.id = 'inputMain';
     mainDiv.style.zIndex = 10000;
     mainDiv.style.border = 'solid 1px rgb(255, 255, 255)';
@@ -44,8 +44,9 @@ function makeInputContainer(whichFlag)
     let inputContainer = ce('div');
     inputContainer.id = 'inputContainer';
     //inputContainer.style.overflowY = 'scroll';
-    inputContainer.style.padding = 10 + 'px';
-    inputContainer.style.margin = 10 + 'px';
+    inputContainer.style.paddingLeft = '4px';
+    inputContainer.style.paddingRight = '4px';
+    //inputContainer.style.margin = '0px 2px';
     inputContainer.style.display = 'flex';
     inputContainer.style.flexDirection = 'column';
     inputContainer.title = 'inputContainer';
