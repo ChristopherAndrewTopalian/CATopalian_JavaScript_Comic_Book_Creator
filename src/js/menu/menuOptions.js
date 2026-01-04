@@ -93,10 +93,6 @@ function menuOptions(whichId)
 
     //-//
 
-    thePanel.append(ce('hr'));
-
-    //-//
-
     let layerLabel = ce('div');
     layerLabel.textContent = 'Layer';
     thePanel.append(layerLabel);
@@ -117,10 +113,6 @@ function menuOptions(whichId)
         ge(whichId).style.zIndex = zIndexInput.value;
     };
     thePanel.append(zIndexInput);
-
-    //-//
-
-    thePanel.append(ce('hr'));
 
     //-//
 
