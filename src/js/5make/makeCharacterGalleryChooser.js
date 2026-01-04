@@ -68,12 +68,13 @@ function makeCharacterGalleryChooser(whichX, whichY, whichId)
             galleryContainer.style.overflowX = 'scroll';
             galleryContainer.style.display = 'grid';
             galleryContainer.style.gridTemplateColumns = 'auto auto auto';
-            galleryContainer.style.gap = '1px';
 
             galleryContainer.style.width = 400 + 'px';
             galleryContainer.style.height = 300 + 'px';
             galleryContainer.style.border = 'solid 2px rgb(0, 255, 255)';
             galleryContainer.style.zIndex = 40000;
+            galleryContainer.style.gap = '3px';
+            galleryContainer.style.backgroundColor = 'rgba(0, 0, 0, 0.8)';
             ba(galleryContainer);
 
             //-//
