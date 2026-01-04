@@ -2,6 +2,7 @@
 
 function makeCharacterGalleryChooser(whichX, whichY, whichId)
 {
+    let characterFiles = [];
     let counter = 0;
     let rezPositionLeft = 200;
     let rezPositionTop = 300;
@@ -49,7 +50,7 @@ function makeCharacterGalleryChooser(whichX, whichY, whichId)
         }
 
         // get the newly selected files
-        let characterFiles = event.target.files;
+        characterFiles = event.target.files;
 
         if (characterFiles && characterFiles.length > 0)
         {

@@ -2,9 +2,10 @@
 
 function makeCharacterChooseButton(whichX, whichY, whichId)
 {
+    let characterFiles = [];
     let counter = 0;
     let rezPositionLeft = 200;
-    let rezPositionTop = 300;
+    let rezPositionTop = 20;
 
     let characterHeight = 300;
     let layer = 1000;
@@ -46,9 +47,14 @@ function makeCharacterChooseButton(whichX, whichY, whichId)
             let character = ce('img');
             character.id = 'character' + counter;
 
+            character.src = URL.createObjectURL(characterFiles[0]);
+
+            /*
+            // random
             character.src = URL.createObjectURL(
                 characterFiles[Math.floor(Math.random() * characterFiles.length)]
             );
+            */
 
             character.style.position = 'absolute';
             character.style.left = rezPositionLeft + 'px';
@@ -58,6 +64,8 @@ function makeCharacterChooseButton(whichX, whichY, whichId)
 
             ba(character);
             makeElementDraggable(character);
+
+            menuOptions(character.id);
         }
     };
     mainDiv.append(characterInput);
@@ -66,12 +74,44 @@ function makeCharacterChooseButton(whichX, whichY, whichId)
 
     let openCharacterButton = ce('button');
     openCharacterButton.textContent = 'Load Character';
-
+    openCharacterButton.style.lineHeight = '12px';
     openCharacterButton.onclick = function()
     {
         characterInput.click();
     };
     mainDiv.append(openCharacterButton);
+
+    //-//
+
+    let backButton = ce('button');
+    backButton.textContent = '<=';
+    backButton.onclick = function()
+    {
+        if (counter > 0)
+        {
+            counter -= 1;
+            //characterFiles[counter];
+
+            ge('character0').src = URL.createObjectURL(characterFiles[counter]);
+        }
+    };
+    mainDiv.append(backButton);
+
+    //-//
+
+    let forwardButton = ce('button');
+    forwardButton.textContent = '=>';
+    forwardButton.onclick = function()
+    {
+        if (counter < characterFiles.length)
+        {
+            counter += 1;
+            //characterFiles[counter];
+
+            ge('character0').src = URL.createObjectURL(characterFiles[counter]);
+        }
+    };
+    mainDiv.append(forwardButton);
 
     //-//
 
