@@ -7,7 +7,7 @@ function makeCharacterGalleryChooser(whichX, whichY, whichId)
     let rezPositionLeft = 200;
     let rezPositionTop = 300;
 
-    let characterHeight = 300;
+    let characterHeight = 100;
     let layer = 3000;
 
     //-//
@@ -59,9 +59,11 @@ function makeCharacterGalleryChooser(whichX, whichY, whichId)
 
             // center the gallery on the screen
             galleryContainer.style.position = 'fixed';
-            galleryContainer.style.top = '50%';
-            galleryContainer.style.left = '50%';
-            galleryContainer.style.transform = 'translate(-50%, -50%)'; // center it
+            galleryContainer.style.left = '20px';
+            galleryContainer.style.top = '20px';
+            //galleryContainer.style.top = '50%';
+            //galleryContainer.style.left = '50%';
+            //galleryContainer.style.transform = 'translate(-50%, -50%)'; // center it
             galleryContainer.style.overflowY = 'scroll';
             galleryContainer.style.overflowX = 'scroll';
             galleryContainer.style.display = 'grid';
@@ -70,7 +72,7 @@ function makeCharacterGalleryChooser(whichX, whichY, whichId)
 
             galleryContainer.style.width = 400 + 'px';
             galleryContainer.style.height = 300 + 'px';
-            galleryContainer.style.border = 'solid 1px rgb(255, 255, 255)';
+            galleryContainer.style.border = 'solid 2px rgb(0, 255, 255)';
             galleryContainer.style.zIndex = 40000;
             ba(galleryContainer);
 
@@ -190,7 +192,7 @@ function makeCharacterGalleryChooser(whichX, whichY, whichId)
 //----//
 
 // Dedicated to God the Father
-// All Rights Reserved Christopher Andrew Topalian Copyright 2000-2025
+// All Rights Reserved Christopher Andrew Topalian Copyright 2000-2026
 // https://github.com/ChristopherTopalian
 // https://github.com/ChristopherAndrewTopalian
 // https://sites.google.com/view/CollegeOfScripting
