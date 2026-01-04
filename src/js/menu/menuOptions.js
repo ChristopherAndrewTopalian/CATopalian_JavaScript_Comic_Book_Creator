@@ -20,7 +20,7 @@ function menuOptions(whichId)
     mainDiv.style.position = "absolute";
     mainDiv.style.right = 0 + "px";
     mainDiv.style.top = 50 + "px";
-    mainDiv.style.width = 270 + 'px';
+    mainDiv.style.width = 235 + 'px';
     mainDiv.style.zIndex = 9000;
     mainDiv.style.fontSize = '14px';
     ba(mainDiv);
@@ -50,7 +50,7 @@ function menuOptions(whichId)
 
     let thePanel = ce("div");
     thePanel.id = menuId;
-    thePanel.style.height ='370px';
+    thePanel.style.height = '250px';
     thePanel.className = 'panel';
     mainDiv.append(thePanel);
 
@@ -344,6 +344,10 @@ function menuOptions(whichId)
         ge('rotationInput').value = rotationSlider.value;
     };
     thePanel.append(rotationSlider);
+
+    //-//
+
+    thePanel.append(ce('br'));
 
     //-//
 
