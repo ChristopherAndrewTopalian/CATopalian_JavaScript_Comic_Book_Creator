@@ -2,6 +2,16 @@
 
 let online = false;
 
+//-//
+
+let interfaceHidden = false;
+
+//-//
+
+// if true, right click context menu off
+// if false, right click context menu shows
+let preventRightClickFlag = false;
+
 //----//
 
 // Dedicated to God the Father
