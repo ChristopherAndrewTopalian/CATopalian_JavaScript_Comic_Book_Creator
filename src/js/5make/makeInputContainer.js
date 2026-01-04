@@ -50,7 +50,7 @@ function makeInputContainer(whichFlag)
     inputContainer.style.display = 'flex';
     inputContainer.style.flexDirection = 'column';
     inputContainer.title = 'inputContainer';
-    inputContainer.style.gap = 5 + 'px';
+    inputContainer.style.gap = 2 + 'px';
     mainDiv.append(inputContainer);
 
     //-//

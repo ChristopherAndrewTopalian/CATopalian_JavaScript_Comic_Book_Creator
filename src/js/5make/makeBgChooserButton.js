@@ -2,6 +2,8 @@
 
 function makeBgChooserButton(whichX, whichY, whichId)
 {
+    let counter = 0;
+
     let chooserId = whichId;
 
     if (ge(chooserId))
@@ -42,7 +44,10 @@ function makeBgChooserButton(whichX, whichY, whichId)
             theBg.id = 'bg';
             theBg.style.width = 700 + 'px';
 
-            theBg.src = URL.createObjectURL(bgFiles[Math.floor(Math.random() * bgFiles.length)]);
+            theBg.src = URL.createObjectURL(bgFiles[0]);
+
+            // random
+            //theBg.src = URL.createObjectURL(bgFiles[Math.floor(Math.random() * bgFiles.length)]);
 
             //theBg.style.position = 'absolute';
 
@@ -64,6 +69,38 @@ function makeBgChooserButton(whichX, whichY, whichId)
         bgInput.click();
     };
     mainDiv.append(openBgBtn);
+
+    //-//
+
+    let backButton = ce('button');
+    backButton.textContent = '<=';
+    backButton.onclick = function()
+    {
+        if (counter > 0)
+        {
+            counter -= 1;
+            //characterFiles[counter];
+
+            ge('bg').src = URL.createObjectURL(bgFiles[counter]);
+        }
+    };
+    mainDiv.append(backButton);
+
+    //-//
+
+    let forwardButton = ce('button');
+    forwardButton.textContent = '=>';
+    forwardButton.onclick = function()
+    {
+        if (counter < bgFiles.length)
+        {
+            counter += 1;
+            //characterFiles[counter];
+
+            ge('bg').src = URL.createObjectURL(bgFiles[counter]);
+        }
+    };
+    mainDiv.append(forwardButton);
 
     //-//
 
