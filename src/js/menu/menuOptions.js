@@ -60,6 +60,7 @@ function menuOptions(whichId)
     idOfCharacterChosen.textContent = whichId;
     idOfCharacterChosen.style.fontWeight = 'bold';
     idOfCharacterChosen.style.textAlign = 'center';
+    idOfCharacterChosen.style.fontSize = '15px';
     thePanel.append(idOfCharacterChosen);
 
     //-//
@@ -105,7 +106,6 @@ function menuOptions(whichId)
     let zIndexInput = ce('input');
     zIndexInput.type = 'number';
     zIndexInput.id = 'zIndexInput';
-    zIndexInput.style.width = 150 + 'px';
     zIndexInput.onkeyup = function()
     {
         ge(whichId).style.zIndex = zIndexInput.value;
