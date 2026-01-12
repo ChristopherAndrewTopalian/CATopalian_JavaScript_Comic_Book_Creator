@@ -51,6 +51,27 @@
     margin-top: -5px; /* Centers the thumb on the track */
 }
 
+/* Target all scrollbars */
+::-webkit-scrollbar {
+    width: 10px; /* Width for vertical scrollbar, height for horizontal */
+}
+
+/* Style the scrollbar track */
+::-webkit-scrollbar-track {
+    background: black; /* Black background for the track */
+}
+
+/* Style the scrollbar thumb */
+::-webkit-scrollbar-thumb {
+    background: aqua; /* Aqua color for the thumb */
+    border-radius: 5px; /* Optional: Rounded corners for the thumb */
+}
+
+/* Optional: Style the thumb on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #00B7EB; /* A lighter shade of aqua on hover */
+}
+
 /* ---- */
 
 /* Dedicated to God the Father */

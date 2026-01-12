@@ -75,6 +75,7 @@ function makeCharacterChooseButton(whichX, whichY, whichId)
     let openCharacterButton = ce('button');
     openCharacterButton.textContent = 'Load Character';
     openCharacterButton.style.lineHeight = '12px';
+    openCharacterButton.title = 'characterChoose Choose Multiple Textures';
     openCharacterButton.onclick = function()
     {
         characterInput.click();
