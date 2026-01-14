@@ -138,7 +138,7 @@ function menuOptions(whichId)
         inputSound();
 
         // size element
-        ge(whichId).style.width = sizeInput.value;
+        ge(whichId).style.width = sizeInput.value + 'px';
 
         // update sizeSlider
         ge('sizeSlider').value = sizeInput.value;
@@ -161,7 +161,7 @@ function menuOptions(whichId)
         inputSound();
 
         // size element
-        ge(whichId).style.width = ge('sizeSlider').value;
+        ge(whichId).style.width = ge('sizeSlider').value + 'px';
 
         // update sizeInput
         ge('sizeInput').value = sizeSlider.value;
@@ -200,10 +200,10 @@ function menuOptions(whichId)
         inputSound();
 
         // position element
-        ge(whichId).style.left = posXInput.value;
+        ge(whichId).style.left = posXInput.value + 'px';
 
         // update posXSlider
-        ge('posXSlider').value = posXInput.value;
+        ge('posXSlider').value = posXInput.value + 'px';
     };
     thePanel.append(posXInput);
 
@@ -223,7 +223,7 @@ function menuOptions(whichId)
         inputSound();
 
         // position element
-        ge(whichId).style.left = posXSlider.value;
+        ge(whichId).style.left = posXSlider.value + 'px';
 
         // update posXInput
         ge('posXInput').value = posXSlider.value;
@@ -254,7 +254,7 @@ function menuOptions(whichId)
         inputSound();
 
         // position element
-        ge(whichId).style.top = posYInput.value;
+        ge(whichId).style.top = posYInput.value + 'px';
 
         // update posYSlider
         ge('posYSlider').value = posYInput.value;
@@ -277,7 +277,7 @@ function menuOptions(whichId)
         inputSound();
 
         // position element
-        ge(whichId).style.top = posYSlider.value;
+        ge(whichId).style.top = posYSlider.value + 'px';
 
         // update posYInput
         ge('posYInput').value = posYSlider.value;

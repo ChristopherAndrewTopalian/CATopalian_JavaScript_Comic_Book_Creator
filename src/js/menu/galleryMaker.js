@@ -83,7 +83,7 @@ function galleryMaker(whichArray, whichCategory)
                 let thePerson = ce("img");
                 thePerson.className = "gridItemStyle";
                 thePerson.src = whichArray[x].texture;
-                thePerson.style.width = whichArray[x].sizeX;
+                thePerson.style.width = whichArray[x].sizeX + 'px';
 
                 thePerson.title = whichArray[x].name + "\n" + whichArray[x].texture;
 
@@ -91,9 +91,9 @@ function galleryMaker(whichArray, whichCategory)
 
                 thePerson.style.position = "relative";
 
-                thePerson.style.left = whichArray[x].posX;
+                thePerson.style.left = whichArray[x].posX + 'px';
 
-                thePerson.style.top = whichArray[x].posY;
+                thePerson.style.top = whichArray[x].posY + 'px';
 
                 idToMove = whichArray[x].theId;
 
@@ -157,7 +157,7 @@ function galleryMaker(whichArray, whichCategory)
 //----//
 
 // Dedicated to God the Father
-// All Rights Reserved Christopher Andrew Topalian Copyright 2000-2025
+// All Rights Reserved Christopher Andrew Topalian Copyright 2000-2026
 // https://github.com/ChristopherTopalian
 // https://github.com/ChristopherAndrewTopalian
 // https://sites.google.com/view/CollegeOfScripting

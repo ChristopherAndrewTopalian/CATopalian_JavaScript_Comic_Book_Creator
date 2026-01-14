@@ -66,7 +66,7 @@ function scene(whichArray)
             if (whichArray[x].theX)
             {
                 // set left position
-                theImage.style.left = whichArray[x].theX;
+                theImage.style.left = whichArray[x].theX + 'px';
             }
 
             //----//
@@ -75,7 +75,7 @@ function scene(whichArray)
             if (whichArray[x].theY)
             {
                 // set top position
-                theImage.style.top = whichArray[x].theY;
+                theImage.style.top = whichArray[x].theY + 'px';
             }
 
             //----//
@@ -85,7 +85,7 @@ function scene(whichArray)
             if (whichArray[x].sizeX)
             {
                 // set width
-                theImage.style.width = whichArray[x].sizeX;
+                theImage.style.width = whichArray[x].sizeX + 'px';
             }
 
             //----//
@@ -95,7 +95,7 @@ function scene(whichArray)
             if (whichArray[x].sizeY)
             {
                 // set height
-                theImage.style.height = whichArray[x].sizeY;
+                theImage.style.height = whichArray[x].sizeY + 'px';
             }
 
             // flipHorizontal
@@ -226,8 +226,8 @@ function scene(whichArray)
             videoElement.id = whichArray[x].theId;
             videoElement.className = whichArray[x].className;
             videoElement.style.position = "absolute";
-            videoElement.style.left = whichArray[x].theX;
-            videoElement.style.top = whichArray[x].theY;
+            videoElement.style.left = whichArray[x].theX + 'px';
+            videoElement.style.top = whichArray[x].theY + 'px';
             videoElement.style.zIndex = whichArray[x].theLayer;
             videoElement.style.width = whichArray[x].sizeX + "px";
             videoElement.style.height = "auto"; // height according to aspect ratio
@@ -292,7 +292,7 @@ function scene(whichArray)
 //----//
 
 // Dedicated to God the Father
-// All Rights Reserved Christopher Andrew Topalian Copyright 2000-2025
+// All Rights Reserved Christopher Andrew Topalian Copyright 2000-2026
 // https://github.com/ChristopherTopalian
 // https://github.com/ChristopherAndrewTopalian
 // https://sites.google.com/view/CollegeOfScripting
