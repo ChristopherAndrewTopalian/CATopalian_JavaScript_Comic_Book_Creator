@@ -35,14 +35,12 @@ function menuGifs()
     mainDiv.style.position = "absolute";
     mainDiv.style.left = 325 + "px";
     mainDiv.style.top = 100 + "px";
-    mainDiv.style.width = 300 + "px";
     mainDiv.id = "menuBackgroundId";
     mainDiv.style.zIndex = 10;
     mainDiv.style.backgroundColor = "rgba(0, 0, 0, 0.8)";
     mainDiv.style.float = "left";
     mainDiv.style.overflowY = "scroll";
-    mainDiv.style.height = 100 + "px";
-    mainDiv.style.padding = 10 + "px";
+    mainDiv.style.padding = '4px';
     mainDiv.style.borderRadius = 5 + "px";
     // mainDiv.className = "scrolling";
     mainDiv.id = theMenuId;
