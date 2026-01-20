@@ -14,14 +14,13 @@ function menuVoiceLoop()
     mainDiv.style.left = 300 + "px";
     mainDiv.style.top = 100 + "px";
     mainDiv.style.backgroundColor = "rgba(0,0,0,0.4)";
-    mainDiv.className = "scrolling";
+    mainDiv.style.overflowY = "scroll";
     mainDiv.id = "menuVoiceLoopId";
     mainDiv.style.zIndex = 10;
     mainDiv.style.float = "left";
     mainDiv.style.overflowY = "auto";
-    mainDiv.style.padding = 10 + "px";
+    mainDiv.style.padding = '4px';
     mainDiv.style.borderRadius = 5 + "px";
-    mainDiv.style.height = 100 + "px";
     ba(mainDiv);
 
     makeElementDraggable(mainDiv);
@@ -73,14 +72,6 @@ function menuVoiceLoop()
     };
     deactivateVoicesButton.className = "ourButton";
     mainDiv.append(deactivateVoicesButton);
-
-    //-//
-
-    let theText = ce("div");
-    theText.textContent = "Voice Loop Options";
-    theText.style.display = "block";
-    //inline //block //none //inline-block
-    mainDiv.append(theText);
 }
 
 //----//

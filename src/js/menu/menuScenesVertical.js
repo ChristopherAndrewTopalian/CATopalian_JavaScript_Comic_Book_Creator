@@ -80,6 +80,7 @@ function menuScenesVertical()
         clickSound();
 
         scene(scene_led_circuit_001);
+        sceneEvents(scene_led_circuit_001, 0);
 
         currentScene = 'scene_led_circuit_001';
 
@@ -104,6 +105,7 @@ function menuScenesVertical()
         clickSound();
 
         scene(scene_beach_001);
+        sceneEvents(scene_beach_001, 0);
 
         currentScene = 'scene_beach_001';
     
@@ -130,6 +132,7 @@ function menuScenesVertical()
         clickSound();
 
         scene(scene_desert_001);
+        sceneEvents(scene_desert_001, 0);
 
         currentScene = 'scene_desert_001';
 

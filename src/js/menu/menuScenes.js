@@ -15,16 +15,15 @@ function menuScenes(whichArray, whichId, menuName, whichSound, theX, theY)
     mainDiv.style.position = "absolute";
     mainDiv.style.left = 300 + "px";
     mainDiv.style.top = 100 + "px";
-    mainDiv.style.width = 500 + "px";
+    mainDiv.style.width = '200px';
     mainDiv.id = "menuBackgroundId";
     mainDiv.style.zIndex = 1000;
     mainDiv.style.backgroundColor = "rgba(0, 0, 0, 0.4)";
     mainDiv.style.float = "left";
     mainDiv.style.overflowY = "auto";
-    mainDiv.style.height = 100 + "px";
-    mainDiv.style.padding = 10 + "px";
+    mainDiv.style.padding = '4px';
     mainDiv.style.borderRadius = 5 + "px";
-    mainDiv.className = "scrolling";
+    mainDiv.style.overflowY = "scroll";
     mainDiv.id = theMenuId;
     ba(mainDiv);
 
@@ -47,13 +46,6 @@ function menuScenes(whichArray, whichId, menuName, whichSound, theX, theY)
     subDiv.style.color = "rgb(70, 70, 70)";
     subDiv.title = theMenuId + "()";
     mainDiv.append(subDiv);
-
-    //-//
-
-    let titleDiv = ce("div");
-    titleDiv.textContent = "Play";
-    titleDiv.style.color = "rgb(255, 255, 255)";
-    mainDiv.append(titleDiv);
 
     //-//
 
