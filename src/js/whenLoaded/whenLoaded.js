@@ -31,6 +31,7 @@ function whenLoaded()
 
     // load scene, with props and characters
     scene(scene_tv_room_001);
+    scene_tv_room_001_actions();
 
     loadSounds(sfx);
 

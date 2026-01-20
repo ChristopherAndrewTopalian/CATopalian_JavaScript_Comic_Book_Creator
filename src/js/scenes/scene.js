@@ -269,22 +269,6 @@ function scene(whichArray)
         }
     }
 
-    //-//
-
-    // if tv elements exist
-    if (ge('tv_container') && 
-        ge('prop_tv_001') &&
-        ge('prop_tv_screen_dark'))
-    {
-        //ge('tv_container').append(ge('prop_tv_001'));
-
-        //ge('tv_container').append(ge('prop_tv_screen_dark'));
-
-        //ge('prop_tv_screen_dark').style.objectFit = 'contain';
-
-        ge('prop_tv_screen_dark').style.height = '130px';
-    }
-
     // make scene description info box
     makeDescription(whichArray);
 }

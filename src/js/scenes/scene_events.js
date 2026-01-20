@@ -18,7 +18,7 @@ function sceneEvents(whichArray, x)
 
     if (THE_SCENE == "scene_tv_room_001")
     {
-        tvRoom001();
+        //tvRoom001();
 
         if (ge('bgVideo'))
         {
@@ -35,9 +35,10 @@ function sceneEvents(whichArray, x)
         ge("bgVideo").play();
     }
 
-    if (THE_SCENE == "scene_room_001")
+    if (THE_SCENE == "scene_tv_room_001")
     {
-        cl('Room 001');
+        cl('tv room 001');
+        scene_tv_room_001_actions();
     }
 
     if (THE_SCENE == "scene_gym_001")

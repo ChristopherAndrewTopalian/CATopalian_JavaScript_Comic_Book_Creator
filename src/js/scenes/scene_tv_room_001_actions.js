@@ -2,9 +2,15 @@
 
 function scene_tv_room_001_actions()
 {
+    cl('g');
     ge("bgVideo").play();
 
-    comicBubbleTargetIdArrayOfObjects("ayan1", greetingMessage, 0);
+    ge('prop_tv_001').addEventListener('click', function()
+    {
+        menuPlayMovie();
+    });
+
+    //comicBubbleTargetIdArrayOfObjects("ayan1", greetingMessage, 0);
 }
 
 // make height of the tv screen 30%
