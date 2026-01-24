@@ -21,8 +21,9 @@ function menuCameraDiv()
     mainDiv.style.overflowY = "auto";
     mainDiv.style.padding = 10 + "px";
     mainDiv.style.borderRadius = 5 + "px";
-    mainDiv.style.height = 100 + "px";
     ba(mainDiv);
+
+    makeElementDraggable(mainDiv);
 
     //-//
 
@@ -71,13 +72,6 @@ function menuCameraDiv()
 
     buttonStay.className = "ourButton";
     mainDiv.append(buttonStay);
-
-    //-//
-
-    let theText = ce("div");
-    theText.textContent = "Set Camera here";
-    theText.style.display = "block";
-    mainDiv.append(theText);
 }
 
 //----//

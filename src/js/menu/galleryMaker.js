@@ -1,7 +1,7 @@
 // galleryMaker.js
 
 // combine arrays together into one array
-let everything = galleryCharacters.concat(galleryHeads, galleryBody, galleryProps, galleryJets, galleryTanks, galleryArtillery, galleryDronesMilitary, galleryMilitaryMales, galleryDesks, galleryPeople, galleryTables, galleryComponents);
+let everything = galleryCharacters.concat(galleryHeads, galleryBody, galleryProps, galleryJets, galleryTanks, galleryArtillery, galleryDronesMilitary, galleryMilitaryMales, galleryDesks, galleryPeople, galleryTables, galleryComponents, galleryHumvees, galleryYachts, galleryJeeps);
 
 let countries = [
 {

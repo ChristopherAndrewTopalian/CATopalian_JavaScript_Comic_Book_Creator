@@ -24,6 +24,13 @@ function cl(whichMessage)
     return result;
 }
 
+function qsa(whichTypeOrClass)
+{
+    let result = document.querySelectorAll(whichTypeOrClass);
+
+    return result;
+}
+
 function ct(whichText)
 {
     let result = document.createTextNode(whichText);

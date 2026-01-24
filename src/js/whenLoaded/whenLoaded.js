@@ -18,6 +18,8 @@ function whenLoaded()
 
     mousePositionShow();
 
+    menuMain();
+
     // prevent right click contextmenu
     rightClickOff();
 
