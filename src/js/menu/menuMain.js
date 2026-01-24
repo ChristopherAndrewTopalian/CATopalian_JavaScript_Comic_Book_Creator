@@ -53,26 +53,259 @@ function menuMain()
 
     //-//
 
-    let galleries = [
-        'electronics', 'jet', 'tank', 'artillery', 'drone_military', 'humvee', 'jeep', 'military_males', 'yacht', 'desk', 'table', 'person', 'character', 'head', 'body', 'props', 
-    ];
-
-    for (let x = 0; x < galleries.length; x++)
+    let galleryComponentsBtn = ce('button');
+    galleryComponentsBtn.textContent = 'ELECTRONICS';
+    galleryComponentsBtn.onmouseover = function()
     {
-        let galleryBtn = ce('button');
-        galleryBtn.textContent = galleries[x];
-        galleryBtn.onmouseover = function()
-        {
-            hoverSound();
-        };
-        galleryBtn.onclick = function()
-        {
-            clickSound();
+        hoverSound();
+    };
+    galleryComponentsBtn.onclick = function()
+    {
+        clickSound();
 
-            galleryMaker(everything, galleries[x]);
-        };
-        galleryDetails.append(galleryBtn);
-    }
+        galleryMaker(galleryComponents);
+    };
+    galleryDetails.append(galleryComponentsBtn);
+
+    //-//
+
+    let galleryJetsBtn = ce('button');
+    galleryJetsBtn.textContent = 'JETS';
+    galleryJetsBtn.onmouseover = function()
+    {
+        hoverSound();
+    };
+    galleryJetsBtn.onclick = function()
+    {
+        clickSound();
+
+        galleryMaker(galleryJets);
+    };
+    galleryDetails.append(galleryJetsBtn);
+
+    //-//
+
+    let galleryTanksBtn = ce('button');
+    galleryTanksBtn.textContent = 'TANKS';
+    galleryTanksBtn.onmouseover = function()
+    {
+        hoverSound();
+    };
+    galleryTanksBtn.onclick = function()
+    {
+        clickSound();
+
+        galleryMaker(galleryTanks);
+    };
+    galleryDetails.append(galleryTanksBtn);
+
+    //-//
+
+    let galleryArtilleryBtn = ce('button');
+    galleryArtilleryBtn.textContent = 'ARTILLERY';
+    galleryArtilleryBtn.onmouseover = function()
+    {
+        hoverSound();
+    };
+    galleryArtilleryBtn.onclick = function()
+    {
+        clickSound();
+
+        galleryMaker(galleryArtillery);
+    };
+    galleryDetails.append(galleryArtilleryBtn);
+
+    //-//
+
+    let galleryDronesMilitaryBtn = ce('button');
+    galleryDronesMilitaryBtn.textContent = 'Drones Military';
+    galleryDronesMilitaryBtn.onmouseover = function()
+    {
+        hoverSound();
+    };
+    galleryDronesMilitaryBtn.onclick = function()
+    {
+        clickSound();
+
+        galleryMaker(galleryDronesMilitary);
+    };
+    galleryDetails.append(galleryDronesMilitaryBtn);
+
+    //-//
+
+    let galleryHumveeBtn = ce('button');
+    galleryHumveeBtn.textContent = 'Humvees';
+    galleryHumveeBtn.onmouseover = function()
+    {
+        hoverSound();
+    };
+    galleryHumveeBtn.onclick = function()
+    {
+        clickSound();
+
+        galleryMaker(galleryHumvees);
+    };
+    galleryDetails.append(galleryHumveeBtn);
+
+    //-//
+
+    let galleryJeepsBtn = ce('button');
+    galleryJeepsBtn.textContent = 'Jeeps';
+    galleryJeepsBtn.onmouseover = function()
+    {
+        hoverSound();
+    };
+    galleryJeepsBtn.onclick = function()
+    {
+        clickSound();
+
+        galleryMaker(galleryJeeps);
+    };
+    galleryDetails.append(galleryJeepsBtn);
+
+    //-//
+
+    let galleryMilitaryMalesBtn = ce('button');
+    galleryMilitaryMalesBtn.textContent = 'Military Males';
+    galleryMilitaryMalesBtn.onmouseover = function()
+    {
+        hoverSound();
+    };
+    galleryMilitaryMalesBtn.onclick = function()
+    {
+        clickSound();
+
+        galleryMaker(galleryMilitaryMales);
+    };
+    galleryDetails.append(galleryMilitaryMalesBtn);
+
+    //-//
+
+    let galleryYachtsBtn = ce('button');
+    galleryYachtsBtn.textContent = 'YACHTS';
+    galleryYachtsBtn.onmouseover = function()
+    {
+        hoverSound();
+    };
+    galleryYachtsBtn.onclick = function()
+    {
+        clickSound();
+
+        galleryMaker(galleryYachts);
+    };
+    galleryDetails.append(galleryYachtsBtn);
+
+    //-//
+
+    let galleryDesksBtn = ce('button');
+    galleryDesksBtn.textContent = 'DESKS';
+    galleryDesksBtn.onmouseover = function()
+    {
+        hoverSound();
+    };
+    galleryDesksBtn.onclick = function()
+    {
+        clickSound();
+
+        galleryMaker(galleryDesks);
+    };
+    galleryDetails.append(galleryDesksBtn);
+
+    //-//
+
+    let galleryTablesBtn = ce('button');
+    galleryTablesBtn.textContent = 'TABLES';
+    galleryTablesBtn.onmouseover = function()
+    {
+        hoverSound();
+    };
+    galleryTablesBtn.onclick = function()
+    {
+        clickSound();
+
+        galleryMaker(galleryTables);
+    };
+    galleryDetails.append(galleryTablesBtn);
+
+    //-//
+
+    let galleryPeopleBtn = ce('button');
+    galleryPeopleBtn.textContent = 'PEOPLE';
+    galleryPeopleBtn.onmouseover = function()
+    {
+        hoverSound();
+    };
+    galleryPeopleBtn.onclick = function()
+    {
+        clickSound();
+
+        galleryMaker(galleryPeople);
+    };
+    galleryDetails.append(galleryPeopleBtn);
+
+    //-//
+
+    let galleryCharactersBtn = ce('button');
+    galleryCharactersBtn.textContent = 'CHARACTERS';
+    galleryCharactersBtn.onmouseover = function()
+    {
+        hoverSound();
+    };
+    galleryCharactersBtn.onclick = function()
+    {
+        clickSound();
+
+        galleryMaker(galleryCharacters);
+    };
+    galleryDetails.append(galleryCharactersBtn);
+
+    //-//
+
+    let galleryHeadsBtn = ce('button');
+    galleryHeadsBtn.textContent = 'HEADS';
+    galleryHeadsBtn.onmouseover = function()
+    {
+        hoverSound();
+    };
+    galleryHeadsBtn.onclick = function()
+    {
+        clickSound();
+
+        galleryMaker(galleryHeads);
+    };
+    galleryDetails.append(galleryHeadsBtn);
+
+    //-//
+
+    let galleryBodyBtn = ce('button');
+    galleryBodyBtn.textContent = 'BODY';
+    galleryBodyBtn.onmouseover = function()
+    {
+        hoverSound();
+    };
+    galleryBodyBtn.onclick = function()
+    {
+        clickSound();
+
+        galleryMaker(galleryBody);
+    };
+    galleryDetails.append(galleryBodyBtn);
+
+    //-//
+
+    let galleryPropsBtn = ce('button');
+    galleryPropsBtn.textContent = 'PROPS';
+    galleryPropsBtn.onmouseover = function()
+    {
+        hoverSound();
+    };
+    galleryPropsBtn.onclick = function()
+    {
+        clickSound();
+
+        galleryMaker(galleryProps);
+    };
+    galleryDetails.append(galleryPropsBtn);
 
     //----//
 

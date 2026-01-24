@@ -14,55 +14,55 @@ let theFunctions = [
     },
     
     {
-        name: "galleryMaker(everything, 'character')",
+        name: "galleryMaker(galleryCharacters)",
         fullName: "galleryMaker",
         description: "CHARACTERS"
     },
 
     {
-        name: "galleryMaker(everything, 'head')",
+        name: "galleryMaker(galleryHeads)",
         fullName: "galleryMaker",
         description: "HEAD"
     },
 
     {
-        name: "galleryMaker(everything, 'body')",
+        name: "galleryMaker(galleryBody)",
         fullName: "galleryMaker",
         description: "BODY"
     },
 
     {
-        name: "galleryMaker(everything, 'props')",
+        name: "galleryMaker(galleryProps)",
         fullName: "galleryMaker",
         description: "PROPS"
     },
 
     {
-        name: "galleryMaker(everything, 'jet')",
+        name: "galleryMaker(galleryJets)",
         fullName: "galleryMaker",
         description: "JETS"
     },
 
     {
-        name: "galleryMaker(everything, 'tank')",
+        name: "galleryMaker(galleryTanks)",
         fullName: "galleryMaker",
         description: "TANKS"
     },
 
     {
-        name: "galleryMaker(everything, 'artillery')",
+        name: "galleryMaker(galleryArtillery)",
         fullName: "galleryMaker",
         description: "ARTILLERY"
     },
 
     {
-        name: "galleryMaker(everything, 'drone_military')",
+        name: "galleryMaker(galleryDronesMilitary)",
         fullName: "galleryMaker",
         description: "DRONES_MILITARY"
     },
 
     {
-        name: "galleryMaker(everything, 'military_males')",
+        name: "galleryMaker(galleryMilitaryMales)",
         fullName: "galleryMaker",
         description: "MILITARY_MALES"
     },

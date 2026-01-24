@@ -77,7 +77,7 @@ function menuMenus()
     electronicsBtn.onclick = function()
     {
         clickSound();
-        galleryMaker(everything, "electronics");
+        galleryMaker(galleryComponents);
         cl("galleryMaker");
     };
     subDiv.append(electronicsBtn);
@@ -95,7 +95,7 @@ function menuMenus()
     jetsButton.onclick = function()
     {
         clickSound();
-        galleryMaker(everything, "jet");
+        galleryMaker(galleryJets);
         cl("galleryMaker");
     };
     subDiv.append(jetsButton);
@@ -113,7 +113,7 @@ function menuMenus()
     tanksButton.onclick = function()
     {
         clickSound();
-        galleryMaker(everything, "tank");
+        galleryMaker(galleryTanks);
         cl("galleryMaker");
     };
     subDiv.append(tanksButton);
@@ -131,7 +131,7 @@ function menuMenus()
     artilleryButton.onclick = function()
     {
         clickSound();
-        galleryMaker(everything, "artillery");
+        galleryMaker(galleryArtillery);
         cl("galleryMaker");
     };
     subDiv.append(artilleryButton);
@@ -149,7 +149,7 @@ function menuMenus()
     dronesMilitaryButton.onclick = function()
     {
         clickSound();
-        galleryMaker(everything, "drone_military");
+        galleryMaker(galleryDronesMilitary);
         cl("galleryMaker");
     };
     subDiv.append(dronesMilitaryButton);
@@ -236,7 +236,7 @@ function menuMenus()
     deskButton.onclick = function()
     {
         clickSound();
-        galleryMaker(everything, "desk");
+        galleryMaker(galleryDesks);
     };
     subDiv.append(deskButton);
 
@@ -253,7 +253,7 @@ function menuMenus()
     tablesButton.onclick = function()
     {
         clickSound();
-        galleryMaker(everything, "table");
+        galleryMaker(galleryTables);
     };
     subDiv.append(tablesButton);
 
@@ -270,7 +270,7 @@ function menuMenus()
     peopleButton.onclick = function()
     {
         clickSound();
-        galleryMaker(everything, "person");
+        galleryMaker(galleryPeople);
     };
     subDiv.append(peopleButton);
 
@@ -287,7 +287,7 @@ function menuMenus()
     charactersButton.onclick = function()
     {
         clickSound();
-        galleryMaker(everything, "character");
+        galleryMaker(galleryCharacters);
         cl("galleryMaker");
     };
     subDiv.append(charactersButton);
@@ -305,7 +305,7 @@ function menuMenus()
     headButton.onclick = function()
     {
         clickSound();
-        galleryMaker(everything, "head");
+        galleryMaker(galleryHeads);
         cl("galleryMaker");
     };
     subDiv.append(headButton);
@@ -323,7 +323,7 @@ function menuMenus()
     bodyButton.onclick = function()
     {
         clickSound();
-        galleryMaker(everything, "body");
+        galleryMaker(galleryBody);
         cl("galleryMaker");
     };
     subDiv.append(bodyButton);
@@ -341,7 +341,7 @@ function menuMenus()
     propsButton.onclick = function()
     {
         clickSound();
-        galleryMaker(everything, "props");
+        galleryMaker(galleryProps);
         cl("galleryMaker");
     };
     subDiv.append(propsButton);

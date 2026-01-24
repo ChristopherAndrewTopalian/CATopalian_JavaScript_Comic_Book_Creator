@@ -70,7 +70,7 @@ function bottomMenu()
     characterGalleryButton.onclick = function()
     {
         clickSound();
-        galleryMaker(everything, 'character');
+        galleryMaker(galleryCharacters, 'character');
     };
 
     characterGalleryButton.onmouseover = function()
@@ -111,7 +111,7 @@ function bottomMenu()
     headButton.onclick = function()
     {
         clickSound();
-        galleryMaker(everything, 'head');
+        galleryMaker(galleryHead, 'head');
     };
 
     headButton.onmouseover = function()
@@ -130,7 +130,7 @@ function bottomMenu()
     bodyButton.onclick = function()
     {
         clickSound();
-        galleryMaker(everything, 'body');
+        galleryMaker(galleryBody, 'body');
     };
 
     bodyButton.onmouseover = function()
@@ -150,7 +150,7 @@ function bottomMenu()
     propButton.onclick = function()
     {
         clickSound();
-        galleryMaker(everything, 'props');
+        galleryMaker(galleryProps, 'props');
     };
 
     propButton.onmouseover = function()

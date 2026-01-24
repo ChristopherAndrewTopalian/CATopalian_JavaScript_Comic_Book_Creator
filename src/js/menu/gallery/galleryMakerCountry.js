@@ -1,5 +1,20 @@
 // galleryMakerCountry.js
 
+let countries = [
+{
+    name: "America",
+},
+
+{
+    name: "China",
+},
+
+{
+    name: "Russia"
+}
+];
+
+
 function galleryMakerCountry(whichArray, whichCategory, whichCountry)
 {
     if (ge("characterGalleryId"))
@@ -60,7 +75,7 @@ function galleryMakerCountry(whichArray, whichCategory, whichCountry)
             {
                 ge("characterGalleryId").remove();
 
-                galleryMaker(everything, 'jet')
+                galleryMaker(galleryJets);
 
                 alert(theOptions.text);
         };
