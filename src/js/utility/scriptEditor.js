@@ -2,9 +2,35 @@
 
 function evaluateJS()
 {
-    let theText = ge("theCode");
+    // Grab the element
+    let codeElement = ge("theCode");
 
-    let result = eval(ge("theCode").textContent);
+    // Grab the text. (Use .value if it's a <textarea>. Use .innerText if it's a <div>)
+    let rawCode = codeElement.value !== undefined ? codeElement.value : codeElement.innerText;
+
+    try
+    {
+        // Wrap the script in our safe sandbox and execute it
+        let result = new Function(rawCode)();
+
+        // Optional: If the script returns something, log it so you know it worked!
+        if (result !== undefined)
+        {
+            console.log("Comic Script Executed Successfully. Result: ", result);
+        }
+        else
+        {
+            console.log("Comic Script Executed Successfully.");
+        }
+    } 
+    catch (error)
+    {
+        // Catch any typos the user makes in their comic script
+        console.error("Comic Script Error: ", error.message);
+        
+        // Optional: Alert the user so they know their script failed
+        // alert("Warning: Your comic script has an error -> " + error.message);
+    }
 }
 
 function makeScriptEditor()
@@ -30,8 +56,7 @@ function makeScriptEditor()
     //-//
 
     let runButton = ce("button");
-    // checkmark for run symbol
-    runButton.textContent = "O"
+    runButton.textContent = "Run"
     runButton.title = "Activate"
     runButton.onclick = function()
     {
@@ -41,7 +66,7 @@ function makeScriptEditor()
 
     //-//
 
-    let subDiv = ce("div");
+    let subDiv = ce("textarea");
     subDiv.id = "theCode";
     subDiv.contentEditable = true;
     subDiv.className = "theTextAreaStyle";
